@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob115_shift18",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  load\n - input  ena\n - input  amount (2 bits)\n - input  data (64 bits)\n - output q (64 bits)\n\nThe module should implement a 64-bit arithmetic shift register, with\nsynchronous load. The shifter can shift both left and right, and by 1 or\n8 bit positions, selected by \"amount.\" Assume the right shit is an\narithmetic right shift.\n\nSignals are defined as below:\n\n  (1) load: Loads shift register with data[63:0] instead of shifting.\n       Active high.\n  (2) ena: Chooses whether to shift. Active high.\n  (3) amount: Chooses which direction and how much to shift.\n      (a) 2'b00: shift left by 1 bit.\n      (b) 2'b01: shift left by 8 bits.\n      (c) 2'b10: shift right by 1 bit.\n      (d) 2'b11: shift right by 8 bits.\n  (4) q: The contents of the shifter.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

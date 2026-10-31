@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob107_fsm1s",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - input  in\n - output out\n\nImplement the following Moore state machine with two states, one input,\nand one output. The reset state is B and reset is active-high\nsynchronous.\n\n  B (out=1) --in=0--> A\n  B (out=1) --in=1--> B\n  A (out=0) --in=0--> B\n  A (out=0) --in=1--> A",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

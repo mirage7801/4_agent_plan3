@@ -1,0 +1,8 @@
+设计一个可综合的串入并出移位寄存器，模块名为 shift_register，参数 WIDTH 默认值为 8，且 WIDTH>=2。
+
+端口：input logic clk、rst、enable、serial_in；output logic [WIDTH-1:0] parallel_out。
+
+行为要求：
+- 只在 clk 上升沿更新；时钟周期为 5 ns。rst 为同步高有效复位，将 parallel_out 清零。
+- rst=0 且 enable=1 时，原有数据向高位移动一位，serial_in 进入 bit 0。
+- enable=0 时保持 parallel_out，不提供并行加载功能。

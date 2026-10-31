@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "passed": false,
+  "stage": "elaborate",
+  "error_type": "module_not_found",
+  "summary": "module_not_found: 位置未知; ERROR: [XSIM 43-3225] Cannot find design unit work.tb_TopModule in library work located at xsim.dir/work.",
+  "source": "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\problems\\prob001_zero\\reference.v",
+  "testbench": "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\problems\\prob001_zero\\tb.sv",
+  "top_module": "TopModule",
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "vivado_version": "2026.1",
+  "timings": {
+    "compile_seconds": 1.235,
+    "elaborate_seconds": 1.078,
+    "simulation_seconds": 0.0,
+    "synthesis_seconds": 0.0,
+    "total_seconds": 3.234
+  },
+  "commands": [
+    {
+      "stage": "environment",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\vivado.bat",
+        "-version"
+      ],
+      "returncode": 1
+    },
+    {
+      "stage": "compile",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+        "-sv",
+        "-work",
+        "work",
+        "C:\\Users\\chenr\\AppData\\Local\\Temp\\rtl_agent_2c9gaf64\\source.v",
+        "C:\\Users\\chenr\\AppData\\Local\\Temp\\rtl_agent_2c9gaf64\\testbench.sv"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+        "work.tb_TopModule",
+        "-s",
+        "rtl_agent_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "returncode": 1
+    }
+  ],
+  "log_files": [
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation\\prob001_zero_reference_2\\environment.log",
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation\\prob001_zero_reference_2\\compile.log",
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation\\prob001_zero_reference_2\\elaborate.log"
+  ],
+  "artifacts": [],
+  "warnings": [],
+  "output_dir": "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation\\prob001_zero_reference_2"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob018_mux256to1",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  in  (256 bits)\n - input  sel (  8 bits)\n - output out\n\nThe module should implement a 1-bit wide, 256-to-1 multiplexer. The 256\ninputs are all packed into a single 256-bit input vector. sel=0 should\nselect in[0], sel=1 selects bits in[1], sel=2 selects bits in[2], etc.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "categories": {
+    "PARSE_ERROR": ["compile", "syntax_error"],
+    "ELABORATION_ERROR": ["elaborate", "port_mismatch", "top_module_mismatch"],
+    "WIDTH_OR_SIGN_ERROR": ["width_mismatch", "signed", "unsigned", "overflow", "truncation"],
+    "RESET_TIMING_ERROR": ["reset_mismatch", "reset_timing"],
+    "OUTPUT_LATENCY_ERROR": ["latency_mismatch", "one_cycle_early", "one_cycle_late"],
+    "PRIORITY_ERROR": ["priority", "enable_collision", "read_write_collision"],
+    "STATE_TRANSITION_ERROR": ["state_transition", "fsm", "sequence_mismatch"],
+    "UNINITIALIZED_OR_LATCH": ["uninitialized", "latch", "x_state"],
+    "SIMULATION_ERROR": ["simulation", "functional_mismatch"],
+    "synthesis": ["synthesis", "multiple_driver", "latch", "unsupported_construct"],
+    "timeout": ["simulation_timeout", "synthesis_timeout", "timeout"],
+    "general": ["unknown_error"]
+  }
+}

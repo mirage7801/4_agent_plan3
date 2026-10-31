@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob082_lfsr32",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - output q (32 bits)\n\nA linear feedback shift register is a shift register usually with a few\nXOR gates to produce the next state of the shift register. A Galois LFSR\nis one particular arrangement that shifts right, where a bit position with\na \"tap\" is XORed with the LSB output bit (q[0]) to produce its next value,\nwhile bit positions without a tap shift right unchanged. \n\nThe module should implement a 32-bit Galois LFSR with taps at bit\npositions 32, 22, 2, and 1. Reset should be active high synchronous, and\nshould reset the output q to 32'h1. Assume all sequential logic is\ntriggered on the positive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob076_always_case",
+  "source_files": {
+    "Prob076_always_case_prompt.txt": "0ae5de2e81d7e0c7682c78b6a37043a0e3cd7b1e03896390094d8447c2259519",
+    "Prob076_always_case_ref.sv": "bc2d160effd6fbaf591d8adaab32f897fcc0479ea8ddb8d1eb92fb3b59cf3d23",
+    "Prob076_always_case_test.sv": "db5a64eb9e0fa149faf500a1a40c1a8a15e281325d585de51f26bd401f1d55fe"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments."
+  ]
+}

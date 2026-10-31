@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob132_always_if2",
+  "source_files": {
+    "Prob132_always_if2_prompt.txt": "8a3ea8c732f21239cd4141606628d08ad4115da6ed4c16cc2b6ac41f68311cf7",
+    "Prob132_always_if2_ref.sv": "5d7b5e97e5f038c0c13d3f06634095f23b50b946223ee7ec398483e0a74dc36e",
+    "Prob132_always_if2_test.sv": "ba6be33c005273b938774d09e0c9f089539d15edc6ffd3dab09f34c0f37e6946"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "修正与过热/驾驶控制代码无关的加减器标题；保留原有修错任务。",
+    "upstream_prompt_sha256": "8a3ea8c732f21239cd4141606628d08ad4115da6ed4c16cc2b6ac41f68311cf7",
+    "code_complete_prompt_sha256": "7aa16a9e81c4a3fe94617b09c104b8de0b1e309a111b389d0bd5d0f968d11b43",
+    "previous_task_txt_sha256": "91efec6e95abf77285f29e579ee5cf1a61ceb62312f86ac27450433de05eb88c"
+  }
+}

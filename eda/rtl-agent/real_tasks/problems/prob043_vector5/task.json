@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob043_vector5",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  a\n - input  b\n - input  c\n - input  d\n - input  e\n - output out (25 bits)\n\nImplement a module that given five 1-bit signals (a, b, c, d, and e),\ncompute all 25 pairwise one-bit comparisons in the 25-bit output vector.\nThe output should be 1 if the two bits being compared are equal. Example:\nout[24] = ~a ^ a; out[23] = ~a ^ b; out[22] = ~a ^ c; ...\nout[ 1] = ~e ^ d; out[ 0] = ~e ^ e.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

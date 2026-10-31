@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob073_dff16e",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  resetn\n - input  byteena ( 2 bits)\n - input  d       (16 bits)\n - output q       (16 bits)\n\nThe module should include 16 D flip-flops. It's sometimes useful to only\nmodify parts of a group of flip-flops. The byte-enable inputs control\nwhether each byte of the 16 registers should be written to on that cycle.\nbyteena[1] controls the upper byte d[15:8], while byteena[0] controls the\nlower byte d[7:0]. resetn is a synchronous, active-low reset. All DFFs\nshould be triggered by the positive edge of clk.\n\n\nWhen resetn=0 at the rising clock edge, clear q to 16'h0000\nregardless of byteena. Otherwise update only the enabled bytes and\nretain each disabled byte.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

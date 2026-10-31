@@ -1,0 +1,8 @@
+设计一个可综合的 8 位优先编码器，模块名为 priority_encoder。
+
+端口：input logic [7:0] request；output logic [2:0] index；output logic valid。
+
+行为要求：
+- 优先级从高到低依次为 request[7]、request[6]、……、request[0]。
+- 有请求时 valid=1，index 为最高优先级有效请求的位号。
+- 无请求时 valid=0 且 index=0。这是纯组合逻辑，不得引入时钟、状态或锁存器。

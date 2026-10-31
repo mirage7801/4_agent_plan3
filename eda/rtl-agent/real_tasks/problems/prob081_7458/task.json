@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob081_7458",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  p1a\n - input  p1b\n - input  p1c\n - input  p1d\n - input  p1e\n - input  p1f\n - input  p2a\n - input  p2b\n - input  p2c\n - input  p2d\n - output p1y\n - output p2y\n\nThe 7458 is a chip with four AND gates and two OR gates. Implement a\nmodule with the same functionality as the 7458 chip. It has 10 inputs and\n2 outputs. You may choose to use an `assign` statement to drive each of\nthe output wires, or you may choose to declare (four) wires for use as\nintermediate signals, where each internal wire is driven by the output of\none of the AND gates.\n\nIn this circuit, p1y should be the OR of two 3-input AND gates: one that\nANDs p1a, p1b, and p1c, and the second that ANDs p1d, p1e, and p1f. The\noutput p2y is the OR of two 2-input AND gates: one that ANDs p2a and p2b,\nand the second that ANDs p2c and p2d.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

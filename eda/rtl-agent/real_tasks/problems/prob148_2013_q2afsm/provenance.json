@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob148_2013_q2afsm",
+  "source_files": {
+    "Prob148_2013_q2afsm_prompt.txt": "08d045ce9849f98d12fa7cb817c9130c1e2614066a2ca8ceb8194059f94bc89e",
+    "Prob148_2013_q2afsm_ref.sv": "8d9517c9f3e10906de5849675419e92605b04ead1a1b74b0df6a7785ff5197d6",
+    "Prob148_2013_q2afsm_test.sv": "df10a7f9f94e93223d460bc15ed6293990c35a7b91f11614676d0ee7fa5659e7"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "按原始文字的固定优先级仲裁规则纠正A到D条件，补齐D保持与释放；不改变零基接口。",
+    "upstream_prompt_sha256": "08d045ce9849f98d12fa7cb817c9130c1e2614066a2ca8ceb8194059f94bc89e",
+    "code_complete_prompt_sha256": "a312065d71d81b1f4f43f438863a9c3259b85cc69566b95142b7bf4fb026ec81",
+    "previous_task_txt_sha256": "bd14bbc4be301daa3cd0ce45f4d366a557723368ff3edd9907b2650f25d07da6"
+  }
+}

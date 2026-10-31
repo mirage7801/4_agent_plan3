@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "title": "RTL task 1.0", "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "task_id", "description", "language", "top_module", "expected_source_file", "testbench", "constraints", "part", "clock_period_ns", "timeouts"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "task_id": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1},
+    "language": {"enum": ["verilog", "systemverilog"]}, "top_module": {"type": "string", "minLength": 1},
+    "expected_source_file": {"type": "string", "minLength": 1}, "testbench": {"type": "string", "minLength": 1},
+    "constraints": {"type": ["string", "null"]}, "part": {"type": "string", "minLength": 1},
+    "clock_period_ns": {"type": "number", "exclusiveMinimum": 0},
+    "timeouts": {"type": "object", "additionalProperties": false, "required": ["compile_seconds", "elaborate_seconds", "simulation_seconds", "synthesis_seconds"],
+      "properties": {"compile_seconds": {"type": "number", "exclusiveMinimum": 0}, "elaborate_seconds": {"type": "number", "exclusiveMinimum": 0}, "simulation_seconds": {"type": "number", "exclusiveMinimum": 0}, "synthesis_seconds": {"type": "number", "exclusiveMinimum": 0}}}
+  }
+}

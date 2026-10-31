@@ -1,0 +1,9 @@
+设计一个可综合的 8 位计数器，模块名为 counter。
+
+端口：input logic clk、rst、enable；output logic [7:0] count。
+
+行为要求：
+- 所有状态仅在 clk 上升沿更新，时钟周期为 5 ns。
+- rst 为同步高有效复位，优先于 enable；采样到 rst=1 的上升沿将 count 清零。
+- rst=0 且 enable=1 时每拍加 1；enable=0 时保持原值。
+- count 按 8 位无符号数自然回绕。不得使用不可综合构造。

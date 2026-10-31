@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob033_ece241_2014_q1c",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  a (8 bits)\n - input  b (8 bits)\n - output s (8 bits)\n - output overflow\n\nAssume that you have two 8-bit 2's complement numbers, a[7:0] and b[7:0].\nThe module should add these numbers to produce s[7:0]. Also compute\nwhether a (signed) overflow has occurred.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

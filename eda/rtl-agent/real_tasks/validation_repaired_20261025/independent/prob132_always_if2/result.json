@@ -1,0 +1,50 @@
+{
+  "task_id": "prob132_always_if2",
+  "passed": true,
+  "failed_stage": null,
+  "vivado_bin": "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin",
+  "independent_candidate_sha256": "9c57813f3d24ad3b7ce416505805242768aba21cac8aeaf2bff5a90334c793dc",
+  "task_txt_sha256": "66f41d40abd7985b4d5d230e4a3c7833d37cbf1e82d6f13cddaa90cb4c722299",
+  "tb_sha256": "9a024de9619601d4d6efb74ef333ca362051ebf651461df312973f716c14f5d6",
+  "synthesis_run": false,
+  "elapsed_seconds": 7.354,
+  "stages": [
+    {
+      "stage": "compile",
+      "command": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+        "-sv",
+        "-work",
+        "work",
+        "source.sv",
+        "testbench.sv"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "stage": "elaborate",
+      "command": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+        "work.tb_TopModule",
+        "-s",
+        "repair_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "stage": "simulation",
+      "command": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xsim.bat",
+        "repair_snapshot",
+        "-tclbatch",
+        "run_xsim.tcl"
+      ],
+      "exit_code": 0,
+      "passed": true
+    }
+  ]
+}

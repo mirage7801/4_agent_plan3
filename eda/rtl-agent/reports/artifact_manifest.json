@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "project_root": "E:/fpga/赛题研究/rtl-agent",
+  "status": "complete",
+  "vivado_version": "2026.1",
+  "target_part": "xczu3eg-sbva484-1-e",
+  "entrypoints": {
+    "cli": "tools/validate_rtl.py",
+    "python": "tools/validator_api.py",
+    "batch": "tools/run_all_tasks.py"
+  },
+  "governance": ["AGENTS.md"],
+  "tools": ["tools/validate_rtl.py", "tools/validator_api.py", "tools/run_all_tasks.py", "tools/rebuild_summary.py", "tools/log_parser.py", "tools/result_schema.py", "tools/vivado/synth.tcl", "tools/vivado/run_xsim.tcl", "tools/vivado/check_environment.tcl"],
+  "contracts": ["interfaces/validation_contract.md", "interfaces/task.schema.json", "interfaces/result.schema.json"],
+  "demo_tasks": ["demo_tasks/counter", "demo_tasks/enable_counter", "demo_tasks/shift_register", "demo_tasks/edge_detector", "demo_tasks/sequence_detector", "demo_tasks/priority_encoder", "demo_tasks/parity", "demo_tasks/parameterized_adder", "demo_tasks/arbiter", "demo_tasks/synchronous_fifo"],
+  "faults": ["demo_tasks/counter/faults/missing_semicolon.v", "demo_tasks/counter/faults/wrong_reset.v", "demo_tasks/counter/faults/wrong_port_width.v", "demo_tasks/counter/faults/multiple_driver.v"],
+  "tests": ["tests/test_validator.py"],
+  "logs": ["logs/manual_counter", "outputs/faults", "outputs/batch"],
+  "reference_results": ["outputs/counter_reference_run_20260921_155829_3ff8d0b8/result.json", "reports/validation_summary.json"],
+  "reports": ["reports/environment_report.json", "reports/environment_report.md", "reports/validation_summary.json", "reports/validation_summary.md", "reports/artifact_manifest.json", "reports/final_handoff.md"],
+  "known_issues": ["Vivado 2026.1 Unicode-path synthesis crash on this Windows machine; validator uses private ASCII staging", "An initial batch counter synthesis timed out across an approximately five-hour interruption; retained historically and later passed on a separate real run", "Heuristic diagnostic classification and no timing-closure proof"]
+}

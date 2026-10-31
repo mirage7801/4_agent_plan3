@@ -1,0 +1,1549 @@
+{
+  "date": "2026-10-23",
+  "project_root": "D:/AMD/4_agent_plan3",
+  "pipeline_version": "bounded_pipeline_v1",
+  "validation_kind": "synthetic_http_model_and_independent_validator_subprocess",
+  "real_model_tested": false,
+  "real_vivado_tested": false,
+  "full_suite": {
+    "tests": 127,
+    "passed": true
+  },
+  "cases": {
+    "pipeline_in_process_False_False": {
+      "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+      "pipeline_version": "bounded_pipeline_v1",
+      "model_call_count": 3,
+      "passed": true,
+      "events": [
+        {
+          "event": "pipeline_started",
+          "state": "PIPELINE_STARTED",
+          "at": "2026-10-23T14:05:06Z",
+          "elapsed_seconds": 0.328,
+          "risk": "high",
+          "buffer_capacity": 1,
+          "drain_policy": "natural_completion"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:06Z",
+          "elapsed_seconds": 0.36,
+          "role": "synthesizer",
+          "candidate_id": "candidate_01",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:06Z",
+          "elapsed_seconds": 0.516,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:06Z",
+          "elapsed_seconds": 0.547,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:06Z",
+          "elapsed_seconds": 0.578,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:07Z",
+          "elapsed_seconds": 0.61,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:07Z",
+          "elapsed_seconds": 1.219,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "passed": true
+        },
+        {
+          "event": "dispatch_stopped",
+          "state": "DISPATCH_STOPPED",
+          "at": "2026-10-23T14:05:07Z",
+          "elapsed_seconds": 1.25,
+          "reason": "success",
+          "dropped_validation": []
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:07Z",
+          "elapsed_seconds": 1.344,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "model_drained",
+          "state": "MODEL_DRAINED",
+          "at": "2026-10-23T14:05:07Z",
+          "elapsed_seconds": 1.391,
+          "revision_id": "candidate_02:r0",
+          "disposition": "discarded"
+        },
+        {
+          "event": "final",
+          "state": "FINAL",
+          "at": "2026-10-23T14:05:07Z",
+          "elapsed_seconds": 1.422,
+          "reason": "success"
+        }
+      ],
+      "max_active": {
+        "active_model": 0,
+        "max_active_model": 1,
+        "active_eda": 0,
+        "max_active_eda": 1
+      },
+      "drain_status": "completed",
+      "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+    },
+    "pipeline_in_process_False_True": {
+      "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+      "pipeline_version": "bounded_pipeline_v1",
+      "model_call_count": 3,
+      "passed": true,
+      "events": [
+        {
+          "event": "pipeline_started",
+          "state": "PIPELINE_STARTED",
+          "at": "2026-10-23T14:05:23Z",
+          "elapsed_seconds": 0.234,
+          "risk": "high",
+          "buffer_capacity": 1,
+          "drain_policy": "natural_completion"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:23Z",
+          "elapsed_seconds": 0.266,
+          "role": "synthesizer",
+          "candidate_id": "candidate_01",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 0.391,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 0.406,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 0.437,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 0.469,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 1.016,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "passed": true
+        },
+        {
+          "event": "dispatch_stopped",
+          "state": "DISPATCH_STOPPED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 1.047,
+          "reason": "success",
+          "dropped_validation": []
+        },
+        {
+          "event": "model_job_failed",
+          "state": "MODEL_JOB_FAILED",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 1.125,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02"
+        },
+        {
+          "event": "final",
+          "state": "FINAL",
+          "at": "2026-10-23T14:05:24Z",
+          "elapsed_seconds": 1.156,
+          "reason": "success"
+        }
+      ],
+      "max_active": {
+        "active_model": 0,
+        "max_active_model": 1,
+        "active_eda": 0,
+        "max_active_eda": 1
+      },
+      "drain_status": "completed",
+      "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+    },
+    "pipeline_in_process_True_False": {
+      "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+      "pipeline_version": "bounded_pipeline_v1",
+      "model_call_count": 4,
+      "passed": true,
+      "events": [
+        {
+          "event": "pipeline_started",
+          "state": "PIPELINE_STARTED",
+          "at": "2026-10-23T14:05:09Z",
+          "elapsed_seconds": 0.36,
+          "risk": "high",
+          "buffer_capacity": 1,
+          "drain_policy": "natural_completion"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:09Z",
+          "elapsed_seconds": 0.407,
+          "role": "synthesizer",
+          "candidate_id": "candidate_01",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:09Z",
+          "elapsed_seconds": 0.547,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:09Z",
+          "elapsed_seconds": 0.563,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:09Z",
+          "elapsed_seconds": 0.61,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:09Z",
+          "elapsed_seconds": 0.625,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:10Z",
+          "elapsed_seconds": 1.172,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "passed": false
+        },
+        {
+          "event": "feedback_queued",
+          "state": "FEEDBACK_QUEUED",
+          "at": "2026-10-23T14:05:10Z",
+          "elapsed_seconds": 1.391,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "concrete": true
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:10Z",
+          "elapsed_seconds": 1.516,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:10Z",
+          "elapsed_seconds": 1.532,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:10Z",
+          "elapsed_seconds": 1.563,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:10Z",
+          "elapsed_seconds": 1.594,
+          "role": "repairer",
+          "candidate_id": "candidate_01",
+          "parent_revision": "candidate_01:r0",
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:11Z",
+          "elapsed_seconds": 2.157,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475",
+          "passed": true
+        },
+        {
+          "event": "dispatch_stopped",
+          "state": "DISPATCH_STOPPED",
+          "at": "2026-10-23T14:05:11Z",
+          "elapsed_seconds": 2.188,
+          "reason": "success",
+          "dropped_validation": []
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:11Z",
+          "elapsed_seconds": 2.282,
+          "revision_id": "candidate_01:r1",
+          "source_hash": "454c49b4cab66446d002a5248014a3d8b37821363d7038eeed5ee554000420da"
+        },
+        {
+          "event": "model_drained",
+          "state": "MODEL_DRAINED",
+          "at": "2026-10-23T14:05:11Z",
+          "elapsed_seconds": 2.329,
+          "revision_id": "candidate_01:r1",
+          "disposition": "discarded"
+        },
+        {
+          "event": "final",
+          "state": "FINAL",
+          "at": "2026-10-23T14:05:11Z",
+          "elapsed_seconds": 2.344,
+          "reason": "success"
+        }
+      ],
+      "max_active": {
+        "active_model": 0,
+        "max_active_model": 1,
+        "active_eda": 0,
+        "max_active_eda": 1
+      },
+      "drain_status": "completed",
+      "final_source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+    },
+    "pipeline_workers_False_False": {
+      "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+      "pipeline_version": "bounded_pipeline_v1",
+      "model_call_count": 3,
+      "passed": true,
+      "events": [
+        {
+          "event": "pipeline_started",
+          "state": "PIPELINE_STARTED",
+          "at": "2026-10-23T14:05:13Z",
+          "elapsed_seconds": 0.828,
+          "risk": "high",
+          "buffer_capacity": 1,
+          "drain_policy": "natural_completion"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:13Z",
+          "elapsed_seconds": 0.859,
+          "role": "synthesizer",
+          "candidate_id": "candidate_01",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:13Z",
+          "elapsed_seconds": 1.672,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:13Z",
+          "elapsed_seconds": 1.703,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:13Z",
+          "elapsed_seconds": 1.719,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:13Z",
+          "elapsed_seconds": 1.75,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:15Z",
+          "elapsed_seconds": 2.844,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "passed": true
+        },
+        {
+          "event": "dispatch_stopped",
+          "state": "DISPATCH_STOPPED",
+          "at": "2026-10-23T14:05:15Z",
+          "elapsed_seconds": 2.89,
+          "reason": "success",
+          "dropped_validation": []
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:15Z",
+          "elapsed_seconds": 3.047,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "model_drained",
+          "state": "MODEL_DRAINED",
+          "at": "2026-10-23T14:05:15Z",
+          "elapsed_seconds": 3.078,
+          "revision_id": "candidate_02:r0",
+          "disposition": "discarded"
+        },
+        {
+          "event": "final",
+          "state": "FINAL",
+          "at": "2026-10-23T14:05:15Z",
+          "elapsed_seconds": 3.125,
+          "reason": "success"
+        }
+      ],
+      "max_active": {
+        "active_model": 0,
+        "max_active_model": 1,
+        "active_eda": 0,
+        "max_active_eda": 1
+      },
+      "drain_status": "completed",
+      "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+    },
+    "pipeline_workers_False_True": {
+      "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+      "pipeline_version": "bounded_pipeline_v1",
+      "model_call_count": 3,
+      "passed": true,
+      "events": [
+        {
+          "event": "pipeline_started",
+          "state": "PIPELINE_STARTED",
+          "at": "2026-10-23T14:05:26Z",
+          "elapsed_seconds": 0.907,
+          "risk": "high",
+          "buffer_capacity": 1,
+          "drain_policy": "natural_completion"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:26Z",
+          "elapsed_seconds": 0.938,
+          "role": "synthesizer",
+          "candidate_id": "candidate_01",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:27Z",
+          "elapsed_seconds": 1.782,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:27Z",
+          "elapsed_seconds": 1.813,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:27Z",
+          "elapsed_seconds": 1.828,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:27Z",
+          "elapsed_seconds": 1.86,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:28Z",
+          "elapsed_seconds": 2.719,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "passed": true
+        },
+        {
+          "event": "dispatch_stopped",
+          "state": "DISPATCH_STOPPED",
+          "at": "2026-10-23T14:05:28Z",
+          "elapsed_seconds": 2.75,
+          "reason": "success",
+          "dropped_validation": []
+        },
+        {
+          "event": "model_job_failed",
+          "state": "MODEL_JOB_FAILED",
+          "at": "2026-10-23T14:05:28Z",
+          "elapsed_seconds": 2.891,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02"
+        },
+        {
+          "event": "final",
+          "state": "FINAL",
+          "at": "2026-10-23T14:05:28Z",
+          "elapsed_seconds": 2.922,
+          "reason": "success"
+        }
+      ],
+      "max_active": {
+        "active_model": 0,
+        "max_active_model": 1,
+        "active_eda": 0,
+        "max_active_eda": 1
+      },
+      "drain_status": "completed",
+      "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+    },
+    "pipeline_workers_True_False": {
+      "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+      "pipeline_version": "bounded_pipeline_v1",
+      "model_call_count": 4,
+      "passed": true,
+      "events": [
+        {
+          "event": "pipeline_started",
+          "state": "PIPELINE_STARTED",
+          "at": "2026-10-23T14:05:18Z",
+          "elapsed_seconds": 1.0,
+          "risk": "high",
+          "buffer_capacity": 1,
+          "drain_policy": "natural_completion"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:18Z",
+          "elapsed_seconds": 1.032,
+          "role": "synthesizer",
+          "candidate_id": "candidate_01",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:19Z",
+          "elapsed_seconds": 1.875,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:19Z",
+          "elapsed_seconds": 1.891,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:19Z",
+          "elapsed_seconds": 1.922,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:19Z",
+          "elapsed_seconds": 1.953,
+          "role": "synthesizer",
+          "candidate_id": "candidate_02",
+          "parent_revision": null,
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:20Z",
+          "elapsed_seconds": 2.875,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "passed": false
+        },
+        {
+          "event": "feedback_queued",
+          "state": "FEEDBACK_QUEUED",
+          "at": "2026-10-23T14:05:20Z",
+          "elapsed_seconds": 3.078,
+          "revision_id": "candidate_01:r0",
+          "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+          "concrete": true
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:20Z",
+          "elapsed_seconds": 3.297,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "candidate_queued",
+          "state": "CANDIDATE_QUEUED",
+          "at": "2026-10-23T14:05:20Z",
+          "elapsed_seconds": 3.328,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "validation_started",
+          "state": "VALIDATION_STARTED",
+          "at": "2026-10-23T14:05:20Z",
+          "elapsed_seconds": 3.344,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+        },
+        {
+          "event": "model_job_started",
+          "state": "MODEL_JOB_STARTED",
+          "at": "2026-10-23T14:05:20Z",
+          "elapsed_seconds": 3.36,
+          "role": "repairer",
+          "candidate_id": "candidate_01",
+          "parent_revision": "candidate_01:r0",
+          "reserved_model_calls": 1,
+          "reserved_validation_slots": 1
+        },
+        {
+          "event": "validation_finished",
+          "state": "VALIDATION_FINISHED",
+          "at": "2026-10-23T14:05:21Z",
+          "elapsed_seconds": 4.375,
+          "revision_id": "candidate_02:r0",
+          "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475",
+          "passed": true
+        },
+        {
+          "event": "dispatch_stopped",
+          "state": "DISPATCH_STOPPED",
+          "at": "2026-10-23T14:05:21Z",
+          "elapsed_seconds": 4.407,
+          "reason": "success",
+          "dropped_validation": []
+        },
+        {
+          "event": "model_job_finished",
+          "state": "MODEL_JOB_FINISHED",
+          "at": "2026-10-23T14:05:21Z",
+          "elapsed_seconds": 4.516,
+          "revision_id": "candidate_01:r1",
+          "source_hash": "454c49b4cab66446d002a5248014a3d8b37821363d7038eeed5ee554000420da"
+        },
+        {
+          "event": "model_drained",
+          "state": "MODEL_DRAINED",
+          "at": "2026-10-23T14:05:21Z",
+          "elapsed_seconds": 4.547,
+          "revision_id": "candidate_01:r1",
+          "disposition": "discarded"
+        },
+        {
+          "event": "final",
+          "state": "FINAL",
+          "at": "2026-10-23T14:05:21Z",
+          "elapsed_seconds": 4.563,
+          "reason": "success"
+        }
+      ],
+      "max_active": {
+        "active_model": 0,
+        "max_active_model": 1,
+        "active_eda": 0,
+        "max_active_eda": 1
+      },
+      "drain_status": "completed",
+      "final_source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+    }
+  },
+  "source_hashes": {
+    "agent/orchestration/candidate_search.py": "b8f5e680bc2d4d7f82b629c172375235d10dcab5dc9edb30756ff9389b3b7374",
+    "agent/runtime/scheduler/worker_boundary.py": "d149010ceb120edd4156b22b6536d8cfe106f9fe9ca8917fd2ad9e2efebbb136",
+    "tests/test_pipeline.py": "9ed45766dc63a39e8dbb7ebd18e339219d5335636423f5f71a5f9f4fa1fc7b87"
+  },
+  "target_verification": {
+    "project_root": "D:\\AMD\\4_agent_plan3",
+    "tests": 127,
+    "passed": true,
+    "preflight": "ready",
+    "smoke": {
+      "run_dir": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\plan3_pipeline_target_smoke\\installed-smoke",
+      "passed": true,
+      "stop_reason": "success",
+      "attempt_count": 2,
+      "mock": true,
+      "pipeline_version": "bounded_pipeline_v1",
+      "solution_ready_seconds": 1.078,
+      "drain_status": "completed"
+    },
+    "cases": {
+      "pipeline_in_process_False_False": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_v1",
+        "model_call_count": 3,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.344,
+            "risk": "high",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.375,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.484,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.516,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.531,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.563,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.938,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-23T14:09:46Z",
+            "elapsed_seconds": 0.969,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:47Z",
+            "elapsed_seconds": 1.047,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-23T14:09:47Z",
+            "elapsed_seconds": 1.094,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-23T14:09:47Z",
+            "elapsed_seconds": 1.125,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      },
+      "pipeline_in_process_False_True": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_v1",
+        "model_call_count": 3,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-23T14:10:00Z",
+            "elapsed_seconds": 0.297,
+            "risk": "high",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:10:00Z",
+            "elapsed_seconds": 0.313,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:10:00Z",
+            "elapsed_seconds": 0.485,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:10:00Z",
+            "elapsed_seconds": 0.5,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:10:00Z",
+            "elapsed_seconds": 0.516,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:10:00Z",
+            "elapsed_seconds": 0.547,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:10:01Z",
+            "elapsed_seconds": 0.875,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-23T14:10:01Z",
+            "elapsed_seconds": 0.907,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_failed",
+            "state": "MODEL_JOB_FAILED",
+            "at": "2026-10-23T14:10:01Z",
+            "elapsed_seconds": 0.954,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-23T14:10:01Z",
+            "elapsed_seconds": 0.969,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      },
+      "pipeline_in_process_True_False": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_v1",
+        "model_call_count": 4,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.265,
+            "risk": "high",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.281,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.39,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.406,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.437,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.468,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:09:48Z",
+            "elapsed_seconds": 0.984,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": false
+          },
+          {
+            "event": "feedback_queued",
+            "state": "FEEDBACK_QUEUED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.172,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "concrete": true
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.25,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.265,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.281,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.297,
+            "role": "repairer",
+            "candidate_id": "candidate_01",
+            "parent_revision": "candidate_01:r0",
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.718,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.734,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.828,
+            "revision_id": "candidate_01:r1",
+            "source_hash": "454c49b4cab66446d002a5248014a3d8b37821363d7038eeed5ee554000420da"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.875,
+            "revision_id": "candidate_01:r1",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-23T14:09:49Z",
+            "elapsed_seconds": 1.89,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+      },
+      "pipeline_workers_False_False": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_v1",
+        "model_call_count": 3,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-23T14:09:51Z",
+            "elapsed_seconds": 0.75,
+            "risk": "high",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:51Z",
+            "elapsed_seconds": 0.781,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:52Z",
+            "elapsed_seconds": 1.39,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:09:52Z",
+            "elapsed_seconds": 1.406,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:09:52Z",
+            "elapsed_seconds": 1.437,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:52Z",
+            "elapsed_seconds": 1.453,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:09:53Z",
+            "elapsed_seconds": 2.218,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-23T14:09:53Z",
+            "elapsed_seconds": 2.25,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:53Z",
+            "elapsed_seconds": 2.359,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-23T14:09:53Z",
+            "elapsed_seconds": 2.39,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-23T14:09:53Z",
+            "elapsed_seconds": 2.421,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      },
+      "pipeline_workers_False_True": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_v1",
+        "model_call_count": 3,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-23T14:10:02Z",
+            "elapsed_seconds": 0.735,
+            "risk": "high",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:10:02Z",
+            "elapsed_seconds": 0.766,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:10:03Z",
+            "elapsed_seconds": 1.36,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:10:03Z",
+            "elapsed_seconds": 1.391,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:10:03Z",
+            "elapsed_seconds": 1.422,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:10:03Z",
+            "elapsed_seconds": 1.453,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:10:04Z",
+            "elapsed_seconds": 2.36,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-23T14:10:04Z",
+            "elapsed_seconds": 2.407,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_failed",
+            "state": "MODEL_JOB_FAILED",
+            "at": "2026-10-23T14:10:04Z",
+            "elapsed_seconds": 2.516,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-23T14:10:04Z",
+            "elapsed_seconds": 2.547,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      },
+      "pipeline_workers_True_False": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_v1",
+        "model_call_count": 4,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-23T14:09:55Z",
+            "elapsed_seconds": 0.813,
+            "risk": "high",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:55Z",
+            "elapsed_seconds": 0.828,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:56Z",
+            "elapsed_seconds": 1.547,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:09:56Z",
+            "elapsed_seconds": 1.578,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:09:56Z",
+            "elapsed_seconds": 1.594,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:56Z",
+            "elapsed_seconds": 1.61,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:09:57Z",
+            "elapsed_seconds": 2.656,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": false
+          },
+          {
+            "event": "feedback_queued",
+            "state": "FEEDBACK_QUEUED",
+            "at": "2026-10-23T14:09:57Z",
+            "elapsed_seconds": 2.86,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "concrete": true
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:57Z",
+            "elapsed_seconds": 3.031,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-23T14:09:58Z",
+            "elapsed_seconds": 3.063,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-23T14:09:58Z",
+            "elapsed_seconds": 3.094,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-23T14:09:58Z",
+            "elapsed_seconds": 3.11,
+            "role": "repairer",
+            "candidate_id": "candidate_01",
+            "parent_revision": "candidate_01:r0",
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-23T14:09:58Z",
+            "elapsed_seconds": 3.938,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-23T14:09:58Z",
+            "elapsed_seconds": 3.969,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-23T14:09:59Z",
+            "elapsed_seconds": 4.094,
+            "revision_id": "candidate_01:r1",
+            "source_hash": "454c49b4cab66446d002a5248014a3d8b37821363d7038eeed5ee554000420da"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-23T14:09:59Z",
+            "elapsed_seconds": 4.11,
+            "revision_id": "candidate_01:r1",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-23T14:09:59Z",
+            "elapsed_seconds": 4.125,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob139_2013_q2bfsm",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  resetn\n - input  x\n - input  y\n - output f\n - output g\n\nConsider a finite state machine that is used to control some type of\nmotor. The FSM has inputs x and y, which come from the motor, and\nproduces outputs f and g, which control the motor. There is also a clock\ninput called clk and a reset input (synchronous, active low) called\nresetn. The FSM has to work as follows. As long as the reset input is\nasserted, the FSM stays in a beginning state, called state A. When the\nreset signal is de-asserted, then after the next clock edge the FSM has\nto set the output f to 1 for one clock cycle. Then, the FSM has to\nmonitor the x input. When x has produced the values 1, 0, 1 in three\nsuccessive clock cycles, then g should be set to 1 on the following clock\ncycle. While maintaining g = 1 the FSM has to monitor the y input. If y\nhas the value 1 within at most two clock cycles, then the FSM should\nmaintain g = 1 permanently (that is, until reset). But if y does not\nbecome 1 within two clock cycles, then the FSM should set g = 0\npermanently (until reset). Assume all sequential logic is triggered on\nthe positive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

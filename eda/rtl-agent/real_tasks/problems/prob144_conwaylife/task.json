@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob144_conwaylife",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  load\n - input  data (256 bits)\n - output q (256 bits)\n\nThe module should implemement a \"game\" played on a two-dimensional grid\nof cells, where each cell is either 1 (alive) or 0 (dead). At each time\nstep, each cell changes state depending on how many neighbours it has:\n\n  (1) 0-1 neighbour: Cell becomes 0.\n  (2) 2 neighbours: Cell state does not change.\n  (3) 3 neighbours: Cell becomes 1.\n  (4) 4+ neighbours: Cell becomes 0.\n\nThe game is formulated for an infinite grid. In this circuit, we will use\na 16x16 grid. To make things more interesting, we will use a 16x16\ntoroid, where the sides wrap around to the other side of the grid. For\nexample, the corner cell (0,0) has 8 neighbours: (15,1), (15,0), (15,15),\n(0,1), (0,15), (1,1), (1,0), and (1,15). The 16x16 grid is represented by\na length 256 vector, where each row of 16 cells is represented by a\nsub-vector: q[15:0] is row 0, q[31:16] is row 1, etc.\n\n  (1) load: Loads data into q at the next clock edge, for loading initial\n       state. Active high synchronous.\n  (2) q: The 16x16 current state of the game, updated every clock cycle.\n\nThe game state should advance by one timestep every clock cycle. Assume\nall sequential logic is triggered on the positive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

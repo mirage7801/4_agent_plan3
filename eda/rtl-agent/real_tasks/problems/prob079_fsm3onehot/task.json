@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob079_fsm3onehot",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  in\n - input  state (4 bits)\n - output next_state (4 bits)\n - output out\n\nThe module should implement the state transition table for a Moore state\nmachine with one input, one output, and four states. Use the following\none-hot state encoding: A=4'b0001, B=4'b0010, C=4'b0100, D=4'b1000.\nDerive state transition and output logic equations by inspection assuming\na one-hot encoding. Implement only the state transition logic and output\nlogic (the combinational logic portion) for this state machine.\n\n  State | Next state in=0, Next state in=1 | Output\n  A     | A, B                             | 0\n  B     | C, B                             | 0\n  C     | A, D                             | 0\n  D     | C, B                             | 1",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

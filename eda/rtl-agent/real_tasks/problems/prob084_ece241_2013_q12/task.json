@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob084_ece241_2013_q12",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  enable\n - input  S\n - input  A\n - input  B\n - input  C\n - output Z\n\nThe module should implement a circuit for an 8x1 memory, where writing to\nthe memory is accomplished by shifting-in bits, and reading is \"random\naccess\", as in a typical RAM. You will then use the circuit to realize a\n3-input logic function. First, create an 8-bit shift register with 8\nD-type flip-flops. Label the flip-flop outputs from Q[0]...Q[7]. The\nshift register input should be called S, which feeds the input of Q[0]\n(MSB is shifted in first). The enable input is synchronous active high\nand controls whether to shift. Extend the circuit to have 3 additional\ninputs A,B,C and an output Z. The circuit's behaviour should be as\nfollows: when ABC is 000, Z=Q[0], when ABC is 001, Z=Q[1], and so on.\nYour circuit should contain ONLY the 8-bit shift register, and\nmultiplexers. Assume all sequential logic is triggered on the positive\nedge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

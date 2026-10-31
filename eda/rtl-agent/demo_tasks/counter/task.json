@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0", "task_id": "counter_001", "description": "设计 counter：input logic clk,rst,enable；output logic [7:0] count；同步高有效复位优先，enable 递增，否则保持，8位回绕。", "language": "systemverilog",
+  "top_module": "counter", "expected_source_file": "solution.sv", "testbench": "tb_counter.sv", "constraints": "constraints.xdc",
+  "part": "xczu3eg-sbva484-1-e", "clock_period_ns": 5.0,
+  "timeouts": {"compile_seconds": 60, "elaborate_seconds": 60, "simulation_seconds": 120, "synthesis_seconds": 300}
+}

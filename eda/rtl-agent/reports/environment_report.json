@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "checked_at_local": "2026-09-21",
+  "project_root": "E:/fpga/赛题研究/rtl-agent",
+  "operating_system": "Microsoft Windows 11 家庭版 中文版 64-bit, version 10.0.26200",
+  "python": {"command": "python", "version": "3.12.10", "executable": "C:/Users/46611/AppData/Local/Programs/Python/Python312/python.exe", "fallback_py_launcher": "C:/Windows/py.exe"},
+  "vivado": {
+    "installed": true,
+    "version": "2026.1",
+    "build": "6511674",
+    "on_path": false,
+    "executables": {
+      "vivado": "D:/AMDDesignTools/2026.1/Vivado/bin/vivado.bat",
+      "xvlog": "D:/AMDDesignTools/2026.1/Vivado/bin/xvlog.bat",
+      "xelab": "D:/AMDDesignTools/2026.1/Vivado/bin/xelab.bat",
+      "xsim": "D:/AMDDesignTools/2026.1/Vivado/bin/xsim.bat"
+    },
+    "version_switch_returncode": 1,
+    "version_switch_note": "The installed Windows launcher prints v2026.1 for -version but returns 1; batch checks and actual tools run.",
+    "target_part": "xczu3eg-sbva484-1-e",
+    "part_library_match_count": 1,
+    "license": "Vivado Design Suite BASIC license detected, active until 20-sep-2027; synth_design acquired Vivado_Synthesis/device license in counter run"
+  },
+  "workspace": {"e_drive_free_bytes_at_check": 89870794752, "directory_acl": "Everyone Allow FullControl (-1)", "write_test": "validated by creating rtl-agent files", "existing_rtl_agent": false, "git_repository": false},
+  "other_simulator": "C:/iverilog/bin/iverilog.exe",
+  "limitations": ["Vivado 2026.1 synthesis crashed with 0xC0000374 when cwd/source paths contained Chinese; ASCII temporary staging allowed counter synthesis to complete."]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob017_mux2to1v",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  a   (100 bits)\n - input  b   (100 bits)\n - input  sel\n - output out (100 bits)\n\nThe module should implement a 2-1 multiplexer. When sel=0, choose a. When\nsel=1, choose b.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "version": "public_spec_repair_v2_20261025",
+  "source_root": "D:\\AMD\\verilog-eval-main\\verilog-eval-main",
+  "target_root": "D:\\AMD\\verilog-eval-main\\real_tasks",
+  "total_audited": 156,
+  "modified_count": 18,
+  "tasks": [
+    {
+      "task_id": "prob031_dff",
+      "number": 31,
+      "reason": "修正q端口方向为output；原始code-complete公开模块头明确为output reg q。",
+      "files": [
+        {
+          "relative": "problems\\prob031_dff\\task.txt",
+          "before_sha256": "6e6d5252b2dd621ee0ec83d679278bca5dc125a98a028546c90dd28fe46b662c",
+          "after_sha256": "b1edc0f14549a8fc3ac65ebd498f3b17aac23e6ef30b0d7a9d98b55c2f5c4964"
+        },
+        {
+          "relative": "problems\\prob031_dff\\task.json",
+          "before_sha256": "89b5de5e9dc926fcba8d300c7fd67486f4ae64997dac942425847e16dec99184",
+          "after_sha256": "2521abe33778953d9082c794b057e75fe71f964125db6f3cc53d8c156e098b2e"
+        },
+        {
+          "relative": "problems\\prob031_dff\\provenance.json",
+          "before_sha256": "58d53028b44be8a4b716a2ae807fbea633495307c0b38605bbf47bec611725e8",
+          "after_sha256": "ba85323170cb2c35eb461d102b09237aaefeda5c9a6a5280f5dd487e0f9c1a2f"
+        }
+      ]
+    },
+    {
+      "task_id": "prob049_m2014_q4b",
+      "number": 49,
+      "reason": "明确原题未写清的异步复位极性和复位值；独立实现交叉复核原始行为。",
+      "files": [
+        {
+          "relative": "problems\\prob049_m2014_q4b\\task.txt",
+          "before_sha256": "bbb7593d8ee124c67fda335d54ac08f74d47671cea24d82d1bdd7422d19280ee",
+          "after_sha256": "10ac53c0253ee78664b219804d8c0bc22d3d4aede0916572d4453d69caaa0021"
+        },
+        {
+          "relative": "problems\\prob049_m2014_q4b\\task.json",
+          "before_sha256": "f5c678bf45f455fdd6d73a2f73058f8b33057f3c0e2b44beea04ea2c197f0aee",
+          "after_sha256": "87fb3bc20c6e32447999511beac001f2664a98d9e35cb0a0d8101dd78dc83160"
+        },
+        {
+          "relative": "problems\\prob049_m2014_q4b\\provenance.json",
+          "before_sha256": "f3fbd3288a0594a23ef4c54da927e59b50969227611d9897c4647aaaef448a29",
+          "after_sha256": "44e61161b105fe1dc65389f2617ea301cce3fa77fef63f18a076f8c0be62ff40"
+        }
+      ]
+    },
+    {
+      "task_id": "prob060_m2014_q4k",
+      "number": 60,
+      "reason": "补齐四级移位寄存器的同步清零值与复位优先级。",
+      "files": [
+        {
+          "relative": "problems\\prob060_m2014_q4k\\task.txt",
+          "before_sha256": "2611b0c88a6e2fb088100aa9ee4c120e2de6d6ce5803632c17aa1b265a1d6d6f",
+          "after_sha256": "48ef4e2008b5cbea691e1fc740d7ed46fb0387d463e1258ab69fdefb60c5b85c"
+        },
+        {
+          "relative": "problems\\prob060_m2014_q4k\\task.json",
+          "before_sha256": "5eb8f0bc4965d533f96ae083b7f44e0952c6f51330edc9108c2f220cbfb8a66b",
+          "after_sha256": "0c857923a9b7e76544f645a4274448d9603899cb12a3c72b3689482000d93ff3"
+        },
+        {
+          "relative": "problems\\prob060_m2014_q4k\\provenance.json",
+          "before_sha256": "361b41ee58f1ab1ac223c8a0d6530eacf216fb4721625f237dd503e8d3298942",
+          "after_sha256": "18e8dfb118aae7926a70740c109b12ba6175e1dbfd6e615f9acc1b2cdbef91d0"
+        }
+      ]
+    },
+    {
+      "task_id": "prob061_2014_q4a",
+      "number": 61,
+      "reason": "补齐L装载优先于E移位，以及均不使能时保持的规则；以独立实现与原验证器交叉复核。",
+      "files": [
+        {
+          "relative": "problems\\prob061_2014_q4a\\task.txt",
+          "before_sha256": "53f2dfacf6b2204c1e705909dec17bc6521368e849a5426a39aadbd7df6c3fc2",
+          "after_sha256": "2fee235c7b985e532b8399905cca54aa043b64cc92c602af4b289d8bccfc2f2e"
+        },
+        {
+          "relative": "problems\\prob061_2014_q4a\\task.json",
+          "before_sha256": "b3909fe3f85d9c43a5870043b9939b784fa723a1717352883c516e9750e8ccac",
+          "after_sha256": "57de073308c532bd4a1644e6b3bbbfbfba35e3dcc1a3fc93ecc6b09a58a7843f"
+        },
+        {
+          "relative": "problems\\prob061_2014_q4a\\provenance.json",
+          "before_sha256": "7672a9ac636cbae0518bfa9a00153c99c2c454b2723d09b2016d6e388a3888b4",
+          "after_sha256": "93ff3128aaad7d8bfa797367cd5c02809c7d607e57d6b61b5ec9f097b7803c55"
+        }
+      ]
+    },
+    {
+      "task_id": "prob062_bugs_mux2",
+      "number": 62,
+      "reason": "明确8位输出；交叉仿真发现原始验证行为是sel=1选a、sel=0选b，与错误示例相反。显式规定原验证极性，保留原始参考与测试。",
+      "files": [
+        {
+          "relative": "problems\\prob062_bugs_mux2\\task.txt",
+          "before_sha256": "5ad5285b165fa83ab78328347e819f6a0d99f3b3e10ef0a562f24520bc3390ee",
+          "after_sha256": "8bb4d1c0799b6073a9ef0999a56ef3411533133ca6396c350122d008d835397b"
+        },
+        {
+          "relative": "problems\\prob062_bugs_mux2\\task.json",
+          "before_sha256": "bd0bc720fdb8935efd257097e11c64d680b27e9bac8b55401e8a981d5b065845",
+          "after_sha256": "58bc36b6d8730d3cdc47624a74ae184a04b8732af1a0aa3f3e26910dc1609e95"
+        },
+        {
+          "relative": "problems\\prob062_bugs_mux2\\provenance.json",
+          "before_sha256": "cd84564ea76dac5d6e9b4a51a0487e21e614eab90bbe96c0f26dcaba5896071a",
+          "after_sha256": "101ea7467b3144f4f6ec642f1ac64be916c91e549c52a0b23d66db7d4fa24a28"
+        }
+      ]
+    },
+    {
+      "task_id": "prob068_countbcd",
+      "number": 68,
+      "reason": "补齐BCD计数器复位值，明确ena为当前数字的组合进位使能而非额外状态。",
+      "files": [
+        {
+          "relative": "problems\\prob068_countbcd\\task.txt",
+          "before_sha256": "75e070ed5913e5c051294d124aa7f3b7112c61066dff96c28c712a0dcf91e85e",
+          "after_sha256": "d31efc926e7b5ba2f22f4039bb878f4657fa32079ac528b365ecd01db9758e2a"
+        },
+        {
+          "relative": "problems\\prob068_countbcd\\task.json",
+          "before_sha256": "c6f686c39f3412b04010693577b257f560c771551c95ecd09c8c07fba2752d30",
+          "after_sha256": "70965d060be415bc877b52a5842f7109c56ab8f4c119477e7819c92320a24ce6"
+        },
+        {
+          "relative": "problems\\prob068_countbcd\\provenance.json",
+          "before_sha256": "fed96b9658da1e0cf17ff10c260937779687bf1a5efd0b8ea861ee2dec6ab47d",
+          "after_sha256": "c65cc3319ded5c39c1c122c6bf539ef87be87b7e0dfc9905508a3fc9872d5b6b"
+        }
+      ]
+    },
+    {
+      "task_id": "prob073_dff16e",
+      "number": 73,
+      "reason": "补齐字节使能寄存器复位值及复位高于byteena的优先级。",
+      "files": [
+        {
+          "relative": "problems\\prob073_dff16e\\task.txt",
+          "before_sha256": "dd36b0b9070f2bf6659c64146f580852d86851ea9d7d39f50d50ee246e28924d",
+          "after_sha256": "aad216eee99496de29595b7b5ea0f44784c88e619421e9e7d4eafaf07e340c9b"
+        },
+        {
+          "relative": "problems\\prob073_dff16e\\task.json",
+          "before_sha256": "56eb44349b63a943a1e36bf222ae7066f4032988e6c78c20590e2fd9ede169e4",
+          "after_sha256": "5f1671dd54556ac783746eb54e3d4131d796304522670fbff0ed8bbecfbf100a"
+        },
+        {
+          "relative": "problems\\prob073_dff16e\\provenance.json",
+          "before_sha256": "80e29bbfcae8a3c23b0468d3a20d89b78caf060b27905491bbf8d78b3db7aab8",
+          "after_sha256": "79668236420798340627555cd5abfe5194ed31fba850eb90e80d222ef4893008"
+        }
+      ]
+    },
+    {
+      "task_id": "prob080_timer",
+      "number": 80,
+      "reason": "删除与10位定时器矛盾的single D flip-flop模板残留；原始code-complete无此句。",
+      "files": [
+        {
+          "relative": "problems\\prob080_timer\\task.txt",
+          "before_sha256": "0637b0c5917dee0564720c5237a9d26b26e1b975265e26e747aa6a830f31833f",
+          "after_sha256": "11f58d027c62b94943992c7a2c4608843808e696c42e82b0aa800543d82b4b70"
+        },
+        {
+          "relative": "problems\\prob080_timer\\task.json",
+          "before_sha256": "cbfe85701468221bbb03109e3448f5e6b2fd356e0e54bde82f27e67bcc4378e5",
+          "after_sha256": "9fe26694565924442fafbc3a5b688f68c173567843455bd683235dd3a7063449"
+        },
+        {
+          "relative": "problems\\prob080_timer\\provenance.json",
+          "before_sha256": "159abb6b2720b9d1ab80751ec8088ae24e3dfe202e940b9295d84bde9e43d2b7",
+          "after_sha256": "9662ad1715055db94093959f4b3374472c77408444ac63cca46c48d1116af34f"
+        }
+      ]
+    },
+    {
+      "task_id": "prob094_gatesv",
+      "number": 94,
+      "reason": "明确spec-to-RTL扩展为4位输出后的边界补零；原始code-complete为3位有效输出，新增端点此前未说明。",
+      "files": [
+        {
+          "relative": "problems\\prob094_gatesv\\task.txt",
+          "before_sha256": "b4cf0401abd2739e3a19f60e1fc96879b30c5ff06f1afbbe7b7943d5c1057b91",
+          "after_sha256": "573352694be65d06e0cc2080a5f8995e680570837da3ab20422e326cecb2bbf3"
+        },
+        {
+          "relative": "problems\\prob094_gatesv\\task.json",
+          "before_sha256": "aedf8f686dc14eb3ef49524b099df19e36edd3d539c5570878d7dc9c7e7e869d",
+          "after_sha256": "b419c96f048e699aadbd9bbee7e15b605de131a40731f1d5bdd1466e2b38b6c8"
+        },
+        {
+          "relative": "problems\\prob094_gatesv\\provenance.json",
+          "before_sha256": "5d53e429df8e98d03f723af184fd5a7ac6d9dfd1bf03e65eaf340252e06bcbf5",
+          "after_sha256": "01faf64d8230bb69805d4bbf9ea4705ee7df9578f99609ecc2360b37a8c61de7"
+        }
+      ]
+    },
+    {
+      "task_id": "prob099_m2014_q6c",
+      "number": 99,
+      "reason": "从原始两版公开题面补回完整转移表；保留现目录已使用的Y2/Y4接口，明确其对应零基y[1]/y[3]。",
+      "files": [
+        {
+          "relative": "problems\\prob099_m2014_q6c\\task.txt",
+          "before_sha256": "c629cc18561eb8d437f5aa59dd50db2d1f607dac06fa62dbce115e1fe0e8b2e5",
+          "after_sha256": "3693822e502530a1a0b4956105a133aa7d7526e80c89172683870d0ec133c566"
+        },
+        {
+          "relative": "problems\\prob099_m2014_q6c\\task.json",
+          "before_sha256": "8f2247cb7268ce149835524b70ae528239c7bcdf24989d9fc50117b56fde8ab4",
+          "after_sha256": "03ffc8fe8ee028142df41ced86063b9618913580052ae22bf389f8ca6d61f3d4"
+        },
+        {
+          "relative": "problems\\prob099_m2014_q6c\\provenance.json",
+          "before_sha256": "0745098d6ea1747a5e9c7edc7f58ead1dbba4f5b98771d5f9034b9a23eeda477",
+          "after_sha256": "6045af9685a812af7c1b54bac420c8796fba80fc07b0bca711a9790de15f7eb7"
+        }
+      ]
+    },
+    {
+      "task_id": "prob116_m2014_q3",
+      "number": 116,
+      "reason": "统一原始[4:1]到spec-to-RTL的[3:0]位编号，修正卡诺图标头；不改图中的真值/无关项。",
+      "files": [
+        {
+          "relative": "problems\\prob116_m2014_q3\\task.txt",
+          "before_sha256": "56aedff533870361ed6fd33e3820eab5eece4bc252d0aed26a965492219b7229",
+          "after_sha256": "c10563722635844a361d1e2e4806de957b5c426c94072d92e219d473a05229ca"
+        },
+        {
+          "relative": "problems\\prob116_m2014_q3\\task.json",
+          "before_sha256": "1d2cb4d39af21c734a81aa619cd13689dbefb728eeeea33c8937efbb14203a6b",
+          "after_sha256": "ed077b4a78a5be12803b63a9c8f9d7ea68d4ea16e5341d3d3f0f9500175d693b"
+        },
+        {
+          "relative": "problems\\prob116_m2014_q3\\provenance.json",
+          "before_sha256": "26280c895bd2d68f3e9cee14383ac1ec4f1de6ea84d98868a8d03e48677b5bd4",
+          "after_sha256": "553fe38c7129a52e27685f21db8f09303d0197426a67e724ec11e37ac1b90c25"
+        }
+      ]
+    },
+    {
+      "task_id": "prob126_circuit6",
+      "number": 126,
+      "reason": "明确波形表中16位常量均为十六进制，消除1232等纯数字项的进制歧义。",
+      "files": [
+        {
+          "relative": "problems\\prob126_circuit6\\task.txt",
+          "before_sha256": "c17ea04cdcde6bad8dc56968777150b81afa61bc7d4a18f5198204f1e6225dff",
+          "after_sha256": "7084d3549a620d1619a41fef3786663ef3e5f37eb33880e4ca67bc7ac635360a"
+        },
+        {
+          "relative": "problems\\prob126_circuit6\\task.json",
+          "before_sha256": "0a9c770f9604fc7a2fd617f58ff75c6271d259dbdbcbd2b6be3a36f958c058cb",
+          "after_sha256": "b6ca13d2844e3eba3dc6542d1b684b7f13dfd7059afc317c302d538aff06206c"
+        },
+        {
+          "relative": "problems\\prob126_circuit6\\provenance.json",
+          "before_sha256": "3335dc05f1c802bcad17b504a7f32ba9576a18119c2c0d5d2c12d838dad3f158",
+          "after_sha256": "ba8466206f4bf85c496020753ecce9854146c73cae2805bb1db2de4798ccc261"
+        }
+      ]
+    },
+    {
+      "task_id": "prob132_always_if2",
+      "number": 132,
+      "reason": "修正与过热/驾驶控制代码无关的加减器标题；保留原有修错任务。",
+      "files": [
+        {
+          "relative": "problems\\prob132_always_if2\\task.txt",
+          "before_sha256": "91efec6e95abf77285f29e579ee5cf1a61ceb62312f86ac27450433de05eb88c",
+          "after_sha256": "66f41d40abd7985b4d5d230e4a3c7833d37cbf1e82d6f13cddaa90cb4c722299"
+        },
+        {
+          "relative": "problems\\prob132_always_if2\\task.json",
+          "before_sha256": "3ba74c496dc54117e9f128d4f48d6592d817614c988c22bcd361081ad61721ca",
+          "after_sha256": "e95a30d3c3b45f17195dd870e7ffb3a2f5c172ca920184fdf4a30c469010be52"
+        },
+        {
+          "relative": "problems\\prob132_always_if2\\provenance.json",
+          "before_sha256": "232c2b5524c9ed85863199520cd1a9534528b9776180cc73070210972d0036ce",
+          "after_sha256": "3c31e87f0b20abef71b4605f1e3e698f89c30eb1d9f784d88273a90f576bba54"
+        }
+      ]
+    },
+    {
+      "task_id": "prob135_m2014_q6b",
+      "number": 135,
+      "reason": "明确Y1是零基y[1]的下一状态而非当前状态，并解释与原始Y2命名的转换。",
+      "files": [
+        {
+          "relative": "problems\\prob135_m2014_q6b\\task.txt",
+          "before_sha256": "4b385fd8a856bd821f539756be6f3c8c9d47eaad522d46861dd24cb4d209e0a2",
+          "after_sha256": "be10c14a3996b1642c9e98357004fcc88779be72f502ed3d38303632042df150"
+        },
+        {
+          "relative": "problems\\prob135_m2014_q6b\\task.json",
+          "before_sha256": "6a9020fb27f3d14d0b6916f65801bba52254dde3388a5a721aab147a4a8263cb",
+          "after_sha256": "f7efb153f7453afed7cbb8afe9d645a101fa23140a1539ea04ec0e6e5f41fdb6"
+        },
+        {
+          "relative": "problems\\prob135_m2014_q6b\\provenance.json",
+          "before_sha256": "df02d01221ffc23c976a606271f2d2c8a703eba65e4de8a5276e240eb07d4a9f",
+          "after_sha256": "1468d5c754fcfdbddb529c00398775e7f69187c9340b0269e84b52605a43e418"
+        }
+      ]
+    },
+    {
+      "task_id": "prob136_m2014_q6",
+      "number": 136,
+      "reason": "补齐原始两版题面均遗漏的复位极性、同步属性与复位状态；独立实现交叉复核原始行为。",
+      "files": [
+        {
+          "relative": "problems\\prob136_m2014_q6\\task.txt",
+          "before_sha256": "44782e75f7c0d4fe6927bf2a99fad42d540a4fe1d966e6040bc383109ff0dca1",
+          "after_sha256": "f4d0fd0130880b4afe6e5c0d7c7db64088a063c14c8ff7348b827a15fd564191"
+        },
+        {
+          "relative": "problems\\prob136_m2014_q6\\task.json",
+          "before_sha256": "fe991155f8f87e60055259182b58f6c73ee3a51cb38af969ed14b61c59f83770",
+          "after_sha256": "2c2f32c45ddde21fe8ecd2b72ec63fc90bdfc025b1b0496c7b1037276450ebc5"
+        },
+        {
+          "relative": "problems\\prob136_m2014_q6\\provenance.json",
+          "before_sha256": "62787bc338576171fe14861ae20c9907e6e24dad213842d63a0053efe9d53921",
+          "after_sha256": "b258e9852250d49bc665f6168b17c6f6dac9974fcf81b1c71f86a333557e59e1"
+        }
+      ]
+    },
+    {
+      "task_id": "prob146_fsm_serialdata",
+      "number": 146,
+      "reason": "澄清无效停止位的恢复行为，避免把恢复高电平或空闲高电平误报为有效帧。",
+      "files": [
+        {
+          "relative": "problems\\prob146_fsm_serialdata\\task.txt",
+          "before_sha256": "de8ab1526c1f0a9868e3f38eff6139bbae5f7e715892e5c70821255c2632f8dd",
+          "after_sha256": "4be193e26ad6ef79fec04bb2bad515eeaba01604a6d40237b5a6b567439def2d"
+        },
+        {
+          "relative": "problems\\prob146_fsm_serialdata\\task.json",
+          "before_sha256": "066c29cd14301a5809d9619dbf849e2d88e0e8de4038603658d59d834e3eedb1",
+          "after_sha256": "cf887d1ac05e430a1312f92ce3e63fbd9a1973ed1ab1cda3e2ef16578ecf2f3e"
+        },
+        {
+          "relative": "problems\\prob146_fsm_serialdata\\provenance.json",
+          "before_sha256": "1843a18545652e1558367770b355c454818930d8b364459a1340f9a2dd096bb5",
+          "after_sha256": "6004a30e5d4c2753e7b1e36573e61f462ddb6bd10fc567a9c8ac02b68a8b194c"
+        }
+      ]
+    },
+    {
+      "task_id": "prob148_2013_q2afsm",
+      "number": 148,
+      "reason": "按原始文字的固定优先级仲裁规则纠正A到D条件，补齐D保持与释放；不改变零基接口。",
+      "files": [
+        {
+          "relative": "problems\\prob148_2013_q2afsm\\task.txt",
+          "before_sha256": "bd14bbc4be301daa3cd0ce45f4d366a557723368ff3edd9907b2650f25d07da6",
+          "after_sha256": "06ea98e4dc3129544fa83da380f4fc4456e891f12f518bebbcb849b5bd098865"
+        },
+        {
+          "relative": "problems\\prob148_2013_q2afsm\\task.json",
+          "before_sha256": "2929ea3247173406d5e4947cd7a2e23b47c74f355dbd55ee872cb63ba8b465c3",
+          "after_sha256": "2057540ca86daef427745c615c6a5e8b102e1ab83229726d58ef672e79108098"
+        },
+        {
+          "relative": "problems\\prob148_2013_q2afsm\\provenance.json",
+          "before_sha256": "1fdee771a89c57c6d62d027a6ed9e57481e26ca69fec82bffe6b4d689b82cb27",
+          "after_sha256": "3766595b49084f809e8f4db42df88429ec26d55bdbbbd42cb50aaee77432189c"
+        }
+      ]
+    },
+    {
+      "task_id": "prob153_gshare",
+      "number": 153,
+      "reason": "补齐PHT/历史复位值、预测方向译码、训练索引和train_valid限定；用独立预测器交叉复核原始行为。",
+      "files": [
+        {
+          "relative": "problems\\prob153_gshare\\task.txt",
+          "before_sha256": "60c36ac16d574878e1bdd51557310dff32b67bac44af4ba69417e4b83c50c8c7",
+          "after_sha256": "df5c04e35fcde535c57773b3544315c01f15973bd0537b0999814e4e5c2a38a7"
+        },
+        {
+          "relative": "problems\\prob153_gshare\\task.json",
+          "before_sha256": "8ff27ea889df6e22b4532e9172924c370243aa92ce7bfc9fec9d2653c628d199",
+          "after_sha256": "0eac1935ce7ca13631bdd43d732db0855c64dbc4db62e62534c4d557b254f2ce"
+        },
+        {
+          "relative": "problems\\prob153_gshare\\provenance.json",
+          "before_sha256": "c9ca365a1bdc538a74b12095435da6a32390af2a294070016b43a71c6569b0b3",
+          "after_sha256": "442265381049ee12ac1fc535444a5aadf7eab332cc03ed4268221877fe940b46"
+        }
+      ]
+    }
+  ],
+  "unchanged_validation_assets": true,
+  "old_task_versions": "overwrite_in_place_no_backup"
+}

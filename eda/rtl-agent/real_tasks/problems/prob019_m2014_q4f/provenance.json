@@ -1,0 +1,17 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob019_m2014_q4f",
+  "source_files": {
+    "Prob019_m2014_q4f_prompt.txt": "97bd8fbb078bc6c1cddfb97a61f5a3e3ed8b33012333b295800d3cc6e1f0982e",
+    "Prob019_m2014_q4f_ref.sv": "c92c3177993007c8cb6d72fa96527a70431a66dc655c3b422bb94ed9c9ca9c29",
+    "Prob019_m2014_q4f_test.sv": "084d74cb95eaa0adc2c33fa13fdb43a7bace3c5714bf98854a161f21d5812ea6"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments."
+  ]
+}

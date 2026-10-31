@@ -1,0 +1,73 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+config/*.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model weights and caches
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+.cache/
+huggingface/
+models/
+
+# Vivado / EDA generated files
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.vcd
+*.fst
+*.xpr
+*.runs/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+xsim.dir/
+
+# Runtime outputs (keep documentation)
+logs/*
+!logs/README.md
+output/
+artifacts/
+runs/*
+!runs/README.md
+integrations/gitee_tasks/evidence/
+reports/*.stdout.txt
+reports/*_command_log_*.jsonl
+reports/*.patch
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local Docker overrides
+docker-compose.override.yml
+*.local.yml
+
+# Disposable cloud recovery local state
+.venv-rocm/
+runtime/
+config/amd-rocm.local.json
+runtime-sync.tar

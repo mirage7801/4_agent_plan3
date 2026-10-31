@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob044_vectorgates",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  a              (3 bits)\n - input  b              (3 bits)\n - output out_or_bitwise (3 bits)\n - output out_or_logical\n - output out_not        (6 bits)\n\nImplement a module with two 3-bit inputs that computes the bitwise-OR of\nthe two vectors, the logical-OR of the two vectors, and the inverse (NOT)\nof both vectors. Place the inverse of b in the upper half of out_not\n(i.e., bits [5:3]), and the inverse of a in the lower half.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

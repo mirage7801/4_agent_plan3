@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob062_bugs_mux2",
+  "description": "Consider the following implementation of an 8-bit 2-to-1 mux:\n\n  module TopModule (\n      input        sel,\n      input  [7:0] a,\n      input  [7:0] b,\n      output       out\n  );\n\n      assign out = (~sel & a) | (sel & b);\n\n  endmodule\n\nUnfortunately, this module has a bug. Implement a new version of this\nmodule that fixes the bug.\n\n\nThe corrected interface has input sel, input [7:0] a, input [7:0] b,\nand output [7:0] out. For compatibility with the original VerilogEval\nvalidation behavior, select b when sel=0 and a when sel=1.\nThis explicit selection rule supersedes the faulty example above, whose\nselection polarity and scalar output are not the corrected specification.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

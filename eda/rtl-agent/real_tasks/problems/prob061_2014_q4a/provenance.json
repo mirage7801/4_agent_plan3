@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob061_2014_q4a",
+  "source_files": {
+    "Prob061_2014_q4a_prompt.txt": "5bec95fe4931a860854e68be23eae36095df5f6dd978b116ae50f15a0248cfbd",
+    "Prob061_2014_q4a_ref.sv": "e3a96e912df4645f611ffbc8f596e7506af1bce98806dcdfd8ebb449a26cc583",
+    "Prob061_2014_q4a_test.sv": "bd5b959d19634cf0187be70cd6a6d7d3ac5afec41133c7ed5dd97eb66ce8400b"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "补齐L装载优先于E移位，以及均不使能时保持的规则；以独立实现与原验证器交叉复核。",
+    "upstream_prompt_sha256": "5bec95fe4931a860854e68be23eae36095df5f6dd978b116ae50f15a0248cfbd",
+    "code_complete_prompt_sha256": "d4b1517f63cce5cb41bd131f79676b896dc4831cd8c166a0e03c78ec8b94e734",
+    "previous_task_txt_sha256": "53f2dfacf6b2204c1e705909dec17bc6521368e849a5426a39aadbd7df6c3fc2"
+  }
+}

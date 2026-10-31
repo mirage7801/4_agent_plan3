@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob135_m2014_q6b",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  y (3 bits)\n - input  w\n - output Y1\n\nThe module should implement the state machine shown below:\n\n  A (0) --0--> B\n  A (0) --1--> A\n  B (0) --0--> C\n  B (0) --1--> D\n  C (0) --0--> E\n  C (0) --1--> D\n  D (0) --0--> F\n  D (0) --1--> A\n  E (1) --0--> E\n  E (1) --1--> D\n  F (1) --0--> C\n  F (1) --1--> D\n\nThe FSM should be implemented using three flip-flops and state codes\ny = 000, 001, ..., 101 for states A, B, ..., F, respectively. Implement\njust the next-state logic for y[1]. The output Y1 is the next-state value of y[1], not its current value.\nUse input y[2:0]; the original one-based output Y2 is named Y1 here\nto match this zero-based spec-to-RTL interface.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

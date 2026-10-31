@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "model": {
+    "service_type": "http",
+    "url": "http://127.0.0.1:8000/generate",
+    "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "revision": "sha256-865a90daf5b81ddfcd6d940d990ce194368d08cffad0d9c8dfba679f25a7efc1",
+    "max_tokens": 8912,
+    "temperature": 0.0,
+    "context_length": 32768,
+    "request_timeout_seconds": 300,
+    "response_text_field": "text",
+    "extra_request_fields": {},
+    "backend_drain": {
+      "max_wait_seconds": 120,
+      "poll_interval_seconds": 2,
+      "status_timeout_seconds": 5
+    }
+  },
+  "agent": {
+    "architecture": "candidate_search",
+    "execution_mode": "workers",
+    "analysis_max_tokens": 8912
+  },
+  "orchestration": {
+    "max_model_calls": 7
+  },
+  "eda": {
+    "adapter": "cli",
+    "validator_root": "../eda/rtl-agent",
+    "validator_entry": "tools/validate_rtl.py",
+    "python_executable": null,
+    "target_part": "xczu3eg-sbva484-1-e",
+    "clock_period_ns": 5.0,
+    "timeouts": {
+      "compile_seconds": 60,
+      "elaborate_seconds": 60,
+      "simulation_seconds": 120,
+      "synthesis_seconds": 300
+    }
+  },
+  "baseline": {
+    "validate": true
+  },
+  "experiment": {
+    "output_root": "../runs"
+  },
+  "mock": {
+    "enabled": false,
+    "model_responses": [],
+    "eda_scenarios": []
+  },
+  "search": {
+    "max_candidates": 3,
+    "max_vivado_calls": 6,
+    "max_eda_seconds": 1800,
+    "max_repairs_per_candidate": 1,
+    "memory_limit": 0,
+    "failure_memory_root": "../failure_memory",
+    "strategies": [
+      "auto"
+    ],
+    "max_wall_clock_seconds": 3600
+  },
+  "speculation": {
+    "enabled": true,
+    "failure_reserve_calls": 2,
+    "time_reserve": {
+      "generation_seconds": 300.0,
+      "validation_seconds": 540.0,
+      "drain_seconds": 120.0
+    }
+  },
+  "analysis": {
+    "mode": "before_generation"
+  }
+}

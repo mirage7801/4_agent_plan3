@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob032_vector0",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  vec  (3 bits)\n - output outv (3 bits)\n - output o2\n - output o1\n - output o0\n\nThe module has one 3-bit input, then outputs the same vector, and also\nsplits it into three separate 1-bit outputs. Connect output o0 to the\ninput vector's position 0, o1 to position 1, etc.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

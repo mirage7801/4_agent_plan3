@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob088_ece241_2014_q5b",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  areset\n - input  x\n - output z\n\nThe module should implement the following Mealy finite-state machine\nwhich is an implementation of the 2's complementer. Implement using a\none-hot encoding. Resets into state A and reset is asynchronous\nactive-high.\n\n  A --x=0 (z=0)--> A\n  A --x=1 (z=1)--> B\n  B --x=0 (z=1)--> B\n  B --x=1 (z=0)--> B\n\nAssume all sequential logic is triggered on the positive edge of the\nclock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

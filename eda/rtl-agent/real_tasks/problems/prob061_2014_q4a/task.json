@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob061_2014_q4a",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  w\n - input  R\n - input  E\n - input  L\n - output Q\n\nThe module will be one stage in a larger n-bit shift register circuit.\nInput E is for enabling shift, R for value to load, L is asserted when it\nshould load, and w is the input from the prevous stage of the shift\nregister. Assume all sequential logic is triggered on the positive edge\nof the clock.\n\n\nL has priority over E: when L=1, load R; otherwise, when E=1,\nshift in w; otherwise retain Q. All controls are synchronous.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

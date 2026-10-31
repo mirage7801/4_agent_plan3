@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "agent": {
+    "architecture": "candidate_search",
+    "execution_mode": "in_process",
+    "analysis_max_tokens": 8912
+  },
+  "search": {
+    "max_candidates": 3,
+    "max_vivado_calls": 6,
+    "max_eda_seconds": 1800,
+    "max_repairs_per_candidate": 1,
+    "memory_limit": 0,
+    "failure_memory_root": "../failure_memory",
+    "strategies": [
+      "auto"
+    ],
+    "max_wall_clock_seconds": 3600
+  },
+  "model": {
+    "max_tokens": 8912,
+    "context_length": 32768,
+    "request_timeout_seconds": 300,
+    "backend_drain": {
+      "max_wait_seconds": 120,
+      "poll_interval_seconds": 2,
+      "status_timeout_seconds": 5
+    }
+  },
+  "speculation": {
+    "enabled": true,
+    "failure_reserve_calls": 2,
+    "time_reserve": {
+      "generation_seconds": 300.0,
+      "validation_seconds": 540.0,
+      "drain_seconds": 120.0
+    }
+  },
+  "analysis": {
+    "mode": "before_generation"
+  }
+}

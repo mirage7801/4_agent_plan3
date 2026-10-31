@@ -1,0 +1,396 @@
+{
+  "project_root": "D:\\AMD\\4_agent_plan3",
+  "mode": "workers",
+  "roles": [
+    "synthesizer",
+    "synthesizer",
+    "reviewer",
+    "repairer",
+    "rebuild",
+    "synthesizer"
+  ],
+  "tokenizer_calls": 6,
+  "max_tokens": [
+    8912,
+    8912,
+    8912,
+    8912,
+    8912,
+    8912
+  ],
+  "request_timeout_seconds": 300.0,
+  "passed": true,
+  "decisions": [
+    {
+      "selected_action": "generate",
+      "reason_code": "compatible_derivation",
+      "required_calls": 1,
+      "required_validations": 1,
+      "alternatives_not_selected": [],
+      "call_budget_tradeoffs": [
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "review_then_repair",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "rebuild",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 7,
+      "candidate_id": "candidate_01",
+      "evidence_capabilities": null
+    },
+    {
+      "selected_action": "generate",
+      "reason_code": "compatible_derivation",
+      "required_calls": 1,
+      "required_validations": 1,
+      "alternatives_not_selected": [],
+      "call_budget_tradeoffs": [
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "review_then_repair",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "rebuild",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 6,
+      "candidate_id": "candidate_02",
+      "evidence_capabilities": null
+    },
+    {
+      "selected_action": "review_then_repair",
+      "reason_code": "unlocalized_failure_first_review",
+      "required_calls": 2,
+      "required_validations": 1,
+      "alternatives_not_selected": [
+        {
+          "action": "rebuild",
+          "reason": "no_failed_repair_requiring_reconstruction_or_not_admissible"
+        }
+      ],
+      "call_budget_tradeoffs": [
+        {
+          "action": "generate",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "rebuild",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 5,
+      "candidate_id": "candidate_01",
+      "evidence_capabilities": {
+        "located_tool_error": false,
+        "observed_io": false,
+        "replayable_trace": false,
+        "review_hypothesis": false,
+        "aggregate_only": true,
+        "direct_repair_supported": false,
+        "reconstruction_after_failed_repair": true
+      }
+    },
+    {
+      "selected_action": "rebuild",
+      "reason_code": "aggregate_failure_after_repair",
+      "required_calls": 2,
+      "required_validations": 1,
+      "alternatives_not_selected": [
+        {
+          "action": "review_then_repair",
+          "reason": "prefer_reconstruction_after_failed_repair"
+        }
+      ],
+      "call_budget_tradeoffs": [
+        {
+          "action": "generate",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "review_then_repair",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": false,
+          "lost_due_to_this_action": true
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 3,
+      "candidate_id": "candidate_03_rebuild",
+      "evidence_capabilities": {
+        "located_tool_error": false,
+        "observed_io": false,
+        "replayable_trace": false,
+        "review_hypothesis": false,
+        "aggregate_only": true,
+        "direct_repair_supported": false,
+        "reconstruction_after_failed_repair": true
+      }
+    }
+  ],
+  "timing_history": {
+    "status": "recorded",
+    "generation_sample_count": 4,
+    "validation_sample_count": 4
+  },
+  "diagnostic_views": [
+    {
+      "role": "reviewer",
+      "coverage": {
+        "scope": "available_safe_warning_projection",
+        "status": "partial",
+        "available_count": 5,
+        "retained_count": 5,
+        "omitted_count": 0,
+        "shortened_count": 5,
+        "upstream_omitted_count": 0,
+        "core_preserved": true,
+        "retained": [
+          {
+            "id": "d409e573439dd8778c0e416fc100b2862009c5cb495759183ca5dc3c36b82279",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-0"
+          },
+          {
+            "id": "d02cc2c766e394f605e64417ab232cef6e4b372e932777726c91ddb12bb81b61",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-1"
+          },
+          {
+            "id": "e5573dcbcbc58e9ec7dd8b3487a4e320c372c3769fa6af309e3e2f587900adb4",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-2"
+          },
+          {
+            "id": "a0fa8709a128a74aae6eba5c3271d3393c071db4a164c1400d577d9010521529",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-3"
+          },
+          {
+            "id": "8b971f9acdd97bc36fda3486baf18a28ffab3a2921ecaa7443b75164bcfa439d",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-4"
+          }
+        ],
+        "omitted_ids": [],
+        "reasons": [
+          "message_shortened"
+        ]
+      }
+    },
+    {
+      "role": "repairer",
+      "coverage": {
+        "scope": "available_safe_warning_projection",
+        "status": "partial",
+        "available_count": 5,
+        "retained_count": 5,
+        "omitted_count": 0,
+        "shortened_count": 5,
+        "upstream_omitted_count": 0,
+        "core_preserved": true,
+        "retained": [
+          {
+            "id": "d409e573439dd8778c0e416fc100b2862009c5cb495759183ca5dc3c36b82279",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-0"
+          },
+          {
+            "id": "d02cc2c766e394f605e64417ab232cef6e4b372e932777726c91ddb12bb81b61",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-1"
+          },
+          {
+            "id": "e5573dcbcbc58e9ec7dd8b3487a4e320c372c3769fa6af309e3e2f587900adb4",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-2"
+          },
+          {
+            "id": "a0fa8709a128a74aae6eba5c3271d3393c071db4a164c1400d577d9010521529",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-3"
+          },
+          {
+            "id": "8b971f9acdd97bc36fda3486baf18a28ffab3a2921ecaa7443b75164bcfa439d",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-4"
+          }
+        ],
+        "omitted_ids": [],
+        "reasons": [
+          "message_shortened"
+        ]
+      }
+    },
+    {
+      "role": "rebuild",
+      "coverage": {
+        "scope": "available_safe_warning_projection",
+        "status": "partial",
+        "available_count": 5,
+        "retained_count": 5,
+        "omitted_count": 0,
+        "shortened_count": 5,
+        "upstream_omitted_count": 0,
+        "core_preserved": true,
+        "retained": [
+          {
+            "id": "d409e573439dd8778c0e416fc100b2862009c5cb495759183ca5dc3c36b82279",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-0"
+          },
+          {
+            "id": "d02cc2c766e394f605e64417ab232cef6e4b372e932777726c91ddb12bb81b61",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-1"
+          },
+          {
+            "id": "e5573dcbcbc58e9ec7dd8b3487a4e320c372c3769fa6af309e3e2f587900adb4",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-2"
+          },
+          {
+            "id": "a0fa8709a128a74aae6eba5c3271d3393c071db4a164c1400d577d9010521529",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-3"
+          },
+          {
+            "id": "8b971f9acdd97bc36fda3486baf18a28ffab3a2921ecaa7443b75164bcfa439d",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-4"
+          }
+        ],
+        "omitted_ids": [],
+        "reasons": [
+          "message_shortened"
+        ]
+      }
+    },
+    {
+      "role": "synthesizer",
+      "coverage": {
+        "scope": "available_safe_warning_projection",
+        "status": "partial",
+        "available_count": 5,
+        "retained_count": 5,
+        "omitted_count": 0,
+        "shortened_count": 5,
+        "upstream_omitted_count": 0,
+        "core_preserved": true,
+        "retained": [
+          {
+            "id": "d409e573439dd8778c0e416fc100b2862009c5cb495759183ca5dc3c36b82279",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-0"
+          },
+          {
+            "id": "d02cc2c766e394f605e64417ab232cef6e4b372e932777726c91ddb12bb81b61",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-1"
+          },
+          {
+            "id": "e5573dcbcbc58e9ec7dd8b3487a4e320c372c3769fa6af309e3e2f587900adb4",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-2"
+          },
+          {
+            "id": "a0fa8709a128a74aae6eba5c3271d3393c071db4a164c1400d577d9010521529",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-3"
+          },
+          {
+            "id": "8b971f9acdd97bc36fda3486baf18a28ffab3a2921ecaa7443b75164bcfa439d",
+            "kind": "error",
+            "shortened": true,
+            "code": "Synth 8-4"
+          }
+        ],
+        "omitted_ids": [],
+        "reasons": [
+          "message_shortened"
+        ]
+      }
+    }
+  ],
+  "runtime_identity": {
+    "identity_id": "851fbc71e3fcb628e684609e2b96cb8d079260f9c36651a8b93e639469a29c84",
+    "code_hash": "61ef46ffa3700248880409798074cf6c26037ab5984f051a70669e228db0694f",
+    "config_hash": "08e918664ac1d8f3f99a2a3ff782cd4e25d16417c3bdcdfd9f051d61111e1d02"
+  },
+  "identity_verified_in_manifest_final_report_requests_and_calls": true
+}

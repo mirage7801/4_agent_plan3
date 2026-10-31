@@ -1,0 +1,9 @@
+设计一个可综合的单时钟同步 FIFO，模块名为 synchronous_fifo；数据宽度为 8，深度为 8。
+
+端口：input logic clk、rst、write_enable、read_enable；input logic [7:0] data_in；output logic [7:0] data_out；output logic full、empty。
+
+行为要求：
+- 所有状态在 clk 上升沿更新，时钟周期为 5 ns。rst 为同步高有效复位，清除读写指针、占用量和 data_out；不要求清除存储阵列。
+- 非满时可写；满时仅在本拍也有有效读操作时可写。非空时可读，data_out 在该上升沿取得原队头数据；空时不读且 data_out 保持。
+- 空时同时请求读写，只接受写而不旁路；满时同时请求读写，两者均接受；其他同时请求读写也均接受且占用量保持。
+- 指针按模 8 回绕；full 和 empty 由当前占用量组合产生。

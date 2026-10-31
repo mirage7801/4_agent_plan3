@@ -1,0 +1,8 @@
+设计一个可综合的偶校验电路，模块名为 parity。
+
+端口：input logic [7:0] data_in；input logic parity_in；output logic parity_bit、error。
+
+行为要求：
+- parity_bit 是 data_in 全部位的异或，使 data_in 与该位合起来有偶数个 1。
+- parity_in 与所需的 parity_bit 不同时，error=1；相同时 error=0。
+- 这是纯组合逻辑，不得引入时钟、状态或锁存器。

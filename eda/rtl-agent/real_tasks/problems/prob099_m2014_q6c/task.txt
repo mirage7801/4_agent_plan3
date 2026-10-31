@@ -1,0 +1,26 @@
+I would like you to implement a combinational module named TopModule.
+Use the following interface:
+
+ - input y (6 bits, indexed [5:0])
+ - input w
+ - output Y2
+ - output Y4
+
+The Moore state machine has this state transition table:
+
+ State | Next state w=0 | Next state w=1 | Moore output
+ A     | B              | A              | 0
+ B     | C              | D              | 0
+ C     | E              | D              | 0
+ D     | F              | A              | 0
+ E     | E              | D              | 1
+ F     | C              | D              | 1
+
+Use one-hot state encoding y[5:0] = 000001(A), 000010(B),
+000100(C), 001000(D), 010000(E), 100000(F).
+Implement only the combinational next-state signals Y2 and Y4.
+Y2 is the next-state value for y[1] (state B); Y4 is the next-state
+value for y[3] (state D). The output names retain the original
+one-based state numbering, while the current-state vector is zero-based.
+Derive each next-state bit as the OR of all its incoming transitions.
+Do not implement state flip-flops, a clock, or a reset port.

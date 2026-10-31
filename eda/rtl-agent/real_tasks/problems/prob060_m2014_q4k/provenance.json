@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob060_m2014_q4k",
+  "source_files": {
+    "Prob060_m2014_q4k_prompt.txt": "f602ab79b1422f26c05da1c05bc6a1f9f643622dcc9779d883443d77b3339ac7",
+    "Prob060_m2014_q4k_ref.sv": "483aa7cd86a26bfcc85ba4771341653cd341815820b7a23105e2579143c0c1ac",
+    "Prob060_m2014_q4k_test.sv": "fc598eeb0ec22dc7d6a8691fd684ef49e01a74d5cc43b1a85aa7304e1d595cb7"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "补齐四级移位寄存器的同步清零值与复位优先级。",
+    "upstream_prompt_sha256": "f602ab79b1422f26c05da1c05bc6a1f9f643622dcc9779d883443d77b3339ac7",
+    "code_complete_prompt_sha256": "f9eed72f3b4a4df6453fad67306d61914c7e374602a325107fe8e450b39191a1",
+    "previous_task_txt_sha256": "2611b0c88a6e2fb088100aa9ee4c120e2de6d6ce5803632c17aa1b265a1d6d6f"
+  }
+}

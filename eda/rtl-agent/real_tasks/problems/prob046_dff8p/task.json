@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob046_dff8p",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - input  d (8 bits)\n - output q (8 bits)\n\nImplement a module that includes 8 D flip-flops with active high\nsynchronous reset. The flip-flops must be reset to 0x34 rather than zero.\nAll DFFs should be triggered by the negative edge of clk.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

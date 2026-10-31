@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob071_always_casez",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  in  (8 bits)\n - output pos (3 bits)\n\nThe module should implement a priority encoder for an 8-bit input. Given\nan 8-bit vector, the output should report the first (least significant)\nbit in the vector that is 1. Report zero if the input vector has no bits\nthat are high. For example, the input 8'b10010000 should output 3'd4,\nbecause bit[4] is first bit that is high.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

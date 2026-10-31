@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob066_edgecapture",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - input  in    (32 bits)\n - output out   (32 bits)\n\nThe module should examine each bit in the 32-bit input vector, and\ncapture when the input signal changes from 1 in one clock cycle to 0 the\nnext. \"Capture\" means that the output will remain 1 until the register is\nreset (active high synchronous reset). Assume all sequential logic is\ntriggered on the positive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

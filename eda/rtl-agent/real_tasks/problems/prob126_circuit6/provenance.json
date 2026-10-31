@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob126_circuit6",
+  "source_files": {
+    "Prob126_circuit6_prompt.txt": "6e97111f20c9e8e87baaa2a0582eaff80e27e5d937088db91fef2aa358c78fc5",
+    "Prob126_circuit6_ref.sv": "d169f6f498141715387a5c30198f9167a62785b7cea08af043bfe587951134e9",
+    "Prob126_circuit6_test.sv": "34f2638e5ea185cdf45283bf7e34e404b2d8fb1ef7ae1d27f2992adef6630dfd"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "明确波形表中16位常量均为十六进制，消除1232等纯数字项的进制歧义。",
+    "upstream_prompt_sha256": "6e97111f20c9e8e87baaa2a0582eaff80e27e5d937088db91fef2aa358c78fc5",
+    "code_complete_prompt_sha256": "2494434139380959e0366f31282b8cddc3439df7847b589cd294c865033eb4c3",
+    "previous_task_txt_sha256": "c17ea04cdcde6bad8dc56968777150b81afa61bc7d4a18f5198204f1e6225dff"
+  }
+}

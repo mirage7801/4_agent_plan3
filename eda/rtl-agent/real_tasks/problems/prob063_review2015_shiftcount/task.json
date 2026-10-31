@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob063_review2015_shiftcount",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  shift_ena\n - input  count_ena\n - input  data\n - output q (4 bits)\n\nThe module should implement a four-bit shift register that also acts as a\ndown counter. Data is shifted in most-significant-bit first when\nshift_ena is 1. The number currently in the shift register is decremented\nwhen count_ena is 1. Since the full system doesn't ever use shift_ena and\ncount_ena together, it does not matter what your circuit does if both\ncontrol inputs are 1 (this mainly means that it doesn't matter which case\ngets higher priority). Assume all sequential logic is triggered on the\npositive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

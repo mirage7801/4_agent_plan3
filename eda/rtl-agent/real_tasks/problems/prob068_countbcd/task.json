@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob068_countbcd",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - output ena (3 bits)\n - output q   (16 bits)\n\nThe module should implement a 4-digit BCD (binary-coded decimal) counter.\nEach decimal digit is encoded using 4 bits: q[3:0] is the ones digit,\nq[7:4] is the tens digit, etc. For digits [3:1], also output an enable\nsignal indicating when each of the upper three digits should be\nincremented. Include a synchronous active-high reset. Assume all\nsequential logic is triggered on the positive edge of the clock.\n\n\nSynchronous reset clears all four BCD digits to zero (q=16'h0000)\nand overrides counting. ena is the combinational carry-enable indication\nfrom the current digits; it is not independently stored or reset.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

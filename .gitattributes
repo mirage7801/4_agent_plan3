@@ -1,0 +1,14 @@
+* text=auto
+
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.tcl text eol=lf
+*.v text eol=lf
+*.sv text eol=lf
+*.xdc text eol=lf
+
+# Preserve the upstream Gitee example bytes recorded in adapter_manifest.json.
+integrations/gitee_tasks/adapted_20261007/** -text !eol whitespace=cr-at-eol

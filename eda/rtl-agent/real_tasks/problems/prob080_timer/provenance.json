@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob080_timer",
+  "source_files": {
+    "Prob080_timer_prompt.txt": "068e154027474220087eb8481da9e01bc5b356106816b7676827e6b6a6f46907",
+    "Prob080_timer_ref.sv": "14b34884220ceb1058f834d04d86cdd7b2798163f8e816ad7ed3ea146cf05f41",
+    "Prob080_timer_test.sv": "86c79e899dcab371d0e244e8775b36c4f0f16259496911bfc41c4d20b8ae2e87"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "删除与10位定时器矛盾的single D flip-flop模板残留；原始code-complete无此句。",
+    "upstream_prompt_sha256": "068e154027474220087eb8481da9e01bc5b356106816b7676827e6b6a6f46907",
+    "code_complete_prompt_sha256": "9b3be36ffbef6c00115fcc04a3a8ec6d0c89e7febd11aaac6628214bd09297b2",
+    "previous_task_txt_sha256": "0637b0c5917dee0564720c5237a9d26b26e1b975265e26e747aa6a830f31833f"
+  }
+}

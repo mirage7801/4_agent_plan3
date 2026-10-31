@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob031_dff",
+  "source_files": {
+    "Prob031_dff_prompt.txt": "77d3eaeac41532ec5a55e1695c9adbf9c84a909c0cbcc24befaae2c273d7552e",
+    "Prob031_dff_ref.sv": "fbfa1604c31f03dca7217b6d4f2ce1b67e85898ec94195ea3dc460868a186e40",
+    "Prob031_dff_test.sv": "60f190b0ab719f7c116072537965ebbcfa8420f3fdee1878db2aa3d8235f6012"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "修正q端口方向为output；原始code-complete公开模块头明确为output reg q。",
+    "upstream_prompt_sha256": "77d3eaeac41532ec5a55e1695c9adbf9c84a909c0cbcc24befaae2c273d7552e",
+    "code_complete_prompt_sha256": "f94d43b73db3666d817f66eb7c6084bfd6a6b5aef475a1dd8ad7ef0de92288dd",
+    "previous_task_txt_sha256": "6e6d5252b2dd621ee0ec83d679278bca5dc125a98a028546c90dd28fe46b662c"
+  }
+}

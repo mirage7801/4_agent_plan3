@@ -1,0 +1,3128 @@
+{
+  "schema_version": "1.0",
+  "total": 156,
+  "tasks": [
+    {
+      "task_id": "prob001_zero",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.468,
+          "elaborate_seconds": 2.328,
+          "simulation_seconds": 4.766,
+          "synthesis_seconds": 144.313,
+          "total_seconds": 154.234
+        }
+      }
+    },
+    {
+      "task_id": "prob002_m2014_q4i",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.688,
+          "elaborate_seconds": 2.547,
+          "simulation_seconds": 4.859,
+          "synthesis_seconds": 157.078,
+          "total_seconds": 167.5
+        }
+      }
+    },
+    {
+      "task_id": "prob003_step_one",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.344,
+          "elaborate_seconds": 2.187,
+          "simulation_seconds": 3.782,
+          "synthesis_seconds": 124.953,
+          "total_seconds": 133.359
+        }
+      }
+    },
+    {
+      "task_id": "prob004_vector2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.297,
+          "elaborate_seconds": 1.797,
+          "simulation_seconds": 3.359,
+          "synthesis_seconds": 134.266,
+          "total_seconds": 141.671
+        }
+      }
+    },
+    {
+      "task_id": "prob005_notgate",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.234,
+          "elaborate_seconds": 1.782,
+          "simulation_seconds": 3.218,
+          "synthesis_seconds": 116.313,
+          "total_seconds": 123.422
+        }
+      }
+    },
+    {
+      "task_id": "prob006_vectorr",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.016,
+          "elaborate_seconds": 1.672,
+          "simulation_seconds": 3.141,
+          "synthesis_seconds": 132.312,
+          "total_seconds": 139.203
+        }
+      }
+    },
+    {
+      "task_id": "prob007_wire",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.61,
+          "elaborate_seconds": 2.422,
+          "simulation_seconds": 3.64,
+          "synthesis_seconds": 156.422,
+          "total_seconds": 165.593
+        }
+      }
+    },
+    {
+      "task_id": "prob008_m2014_q4h",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 2.031,
+          "elaborate_seconds": 3.641,
+          "simulation_seconds": 8.547,
+          "synthesis_seconds": 169.093,
+          "total_seconds": 184.625
+        }
+      }
+    },
+    {
+      "task_id": "prob009_popcount3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.297,
+          "elaborate_seconds": 1.782,
+          "simulation_seconds": 2.781,
+          "synthesis_seconds": 152.469,
+          "total_seconds": 159.594
+        }
+      }
+    },
+    {
+      "task_id": "prob010_mt2015_q4a",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 2.672,
+          "elaborate_seconds": 4.406,
+          "simulation_seconds": 4.906,
+          "synthesis_seconds": 134.234,
+          "total_seconds": 148.156
+        }
+      }
+    },
+    {
+      "task_id": "prob011_norgate",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.219,
+          "elaborate_seconds": 2.328,
+          "simulation_seconds": 4.156,
+          "synthesis_seconds": 102.015,
+          "total_seconds": 111.125
+        }
+      }
+    },
+    {
+      "task_id": "prob012_xnorgate",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.609,
+          "elaborate_seconds": 2.141,
+          "simulation_seconds": 3.844,
+          "synthesis_seconds": 145.281,
+          "total_seconds": 154.063
+        }
+      }
+    },
+    {
+      "task_id": "prob013_m2014_q4e",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.328,
+          "elaborate_seconds": 2.094,
+          "simulation_seconds": 3.796,
+          "synthesis_seconds": 123.203,
+          "total_seconds": 131.469
+        }
+      }
+    },
+    {
+      "task_id": "prob014_andgate",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.235,
+          "elaborate_seconds": 1.718,
+          "simulation_seconds": 3.329,
+          "synthesis_seconds": 148.328,
+          "total_seconds": 155.563
+        }
+      }
+    },
+    {
+      "task_id": "prob015_vector1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.422,
+          "elaborate_seconds": 2.328,
+          "simulation_seconds": 3.782,
+          "synthesis_seconds": 148.468,
+          "total_seconds": 157.25
+        }
+      }
+    },
+    {
+      "task_id": "prob016_m2014_q4j",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.5,
+          "elaborate_seconds": 2.39,
+          "simulation_seconds": 3.891,
+          "synthesis_seconds": 149.156,
+          "total_seconds": 158.297
+        }
+      }
+    },
+    {
+      "task_id": "prob017_mux2to1v",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.313,
+          "elaborate_seconds": 2.5,
+          "simulation_seconds": 3.75,
+          "synthesis_seconds": 152.063,
+          "total_seconds": 161.015
+        }
+      }
+    },
+    {
+      "task_id": "prob018_mux256to1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.563,
+          "elaborate_seconds": 2.547,
+          "simulation_seconds": 4.094,
+          "synthesis_seconds": 157.672,
+          "total_seconds": 167.141
+        }
+      }
+    },
+    {
+      "task_id": "prob019_m2014_q4f",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.36,
+          "elaborate_seconds": 2.485,
+          "simulation_seconds": 4.578,
+          "synthesis_seconds": 154.204,
+          "total_seconds": 163.969
+        }
+      }
+    },
+    {
+      "task_id": "prob020_mt2015_eq2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.281,
+          "elaborate_seconds": 2.328,
+          "simulation_seconds": 4.063,
+          "synthesis_seconds": 127.14,
+          "total_seconds": 136.062
+        }
+      }
+    },
+    {
+      "task_id": "prob021_mux256to1v",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.063,
+          "elaborate_seconds": 1.719,
+          "simulation_seconds": 3.344,
+          "synthesis_seconds": 82.797,
+          "total_seconds": 89.906
+        }
+      }
+    },
+    {
+      "task_id": "prob022_mux2to1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.0,
+          "elaborate_seconds": 1.89,
+          "simulation_seconds": 3.438,
+          "synthesis_seconds": 62.734,
+          "total_seconds": 69.765
+        }
+      }
+    },
+    {
+      "task_id": "prob023_vector100r",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.937,
+          "elaborate_seconds": 2.219,
+          "simulation_seconds": 3.328,
+          "synthesis_seconds": 70.75,
+          "total_seconds": 78.125
+        }
+      }
+    },
+    {
+      "task_id": "prob024_hadd",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.703,
+          "elaborate_seconds": 2.172,
+          "simulation_seconds": 3.562,
+          "synthesis_seconds": 84.032,
+          "total_seconds": 92.329
+        }
+      }
+    },
+    {
+      "task_id": "prob025_reduction",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.203,
+          "elaborate_seconds": 1.922,
+          "simulation_seconds": 3.39,
+          "synthesis_seconds": 96.781,
+          "total_seconds": 103.984
+        }
+      }
+    },
+    {
+      "task_id": "prob026_alwaysblock1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.812,
+          "simulation_seconds": 3.032,
+          "synthesis_seconds": 96.968,
+          "total_seconds": 103.563
+        }
+      }
+    },
+    {
+      "task_id": "prob027_fadd",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.844,
+          "elaborate_seconds": 1.89,
+          "simulation_seconds": 3.313,
+          "synthesis_seconds": 107.234,
+          "total_seconds": 113.953
+        }
+      }
+    },
+    {
+      "task_id": "prob028_m2014_q4a",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.297,
+          "elaborate_seconds": 2.406,
+          "simulation_seconds": 3.672,
+          "synthesis_seconds": 105.844,
+          "total_seconds": 114.531
+        }
+      }
+    },
+    {
+      "task_id": "prob029_m2014_q4g",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.062,
+          "elaborate_seconds": 1.688,
+          "simulation_seconds": 3.328,
+          "synthesis_seconds": 114.828,
+          "total_seconds": 121.703
+        }
+      }
+    },
+    {
+      "task_id": "prob030_popcount255",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.219,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.719,
+          "synthesis_seconds": 70.734,
+          "total_seconds": 78.422
+        }
+      }
+    },
+    {
+      "task_id": "prob031_dff",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.891,
+          "elaborate_seconds": 1.656,
+          "simulation_seconds": 3.594,
+          "synthesis_seconds": 77.468,
+          "total_seconds": 84.312
+        }
+      }
+    },
+    {
+      "task_id": "prob032_vector0",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.703,
+          "elaborate_seconds": 1.469,
+          "simulation_seconds": 3.0,
+          "synthesis_seconds": 101.156,
+          "total_seconds": 108.313
+        }
+      }
+    },
+    {
+      "task_id": "prob033_ece241_2014_q1c",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.782,
+          "elaborate_seconds": 1.609,
+          "simulation_seconds": 3.391,
+          "synthesis_seconds": 95.828,
+          "total_seconds": 102.422
+        }
+      }
+    },
+    {
+      "task_id": "prob034_dff8",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.735,
+          "elaborate_seconds": 1.312,
+          "simulation_seconds": 3.391,
+          "synthesis_seconds": 96.438,
+          "total_seconds": 104.031
+        }
+      }
+    },
+    {
+      "task_id": "prob035_count1to10",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.11,
+          "elaborate_seconds": 1.453,
+          "simulation_seconds": 3.031,
+          "synthesis_seconds": 99.469,
+          "total_seconds": 105.782
+        }
+      }
+    },
+    {
+      "task_id": "prob036_ringer",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.046,
+          "elaborate_seconds": 1.407,
+          "simulation_seconds": 3.187,
+          "synthesis_seconds": 98.297,
+          "total_seconds": 104.719
+        }
+      }
+    },
+    {
+      "task_id": "prob037_review2015_count1k",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.234,
+          "elaborate_seconds": 1.516,
+          "simulation_seconds": 3.078,
+          "synthesis_seconds": 96.969,
+          "total_seconds": 103.594
+        }
+      }
+    },
+    {
+      "task_id": "prob038_count15",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.062,
+          "elaborate_seconds": 1.578,
+          "simulation_seconds": 3.266,
+          "synthesis_seconds": 94.828,
+          "total_seconds": 101.375
+        }
+      }
+    },
+    {
+      "task_id": "prob039_always_if",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.875,
+          "elaborate_seconds": 1.485,
+          "simulation_seconds": 3.031,
+          "synthesis_seconds": 95.781,
+          "total_seconds": 101.859
+        }
+      }
+    },
+    {
+      "task_id": "prob040_count10",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.328,
+          "elaborate_seconds": 1.5,
+          "simulation_seconds": 2.969,
+          "synthesis_seconds": 97.594,
+          "total_seconds": 104.391
+        }
+      }
+    },
+    {
+      "task_id": "prob041_dff8r",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.766,
+          "elaborate_seconds": 1.641,
+          "simulation_seconds": 3.171,
+          "synthesis_seconds": 99.422,
+          "total_seconds": 105.703
+        }
+      }
+    },
+    {
+      "task_id": "prob042_vector4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.125,
+          "elaborate_seconds": 1.25,
+          "simulation_seconds": 3.031,
+          "synthesis_seconds": 96.891,
+          "total_seconds": 103.109
+        }
+      }
+    },
+    {
+      "task_id": "prob043_vector5",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.813,
+          "elaborate_seconds": 1.609,
+          "simulation_seconds": 3.0,
+          "synthesis_seconds": 104.188,
+          "total_seconds": 110.297
+        }
+      }
+    },
+    {
+      "task_id": "prob044_vectorgates",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.0,
+          "elaborate_seconds": 1.688,
+          "simulation_seconds": 3.187,
+          "synthesis_seconds": 98.563,
+          "total_seconds": 105.187
+        }
+      }
+    },
+    {
+      "task_id": "prob045_edgedetect2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.906,
+          "elaborate_seconds": 1.828,
+          "simulation_seconds": 3.063,
+          "synthesis_seconds": 97.359,
+          "total_seconds": 103.86
+        }
+      }
+    },
+    {
+      "task_id": "prob046_dff8p",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.968,
+          "elaborate_seconds": 1.547,
+          "simulation_seconds": 3.047,
+          "synthesis_seconds": 96.438,
+          "total_seconds": 102.688
+        }
+      }
+    },
+    {
+      "task_id": "prob047_dff8ar",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.828,
+          "elaborate_seconds": 1.531,
+          "simulation_seconds": 3.219,
+          "synthesis_seconds": 95.062,
+          "total_seconds": 101.312
+        }
+      }
+    },
+    {
+      "task_id": "prob048_m2014_q4c",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.109,
+          "elaborate_seconds": 1.531,
+          "simulation_seconds": 3.453,
+          "synthesis_seconds": 98.625,
+          "total_seconds": 105.594
+        }
+      }
+    },
+    {
+      "task_id": "prob049_m2014_q4b",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.063,
+          "elaborate_seconds": 1.328,
+          "simulation_seconds": 3.125,
+          "synthesis_seconds": 97.938,
+          "total_seconds": 104.156
+        }
+      }
+    },
+    {
+      "task_id": "prob050_kmap1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.828,
+          "elaborate_seconds": 1.5,
+          "simulation_seconds": 3.157,
+          "synthesis_seconds": 99.5,
+          "total_seconds": 105.859
+        }
+      }
+    },
+    {
+      "task_id": "prob051_gates4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.797,
+          "simulation_seconds": 3.718,
+          "synthesis_seconds": 96.531,
+          "total_seconds": 103.828
+        }
+      }
+    },
+    {
+      "task_id": "prob052_gates100",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.86,
+          "elaborate_seconds": 1.687,
+          "simulation_seconds": 3.063,
+          "synthesis_seconds": 98.672,
+          "total_seconds": 105.485
+        }
+      }
+    },
+    {
+      "task_id": "prob053_m2014_q4d",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.797,
+          "elaborate_seconds": 1.359,
+          "simulation_seconds": 3.188,
+          "synthesis_seconds": 98.187,
+          "total_seconds": 104.219
+        }
+      }
+    },
+    {
+      "task_id": "prob054_edgedetect",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.062,
+          "elaborate_seconds": 1.391,
+          "simulation_seconds": 3.14,
+          "synthesis_seconds": 97.219,
+          "total_seconds": 103.734
+        }
+      }
+    },
+    {
+      "task_id": "prob055_conditional",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.234,
+          "elaborate_seconds": 1.891,
+          "simulation_seconds": 3.109,
+          "synthesis_seconds": 99.094,
+          "total_seconds": 105.985
+        }
+      }
+    },
+    {
+      "task_id": "prob056_ece241_2013_q7",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.172,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.468,
+          "synthesis_seconds": 98.313,
+          "total_seconds": 105.672
+        }
+      }
+    },
+    {
+      "task_id": "prob057_kmap2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.031,
+          "elaborate_seconds": 1.813,
+          "simulation_seconds": 2.984,
+          "synthesis_seconds": 96.484,
+          "total_seconds": 103.265
+        }
+      }
+    },
+    {
+      "task_id": "prob058_alwaysblock2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.047,
+          "elaborate_seconds": 1.984,
+          "simulation_seconds": 3.234,
+          "synthesis_seconds": 100.0,
+          "total_seconds": 107.0
+        }
+      }
+    },
+    {
+      "task_id": "prob059_wire4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.969,
+          "elaborate_seconds": 1.719,
+          "simulation_seconds": 3.328,
+          "synthesis_seconds": 98.406,
+          "total_seconds": 105.141
+        }
+      }
+    },
+    {
+      "task_id": "prob060_m2014_q4k",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.312,
+          "elaborate_seconds": 1.406,
+          "simulation_seconds": 2.922,
+          "synthesis_seconds": 101.375,
+          "total_seconds": 108.187
+        }
+      }
+    },
+    {
+      "task_id": "prob061_2014_q4a",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.422,
+          "elaborate_seconds": 3.157,
+          "simulation_seconds": 3.828,
+          "synthesis_seconds": 100.859,
+          "total_seconds": 111.891
+        }
+      }
+    },
+    {
+      "task_id": "prob062_bugs_mux2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.969,
+          "elaborate_seconds": 1.844,
+          "simulation_seconds": 2.984,
+          "synthesis_seconds": 96.156,
+          "total_seconds": 102.843
+        }
+      }
+    },
+    {
+      "task_id": "prob063_review2015_shiftcount",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 2.282,
+          "elaborate_seconds": 1.578,
+          "simulation_seconds": 3.125,
+          "synthesis_seconds": 99.172,
+          "total_seconds": 107.016
+        }
+      }
+    },
+    {
+      "task_id": "prob064_vector3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.015,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.25,
+          "synthesis_seconds": 100.625,
+          "total_seconds": 107.844
+        }
+      }
+    },
+    {
+      "task_id": "prob065_7420",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.515,
+          "elaborate_seconds": 1.485,
+          "simulation_seconds": 3.234,
+          "synthesis_seconds": 98.344,
+          "total_seconds": 105.687
+        }
+      }
+    },
+    {
+      "task_id": "prob066_edgecapture",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.125,
+          "elaborate_seconds": 1.422,
+          "simulation_seconds": 2.938,
+          "synthesis_seconds": 96.859,
+          "total_seconds": 103.172
+        }
+      }
+    },
+    {
+      "task_id": "prob067_countslow",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.016,
+          "elaborate_seconds": 1.859,
+          "simulation_seconds": 3.094,
+          "synthesis_seconds": 96.672,
+          "total_seconds": 103.515
+        }
+      }
+    },
+    {
+      "task_id": "prob068_countbcd",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.875,
+          "elaborate_seconds": 2.016,
+          "simulation_seconds": 3.5,
+          "synthesis_seconds": 98.344,
+          "total_seconds": 105.5
+        }
+      }
+    },
+    {
+      "task_id": "prob069_truthtable1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.828,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.094,
+          "synthesis_seconds": 81.75,
+          "total_seconds": 88.453
+        }
+      }
+    },
+    {
+      "task_id": "prob070_ece241_2013_q2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.172,
+          "elaborate_seconds": 2.11,
+          "simulation_seconds": 3.531,
+          "synthesis_seconds": 60.11,
+          "total_seconds": 67.656
+        }
+      }
+    },
+    {
+      "task_id": "prob071_always_casez",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.593,
+          "simulation_seconds": 3.157,
+          "synthesis_seconds": 56.625,
+          "total_seconds": 63.219
+        }
+      }
+    },
+    {
+      "task_id": "prob072_thermostat",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.891,
+          "elaborate_seconds": 1.797,
+          "simulation_seconds": 3.203,
+          "synthesis_seconds": 59.343,
+          "total_seconds": 65.906
+        }
+      }
+    },
+    {
+      "task_id": "prob073_dff16e",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.64,
+          "elaborate_seconds": 0.922,
+          "simulation_seconds": 3.547,
+          "synthesis_seconds": 99.406,
+          "total_seconds": 105.015
+        }
+      }
+    },
+    {
+      "task_id": "prob074_ece241_2014_q4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.172,
+          "elaborate_seconds": 1.547,
+          "simulation_seconds": 3.672,
+          "synthesis_seconds": 99.25,
+          "total_seconds": 106.562
+        }
+      }
+    },
+    {
+      "task_id": "prob075_counter_2bc",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.89,
+          "elaborate_seconds": 1.703,
+          "simulation_seconds": 3.0,
+          "synthesis_seconds": 98.969,
+          "total_seconds": 105.359
+        }
+      }
+    },
+    {
+      "task_id": "prob076_always_case",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.875,
+          "elaborate_seconds": 1.516,
+          "simulation_seconds": 2.984,
+          "synthesis_seconds": 97.297,
+          "total_seconds": 103.75
+        }
+      }
+    },
+    {
+      "task_id": "prob077_wire_decl",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.11,
+          "elaborate_seconds": 1.5,
+          "simulation_seconds": 2.984,
+          "synthesis_seconds": 98.594,
+          "total_seconds": 104.969
+        }
+      }
+    },
+    {
+      "task_id": "prob078_dualedge",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.938,
+          "elaborate_seconds": 1.562,
+          "simulation_seconds": 3.031,
+          "synthesis_seconds": 101.735,
+          "total_seconds": 108.11
+        }
+      }
+    },
+    {
+      "task_id": "prob079_fsm3onehot",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.125,
+          "elaborate_seconds": 1.563,
+          "simulation_seconds": 3.531,
+          "synthesis_seconds": 105.797,
+          "total_seconds": 112.859
+        }
+      }
+    },
+    {
+      "task_id": "prob080_timer",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.094,
+          "elaborate_seconds": 1.765,
+          "simulation_seconds": 3.36,
+          "synthesis_seconds": 100.828,
+          "total_seconds": 107.703
+        }
+      }
+    },
+    {
+      "task_id": "prob081_7458",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.969,
+          "elaborate_seconds": 1.375,
+          "simulation_seconds": 3.015,
+          "synthesis_seconds": 101.954,
+          "total_seconds": 108.594
+        }
+      }
+    },
+    {
+      "task_id": "prob082_lfsr32",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.156,
+          "elaborate_seconds": 1.422,
+          "simulation_seconds": 5.141,
+          "synthesis_seconds": 99.609,
+          "total_seconds": 108.094
+        }
+      }
+    },
+    {
+      "task_id": "prob083_mt2015_q4b",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.297,
+          "elaborate_seconds": 1.469,
+          "simulation_seconds": 3.125,
+          "synthesis_seconds": 97.39,
+          "total_seconds": 104.109
+        }
+      }
+    },
+    {
+      "task_id": "prob084_ece241_2013_q12",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.297,
+          "elaborate_seconds": 1.453,
+          "simulation_seconds": 3.219,
+          "synthesis_seconds": 97.297,
+          "total_seconds": 103.937
+        }
+      }
+    },
+    {
+      "task_id": "prob085_shift4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.016,
+          "elaborate_seconds": 1.484,
+          "simulation_seconds": 3.032,
+          "synthesis_seconds": 98.343,
+          "total_seconds": 104.703
+        }
+      }
+    },
+    {
+      "task_id": "prob086_lfsr5",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.984,
+          "elaborate_seconds": 1.672,
+          "simulation_seconds": 3.36,
+          "synthesis_seconds": 98.109,
+          "total_seconds": 104.891
+        }
+      }
+    },
+    {
+      "task_id": "prob087_gates",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.281,
+          "elaborate_seconds": 1.844,
+          "simulation_seconds": 3.218,
+          "synthesis_seconds": 97.766,
+          "total_seconds": 104.86
+        }
+      }
+    },
+    {
+      "task_id": "prob088_ece241_2014_q5b",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.032,
+          "elaborate_seconds": 1.953,
+          "simulation_seconds": 3.109,
+          "synthesis_seconds": 100.735,
+          "total_seconds": 107.781
+        }
+      }
+    },
+    {
+      "task_id": "prob089_ece241_2014_q5a",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.485,
+          "simulation_seconds": 3.078,
+          "synthesis_seconds": 101.75,
+          "total_seconds": 108.015
+        }
+      }
+    },
+    {
+      "task_id": "prob090_circuit1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.313,
+          "elaborate_seconds": 1.703,
+          "simulation_seconds": 3.187,
+          "synthesis_seconds": 66.078,
+          "total_seconds": 73.125
+        }
+      }
+    },
+    {
+      "task_id": "prob091_2012_q2b",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.937,
+          "elaborate_seconds": 1.641,
+          "simulation_seconds": 3.203,
+          "synthesis_seconds": 57.25,
+          "total_seconds": 63.735
+        }
+      }
+    },
+    {
+      "task_id": "prob092_gatesv100",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.937,
+          "elaborate_seconds": 1.828,
+          "simulation_seconds": 3.094,
+          "synthesis_seconds": 56.641,
+          "total_seconds": 63.187
+        }
+      }
+    },
+    {
+      "task_id": "prob093_ece241_2014_q3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.938,
+          "elaborate_seconds": 1.61,
+          "simulation_seconds": 3.015,
+          "synthesis_seconds": 57.016,
+          "total_seconds": 63.343
+        }
+      }
+    },
+    {
+      "task_id": "prob094_gatesv",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.125,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.359,
+          "synthesis_seconds": 56.578,
+          "total_seconds": 63.766
+        }
+      }
+    },
+    {
+      "task_id": "prob095_review2015_fsmshift",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.922,
+          "elaborate_seconds": 1.734,
+          "simulation_seconds": 3.141,
+          "synthesis_seconds": 56.343,
+          "total_seconds": 62.859
+        }
+      }
+    },
+    {
+      "task_id": "prob096_review2015_fsmseq",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.078,
+          "elaborate_seconds": 1.797,
+          "simulation_seconds": 3.265,
+          "synthesis_seconds": 48.703,
+          "total_seconds": 55.875
+        }
+      }
+    },
+    {
+      "task_id": "prob097_mux9to1v",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.907,
+          "elaborate_seconds": 1.609,
+          "simulation_seconds": 3.016,
+          "synthesis_seconds": 57.203,
+          "total_seconds": 63.328
+        }
+      }
+    },
+    {
+      "task_id": "prob098_circuit7",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.875,
+          "elaborate_seconds": 1.656,
+          "simulation_seconds": 3.078,
+          "synthesis_seconds": 54.656,
+          "total_seconds": 60.922
+        }
+      }
+    },
+    {
+      "task_id": "prob099_m2014_q6c",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.203,
+          "elaborate_seconds": 2.297,
+          "simulation_seconds": 3.359,
+          "synthesis_seconds": 63.484,
+          "total_seconds": 71.281
+        }
+      }
+    },
+    {
+      "task_id": "prob100_fsm3comb",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.969,
+          "elaborate_seconds": 1.75,
+          "simulation_seconds": 3.031,
+          "synthesis_seconds": 57.016,
+          "total_seconds": 63.438
+        }
+      }
+    },
+    {
+      "task_id": "prob101_circuit4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.907,
+          "elaborate_seconds": 1.687,
+          "simulation_seconds": 3.125,
+          "synthesis_seconds": 57.813,
+          "total_seconds": 64.515
+        }
+      }
+    },
+    {
+      "task_id": "prob102_circuit3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.515,
+          "simulation_seconds": 3.282,
+          "synthesis_seconds": 57.75,
+          "total_seconds": 64.157
+        }
+      }
+    },
+    {
+      "task_id": "prob103_circuit2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.969,
+          "elaborate_seconds": 1.516,
+          "simulation_seconds": 3.015,
+          "synthesis_seconds": 50.5,
+          "total_seconds": 56.781
+        }
+      }
+    },
+    {
+      "task_id": "prob104_mt2015_muxdff",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.36,
+          "simulation_seconds": 3.0,
+          "synthesis_seconds": 47.0,
+          "total_seconds": 53.078
+        }
+      }
+    },
+    {
+      "task_id": "prob105_rotate100",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.828,
+          "elaborate_seconds": 1.781,
+          "simulation_seconds": 3.219,
+          "synthesis_seconds": 55.984,
+          "total_seconds": 62.438
+        }
+      }
+    },
+    {
+      "task_id": "prob106_always_nolatches",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.875,
+          "elaborate_seconds": 1.75,
+          "simulation_seconds": 3.375,
+          "synthesis_seconds": 52.906,
+          "total_seconds": 59.516
+        }
+      }
+    },
+    {
+      "task_id": "prob107_fsm1s",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.86,
+          "elaborate_seconds": 1.719,
+          "simulation_seconds": 3.296,
+          "synthesis_seconds": 55.25,
+          "total_seconds": 61.75
+        }
+      }
+    },
+    {
+      "task_id": "prob108_rule90",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.218,
+          "elaborate_seconds": 1.953,
+          "simulation_seconds": 3.281,
+          "synthesis_seconds": 60.11,
+          "total_seconds": 67.25
+        }
+      }
+    },
+    {
+      "task_id": "prob109_fsm1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.938,
+          "elaborate_seconds": 1.656,
+          "simulation_seconds": 3.016,
+          "synthesis_seconds": 54.828,
+          "total_seconds": 61.094
+        }
+      }
+    },
+    {
+      "task_id": "prob110_fsm2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.141,
+          "elaborate_seconds": 1.734,
+          "simulation_seconds": 3.156,
+          "synthesis_seconds": 51.422,
+          "total_seconds": 58.187
+        }
+      }
+    },
+    {
+      "task_id": "prob111_fsm2s",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.937,
+          "elaborate_seconds": 1.594,
+          "simulation_seconds": 3.14,
+          "synthesis_seconds": 48.985,
+          "total_seconds": 55.516
+        }
+      }
+    },
+    {
+      "task_id": "prob112_always_case2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.844,
+          "elaborate_seconds": 1.719,
+          "simulation_seconds": 3.343,
+          "synthesis_seconds": 53.438,
+          "total_seconds": 60.109
+        }
+      }
+    },
+    {
+      "task_id": "prob113_2012_q1g",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.703,
+          "simulation_seconds": 3.016,
+          "synthesis_seconds": 50.156,
+          "total_seconds": 56.547
+        }
+      }
+    },
+    {
+      "task_id": "prob114_bugs_case",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.828,
+          "elaborate_seconds": 1.547,
+          "simulation_seconds": 2.953,
+          "synthesis_seconds": 52.61,
+          "total_seconds": 58.531
+        }
+      }
+    },
+    {
+      "task_id": "prob115_shift18",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.844,
+          "elaborate_seconds": 1.688,
+          "simulation_seconds": 3.156,
+          "synthesis_seconds": 52.265,
+          "total_seconds": 58.781
+        }
+      }
+    },
+    {
+      "task_id": "prob116_m2014_q3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.859,
+          "elaborate_seconds": 1.688,
+          "simulation_seconds": 3.172,
+          "synthesis_seconds": 51.828,
+          "total_seconds": 58.5
+        }
+      }
+    },
+    {
+      "task_id": "prob117_circuit9",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.891,
+          "elaborate_seconds": 1.719,
+          "simulation_seconds": 3.172,
+          "synthesis_seconds": 50.734,
+          "total_seconds": 57.313
+        }
+      }
+    },
+    {
+      "task_id": "prob118_history_shift",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.812,
+          "elaborate_seconds": 1.563,
+          "simulation_seconds": 3.078,
+          "synthesis_seconds": 52.75,
+          "total_seconds": 58.797
+        }
+      }
+    },
+    {
+      "task_id": "prob119_fsm3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.859,
+          "elaborate_seconds": 1.813,
+          "simulation_seconds": 3.093,
+          "synthesis_seconds": 76.282,
+          "total_seconds": 82.704
+        }
+      }
+    },
+    {
+      "task_id": "prob120_fsm3s",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.156,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.25,
+          "synthesis_seconds": 58.094,
+          "total_seconds": 65.266
+        }
+      }
+    },
+    {
+      "task_id": "prob121_2014_q3bfsm",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.11,
+          "elaborate_seconds": 1.75,
+          "simulation_seconds": 4.281,
+          "synthesis_seconds": 57.234,
+          "total_seconds": 65.0
+        }
+      }
+    },
+    {
+      "task_id": "prob122_kmap4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.953,
+          "elaborate_seconds": 1.547,
+          "simulation_seconds": 2.985,
+          "synthesis_seconds": 64.328,
+          "total_seconds": 70.437
+        }
+      }
+    },
+    {
+      "task_id": "prob123_bugs_addsubz",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.047,
+          "elaborate_seconds": 1.828,
+          "simulation_seconds": 3.25,
+          "synthesis_seconds": 56.75,
+          "total_seconds": 63.89
+        }
+      }
+    },
+    {
+      "task_id": "prob124_rule110",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.859,
+          "elaborate_seconds": 1.984,
+          "simulation_seconds": 3.453,
+          "synthesis_seconds": 61.735,
+          "total_seconds": 69.016
+        }
+      }
+    },
+    {
+      "task_id": "prob125_kmap3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.938,
+          "elaborate_seconds": 1.937,
+          "simulation_seconds": 3.063,
+          "synthesis_seconds": 76.797,
+          "total_seconds": 83.453
+        }
+      }
+    },
+    {
+      "task_id": "prob126_circuit6",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.922,
+          "elaborate_seconds": 1.984,
+          "simulation_seconds": 3.5,
+          "synthesis_seconds": 60.688,
+          "total_seconds": 67.766
+        }
+      }
+    },
+    {
+      "task_id": "prob127_lemmings1",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.046,
+          "elaborate_seconds": 2.204,
+          "simulation_seconds": 3.312,
+          "synthesis_seconds": 70.328,
+          "total_seconds": 77.906
+        }
+      }
+    },
+    {
+      "task_id": "prob128_fsm_ps2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 2.0,
+          "elaborate_seconds": 1.547,
+          "simulation_seconds": 3.359,
+          "synthesis_seconds": 86.906,
+          "total_seconds": 94.86
+        }
+      }
+    },
+    {
+      "task_id": "prob129_ece241_2013_q8",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.453,
+          "elaborate_seconds": 2.062,
+          "simulation_seconds": 3.828,
+          "synthesis_seconds": 65.297,
+          "total_seconds": 73.703
+        }
+      }
+    },
+    {
+      "task_id": "prob130_circuit5",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.063,
+          "elaborate_seconds": 2.235,
+          "simulation_seconds": 3.484,
+          "synthesis_seconds": 62.109,
+          "total_seconds": 69.609
+        }
+      }
+    },
+    {
+      "task_id": "prob131_mt2015_q4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.203,
+          "elaborate_seconds": 1.797,
+          "simulation_seconds": 3.281,
+          "synthesis_seconds": 64.969,
+          "total_seconds": 72.188
+        }
+      }
+    },
+    {
+      "task_id": "prob132_always_if2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.094,
+          "elaborate_seconds": 1.984,
+          "simulation_seconds": 3.328,
+          "synthesis_seconds": 62.015,
+          "total_seconds": 69.547
+        }
+      }
+    },
+    {
+      "task_id": "prob133_2014_q3fsm",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.547,
+          "elaborate_seconds": 2.141,
+          "simulation_seconds": 3.187,
+          "synthesis_seconds": 59.156,
+          "total_seconds": 66.859
+        }
+      }
+    },
+    {
+      "task_id": "prob134_2014_q3c",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.141,
+          "elaborate_seconds": 1.781,
+          "simulation_seconds": 3.172,
+          "synthesis_seconds": 73.547,
+          "total_seconds": 80.453
+        }
+      }
+    },
+    {
+      "task_id": "prob135_m2014_q6b",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.282,
+          "elaborate_seconds": 2.296,
+          "simulation_seconds": 4.063,
+          "synthesis_seconds": 79.687,
+          "total_seconds": 88.187
+        }
+      }
+    },
+    {
+      "task_id": "prob136_m2014_q6",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.984,
+          "elaborate_seconds": 2.125,
+          "simulation_seconds": 3.406,
+          "synthesis_seconds": 101.204,
+          "total_seconds": 108.812
+        }
+      }
+    },
+    {
+      "task_id": "prob137_fsm_serial",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.859,
+          "elaborate_seconds": 1.75,
+          "simulation_seconds": 3.234,
+          "synthesis_seconds": 89.672,
+          "total_seconds": 96.282
+        }
+      }
+    },
+    {
+      "task_id": "prob138_2012_q2fsm",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.141,
+          "elaborate_seconds": 1.781,
+          "simulation_seconds": 3.281,
+          "synthesis_seconds": 61.219,
+          "total_seconds": 68.266
+        }
+      }
+    },
+    {
+      "task_id": "prob139_2013_q2bfsm",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.047,
+          "elaborate_seconds": 1.484,
+          "simulation_seconds": 3.156,
+          "synthesis_seconds": 56.922,
+          "total_seconds": 63.297
+        }
+      }
+    },
+    {
+      "task_id": "prob140_fsm_hdlc",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.203,
+          "elaborate_seconds": 1.594,
+          "simulation_seconds": 3.172,
+          "synthesis_seconds": 57.109,
+          "total_seconds": 63.875
+        }
+      }
+    },
+    {
+      "task_id": "prob141_count_clock",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.031,
+          "elaborate_seconds": 2.297,
+          "simulation_seconds": 5.391,
+          "synthesis_seconds": 57.406,
+          "total_seconds": 66.859
+        }
+      }
+    },
+    {
+      "task_id": "prob142_lemmings2",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.406,
+          "elaborate_seconds": 2.531,
+          "simulation_seconds": 3.219,
+          "synthesis_seconds": 60.562,
+          "total_seconds": 68.422
+        }
+      }
+    },
+    {
+      "task_id": "prob143_fsm_onehot",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.047,
+          "elaborate_seconds": 2.344,
+          "simulation_seconds": 3.421,
+          "synthesis_seconds": 59.922,
+          "total_seconds": 67.625
+        }
+      }
+    },
+    {
+      "task_id": "prob144_conwaylife",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.0,
+          "elaborate_seconds": 2.187,
+          "simulation_seconds": 3.359,
+          "synthesis_seconds": 72.704,
+          "total_seconds": 79.969
+        }
+      }
+    },
+    {
+      "task_id": "prob145_circuit8",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.875,
+          "elaborate_seconds": 1.547,
+          "simulation_seconds": 3.203,
+          "synthesis_seconds": 49.125,
+          "total_seconds": 55.5
+        }
+      }
+    },
+    {
+      "task_id": "prob146_fsm_serialdata",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.078,
+          "elaborate_seconds": 2.141,
+          "simulation_seconds": 3.906,
+          "synthesis_seconds": 59.781,
+          "total_seconds": 67.797
+        }
+      }
+    },
+    {
+      "task_id": "prob147_circuit10",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.172,
+          "elaborate_seconds": 1.875,
+          "simulation_seconds": 3.125,
+          "synthesis_seconds": 58.531,
+          "total_seconds": 65.547
+        }
+      }
+    },
+    {
+      "task_id": "prob148_2013_q2afsm",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.11,
+          "elaborate_seconds": 1.922,
+          "simulation_seconds": 3.437,
+          "synthesis_seconds": 57.5,
+          "total_seconds": 64.672
+        }
+      }
+    },
+    {
+      "task_id": "prob149_ece241_2013_q4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.391,
+          "elaborate_seconds": 2.109,
+          "simulation_seconds": 3.485,
+          "synthesis_seconds": 58.687,
+          "total_seconds": 66.344
+        }
+      }
+    },
+    {
+      "task_id": "prob150_review2015_fsmonehot",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.093,
+          "elaborate_seconds": 2.0,
+          "simulation_seconds": 3.235,
+          "synthesis_seconds": 63.094,
+          "total_seconds": 70.282
+        }
+      }
+    },
+    {
+      "task_id": "prob151_review2015_fsm",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.937,
+          "elaborate_seconds": 2.313,
+          "simulation_seconds": 3.187,
+          "synthesis_seconds": 60.125,
+          "total_seconds": 67.5
+        }
+      }
+    },
+    {
+      "task_id": "prob152_lemmings3",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 0.985,
+          "elaborate_seconds": 1.985,
+          "simulation_seconds": 3.093,
+          "synthesis_seconds": 59.469,
+          "total_seconds": 66.297
+        }
+      }
+    },
+    {
+      "task_id": "prob153_gshare",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.0,
+          "elaborate_seconds": 2.094,
+          "simulation_seconds": 3.5,
+          "synthesis_seconds": 82.844,
+          "total_seconds": 90.594
+        }
+      }
+    },
+    {
+      "task_id": "prob154_fsm_ps2data",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.359,
+          "elaborate_seconds": 1.86,
+          "simulation_seconds": 3.203,
+          "synthesis_seconds": 59.094,
+          "total_seconds": 66.375
+        }
+      }
+    },
+    {
+      "task_id": "prob155_lemmings4",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.218,
+          "elaborate_seconds": 2.266,
+          "simulation_seconds": 3.203,
+          "synthesis_seconds": 59.766,
+          "total_seconds": 67.265
+        }
+      }
+    },
+    {
+      "task_id": "prob156_review2015_fancytimer",
+      "static_errors": [],
+      "status": "validated",
+      "exit_code": 0,
+      "vivado": {
+        "passed": true,
+        "stage": "complete",
+        "error_type": "none",
+        "summary": "编译、详细描述、仿真和目标器件综合均通过",
+        "vivado_version": "2026.1",
+        "timings": {
+          "compile_seconds": 1.125,
+          "elaborate_seconds": 2.578,
+          "simulation_seconds": 5.344,
+          "synthesis_seconds": 58.031,
+          "total_seconds": 68.0
+        }
+      }
+    }
+  ],
+  "static_passed": 156,
+  "vivado_passed": 156
+}

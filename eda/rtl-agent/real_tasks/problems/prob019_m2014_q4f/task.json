@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob019_m2014_q4f",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  in1\n - input  in2\n - output out\n\nThe module should implement the following circuit in Verilog. Two inputs\n(in1 and in2) go to an AND gate, but the in2 input to the AND gate has a\nbubble. The output of the AND gate is connected to 'out'.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

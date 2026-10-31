@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob077_wire_decl",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  a\n - input  b\n - input  c\n - input  d\n - output out\n - output out_n\n\nThe module should implement the following circuit. Create two\nintermediate wires (named anything you want) to connect the AND and OR\ngates together. Note that the wire that feeds the NOT gate is really wire\n`out`, so you do not necessarily need to declare a third wire here.\nNotice how wires are driven by exactly one source (output of a gate), but\ncan feed multiple inputs.\n\nThe circuit is composed of two layers. The first layer, counting from the\ninput, is two AND gates: one whose input is connected to a and b, and the\nsecond is connected to c and d. The second layer there is an OR gate to\nOR the two AND outputs, connected the output 'out'. Additionally, there\nis an inverted output 'out_n'.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

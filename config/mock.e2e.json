@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "model": {
+    "service_type": "mock",
+    "id": "mock-rtl-model",
+    "revision": "mock-sequence-v1",
+    "max_tokens": 8912,
+    "temperature": 0.2,
+    "context_length": 16384,
+    "request_timeout_seconds": 300,
+    "backend_drain": {
+      "max_wait_seconds": 120,
+      "poll_interval_seconds": 2,
+      "status_timeout_seconds": 5
+    }
+  },
+  "agent": {
+    "execution_mode": "in_process",
+    "analysis_max_tokens": 8912
+  },
+  "orchestration": {
+    "max_model_calls": 7
+  },
+  "eda": {
+    "adapter": "mock",
+    "validator_root": "../eda/rtl-agent",
+    "validator_entry": "tools/validate_rtl.py",
+    "target_part": "xczu3eg-sbva484-1-e",
+    "clock_period_ns": 5.0,
+    "timeouts": {
+      "compile_seconds": 5,
+      "elaborate_seconds": 5,
+      "simulation_seconds": 5,
+      "synthesis_seconds": 5
+    }
+  },
+  "baseline": {
+    "validate": true
+  },
+  "experiment": {
+    "output_root": "../runs"
+  },
+  "mock": {
+    "enabled": true,
+    "model_responses": [
+      {
+        "text": "<answer>\n{\"implementation_notes\": [], \"ambiguities\": []}\n</answer>"
+      },
+      {
+        "text": "<RTL_CODE>\nmodule counter(input logic clk, rst, enable, output logic [7:0] count)\nalways_ff @(posedge clk) begin\n  if (rst) count <= 8'h00;\n  else if (enable) count <= count + 1'b1;\nend\nendmodule\n</RTL_CODE>"
+      },
+      {
+        "text": "<RTL_CODE>\nmodule counter(input logic clk, rst, enable, output logic [7:0] count);\nalways_ff @(posedge clk) begin\n  if (rst) count <= 8'h00;\n  else if (enable) count <= count + 1'b1;\nend\nendmodule\n</RTL_CODE>"
+      }
+    ],
+    "eda_scenarios": [
+      {
+        "kind": "syntax",
+        "summary": "syntax_error: candidate line 1 is missing a semicolon"
+      },
+      {
+        "kind": "pass"
+      }
+    ]
+  },
+  "search": {
+    "max_candidates": 1,
+    "memory_limit": 0,
+    "max_wall_clock_seconds": 3600
+  },
+  "speculation": {
+    "enabled": true,
+    "failure_reserve_calls": 2,
+    "time_reserve": {
+      "generation_seconds": 300.0,
+      "validation_seconds": 540.0,
+      "drain_seconds": 120.0
+    }
+  },
+  "analysis": {
+    "mode": "before_generation"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob042_vector4",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  in  (8  bits)\n - output out (32 bits)\n\nOne common place to see a replication operator is when sign-extending a\nsmaller number to a larger one, while preserving its signed value. This\nis done by replicating the sign bit (the most significant bit) of the\nsmaller number to the left. For example, sign-extending 4'b0101 (5) to 8\nbits results in 8'b00000101 (5), while sign-extending 4'b1101 (-3) to 8\nbits results in 8'b11111101 (-3). Implement a module that sign-extends an\n8-bit number to 32 bits. This requires a concatenation of 24 copies of\nthe sign bit (i.e., replicate bit[7] 24 times) followed by the 8-bit\nnumber itself.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

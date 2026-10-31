@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob096_review2015_fsmseq",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - input  data\n - output start_shifting\n\nThe module should implement a finite-state machine that searches for the\nsequence 1101 in an input bit stream. When the sequence is found, it\nshould set start_shifting to 1, forever, until reset. Reset is active\nhigh synchronous. Assume all sequential logic is triggered on the\npositive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

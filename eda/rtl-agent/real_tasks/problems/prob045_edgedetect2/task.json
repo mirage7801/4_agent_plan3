@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob045_edgedetect2",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input clk\n - input in       (8 bits)\n - output anyedge (8 bits)\n\nImplement a module that for each bit in an 8-bit input vector, detect\nwhen the input signal changes from one clock cycle to the next (detect\nany edge). The output bit of anyedge should be set to 1 the cycle \nafter the input bit has 0 to 1 or 1 to 0 transition occurs. Assume all \nsequential logic is triggered on the positive edge of the clock.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

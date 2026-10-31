@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob099_m2014_q6c",
+  "description": "I would like you to implement a combinational module named TopModule.\nUse the following interface:\n\n - input y (6 bits, indexed [5:0])\n - input w\n - output Y2\n - output Y4\n\nThe Moore state machine has this state transition table:\n\n State | Next state w=0 | Next state w=1 | Moore output\n A     | B              | A              | 0\n B     | C              | D              | 0\n C     | E              | D              | 0\n D     | F              | A              | 0\n E     | E              | D              | 1\n F     | C              | D              | 1\n\nUse one-hot state encoding y[5:0] = 000001(A), 000010(B),\n000100(C), 001000(D), 010000(E), 100000(F).\nImplement only the combinational next-state signals Y2 and Y4.\nY2 is the next-state value for y[1] (state B); Y4 is the next-state\nvalue for y[3] (state D). The output names retain the original\none-based state numbering, while the current-state vector is zero-based.\nDerive each next-state bit as the OR of all its incoming transitions.\nDo not implement state flip-flops, a clock, or a reset port.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

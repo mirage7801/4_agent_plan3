@@ -1,0 +1,26 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob099_m2014_q6c",
+  "source_files": {
+    "Prob099_m2014_q6c_prompt.txt": "029a91f6abaf1bbf349223f5b481c3057b15a8bf1afdc2cdbee027ec5275f359",
+    "Prob099_m2014_q6c_ref.sv": "ae1b704ee3babb1883baedc5632cfaaa2d696f27513435985abc534394e9d233",
+    "Prob099_m2014_q6c_test.sv": "f0646c83cf045e2b151dd54af1772e6b22666d2367ef1f91179309271d9c64a7"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Manual compatibility repair: the upstream prompt/reference declare Y1/Y3 while the upstream testbench and prose check Y2/Y4. The converted public task and candidate reference use Y2/Y4 to match the upstream checker and stated next-state-signal intent.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "从原始两版公开题面补回完整转移表；保留现目录已使用的Y2/Y4接口，明确其对应零基y[1]/y[3]。",
+    "upstream_prompt_sha256": "029a91f6abaf1bbf349223f5b481c3057b15a8bf1afdc2cdbee027ec5275f359",
+    "code_complete_prompt_sha256": "0f24ceb1e18b0fde2ecfb5f2fda60d98fa38e3211c9d7d4d4c28321cc1225049",
+    "previous_task_txt_sha256": "c629cc18561eb8d437f5aa59dd50db2d1f607dac06fa62dbce115e1fe0e8b2e5"
+  }
+}

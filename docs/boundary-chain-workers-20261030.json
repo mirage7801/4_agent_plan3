@@ -1,0 +1,192 @@
+{
+  "project_root": "D:\\AMD\\4_agent_plan3",
+  "mode": "workers",
+  "roles": [
+    "synthesizer",
+    "synthesizer",
+    "reviewer",
+    "repairer",
+    "rebuild",
+    "synthesizer"
+  ],
+  "tokenizer_calls": 6,
+  "max_tokens": [
+    8912,
+    8912,
+    8912,
+    8912,
+    8912,
+    8912
+  ],
+  "request_timeout_seconds": 300.0,
+  "passed": true,
+  "decisions": [
+    {
+      "selected_action": "generate",
+      "reason_code": "compatible_derivation",
+      "required_calls": 1,
+      "required_validations": 1,
+      "alternatives_not_selected": [],
+      "call_budget_tradeoffs": [
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "review_then_repair",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "rebuild",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 7,
+      "candidate_id": "candidate_01",
+      "evidence_capabilities": null
+    },
+    {
+      "selected_action": "generate",
+      "reason_code": "compatible_derivation",
+      "required_calls": 1,
+      "required_validations": 1,
+      "alternatives_not_selected": [],
+      "call_budget_tradeoffs": [
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "review_then_repair",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "rebuild",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 6,
+      "candidate_id": "candidate_02",
+      "evidence_capabilities": null
+    },
+    {
+      "selected_action": "review_then_repair",
+      "reason_code": "unlocalized_failure_first_review",
+      "required_calls": 2,
+      "required_validations": 1,
+      "alternatives_not_selected": [
+        {
+          "action": "rebuild",
+          "reason": "no_failed_repair_requiring_reconstruction_or_not_admissible"
+        }
+      ],
+      "call_budget_tradeoffs": [
+        {
+          "action": "generate",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "rebuild",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 5,
+      "candidate_id": "candidate_01",
+      "evidence_capabilities": {
+        "located_tool_error": false,
+        "observed_io": false,
+        "replayable_trace": false,
+        "review_hypothesis": false,
+        "aggregate_only": true,
+        "direct_repair_supported": false,
+        "reconstruction_after_failed_repair": true
+      }
+    },
+    {
+      "selected_action": "rebuild",
+      "reason_code": "aggregate_failure_after_repair",
+      "required_calls": 2,
+      "required_validations": 1,
+      "alternatives_not_selected": [
+        {
+          "action": "review_then_repair",
+          "reason": "prefer_reconstruction_after_failed_repair"
+        }
+      ],
+      "call_budget_tradeoffs": [
+        {
+          "action": "generate",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "direct_repair",
+          "required_calls": 1,
+          "affordable_before": true,
+          "affordable_after": true,
+          "lost_due_to_this_action": false
+        },
+        {
+          "action": "review_then_repair",
+          "required_calls": 2,
+          "affordable_before": true,
+          "affordable_after": false,
+          "lost_due_to_this_action": true
+        }
+      ],
+      "cost_basis": "minimum_calls_protocol_retries_consume_actual_remaining_budget",
+      "remaining_calls_before": 3,
+      "candidate_id": "candidate_03_rebuild",
+      "evidence_capabilities": {
+        "located_tool_error": false,
+        "observed_io": false,
+        "replayable_trace": false,
+        "review_hypothesis": false,
+        "aggregate_only": true,
+        "direct_repair_supported": false,
+        "reconstruction_after_failed_repair": true
+      }
+    }
+  ],
+  "timing_history": {
+    "status": "recorded",
+    "generation_sample_count": 4,
+    "validation_sample_count": 4
+  }
+}

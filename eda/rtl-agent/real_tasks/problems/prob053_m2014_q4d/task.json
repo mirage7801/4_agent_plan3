@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob053_m2014_q4d",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  in\n - output out\n\nThe module should implement the following circuit: A D flip-flop takes as\ninput the output of a two-input XOR. The flip-flop is positive edge\ntriggered by clk, but there is no reset. The XOR takes as input 'in'\nalong with the output 'out' of the flip-flop.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

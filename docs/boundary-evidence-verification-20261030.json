@@ -1,0 +1,64 @@
+{
+  "target": "D:\\AMD\\4_agent_plan3",
+  "batches": {
+    "1": {
+      "tests": 245,
+      "seconds": 265.026,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\boundary_batch1_final_target.log"
+    },
+    "2": {
+      "tests": 252,
+      "seconds": 261.808,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\boundary_batch2_target.log"
+    },
+    "3": {
+      "tests": 259,
+      "seconds": 263.549,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\boundary_batch3_verified_target.log"
+    }
+  },
+  "scope": "Actual target CLI, local HTTP substitutes, mock authoritative validators and owned local subprocesses; no cloud GPU/Vivado performance or ablations.",
+  "changed_source_hashes": {
+    "agent\\contracts\\schemas.py": "afaab7e43882da59f5cc3e08e0b1aff3c3d8e526b6929180c45333ad1830ca25",
+    "agent\\core\\eda_adapter.py": "711245285bd4da7ef598e8518dccdd0aec0506b68c1d08bc0aa08915c26f5a30",
+    "agent\\core\\failure_evidence.py": "fb0a94d1f7e9bb2706a48e72c69ec0d94a668710c1be00b2ddc8e3f708fcff4a",
+    "agent\\core\\feedback.py": "bb0d9b252c9c3e57b7742e7a5ed46758a967f8b8ebb0d1c99fff788199626a42",
+    "agent\\core\\search_policy.py": "c1fbfd57f53b12ba209df0759859deff28e66516fe922b4f993cab41e5302e03",
+    "agent\\core\\stage_context.py": "fca8b176073068295092f085c1922f3981a06538e755ea4b6db2880f40629b02",
+    "agent\\core\\static_checks.py": "7c7904ec4a00822a8a3971ac2f305b9497d3e17c536741df041a6d92dfa0135d",
+    "agent\\core\\task_facts.py": "4b22c503a5e5d926aa297b2759403882d1f107a8594131826e804b254c808ed2",
+    "agent\\orchestration\\candidate_search.py": "2127afe8bb80a926e9f81077659ea5a25d9c90a9d80e306c2e4d6d8e7b15f6e3",
+    "agent\\runtime\\reporting.py": "b105f1c405c6010a5dc71a7ba834d17a4056eea99388bd80350295047b2c9973",
+    "agent\\runtime\\worker_boundary.py": "86d841d1aaea44e161a2df447ae61c5c7a68559ba4a598dc9c6a1b51b9aa6ba3",
+    "model\\extraction.py": "f56ee4b96a3a672dba4cb2f7af9c34a7f768cd0ced8a3c12b9c6bad2034419c4",
+    "model\\rtl_lex.py": "ad458e005d7de58962334491b7251f4d3ea1025cda1135bfbbb9e019fb2770be",
+    "serve\\backend_lifecycle.py": "e03d77db0938e8f7881ece90873867ef67ac2bbc45bf76f8ded7017f3207b8b6",
+    "config\\loader.py": "2998cc808d4dc50e1f7bbbe017182fbe2151bb47f8348f36535dfde8bc9d5cd9",
+    "config\\remote-siliconmind.local.json": "3d8a104ff3a1edf2bbd85b0dcee5187a746c4268f836751af3f6458302e773f9",
+    "tests\\test_agent_bugfixes.py": "a119a3c3127e4de892e235eb164a16230c6397ef739d31832a11901fba0bfb83",
+    "tests\\test_backend_drain.py": "09af6aec924dd133800a5568e0c7137bac77f899eaf5800886d44a97093d35da",
+    "tests\\test_candidate_search.py": "0a8a16f4458845dd1191d9da26ac5377493eb04eec3e7fa1d758c074e332568f",
+    "tests\\test_eda_and_report.py": "35207f0fc11c0330bab6b405ab834534f7a15ada723a16fbfebf82cebd891e29",
+    "tests\\test_feedback_router.py": "6c3e9191aa80290798c6e59d47c601b6056d11cb0380fc99b2c6a998ee7b1e06",
+    "tests\\test_gitee_tasks_integration.py": "8bcaaa949a5a428d311fb43bdc1f7ecead493490db5c2823149499960ca698f2",
+    "tests\\test_internal_contracts.py": "c696e75441b621c197125c83a706b1c905434fa59438980062c21c189d3ca5b2",
+    "tests\\test_output_protocol.py": "b42c136477b780ce3c1c474e6e1b9768f41b3b6734b9083f948b89baa4218ec3",
+    "tests\\test_pipeline.py": "54c960cba3fb2bdf95dbc94bd1157d181a5ac0b1738aa162d55cceae2199f163",
+    "tests\\test_policy_http_chain.py": "0695cacb80d7c3c13cc2ea2407f0a046c73f952dd0f20f4c6a2127930784440e",
+    "tests\\test_protocol_alignment.py": "de7c6ad1d07c253297742ff44b7a01190e8c76ce78f1dc9907a4424e965e24c7",
+    "tests\\test_reviewer.py": "c51316491c17aa5ff53d8e5a79529f6e19a58167da146d24431a4bd548ed069b",
+    "tests\\test_search_evidence.py": "16681e5c8112b0645afde7644191d3e7662bb39663eb64d30529d572b7b8d8d3",
+    "tests\\test_search_policy.py": "d79a5fd2a3ad379fbc09d40e51b191202323c015f13a3d1fa92c501a58f8eb6d",
+    "tests\\test_semantic_hardening.py": "d5e5f4020d3fdde9be9911f4b04c5be12cd33188618d99ed3a3eacf39d6e5ea3",
+    "tests\\test_task_facts_context.py": "03aafb72eafdb57863f417cf28040cb8453a6b4280f1ed6b28fda818a5962ec3",
+    "tests\\test_think_framing.py": "9a8e22e624436a77030391d81f084eae3550cf2e07db82bc62406bd37a6da34f",
+    "tests\\test_three_batches.py": "6f00fe23a4aa1edb75ec50e3d8ea05168785c23d1bfde97fc2bb40f57a0d9177",
+    "tests\\test_boundary_hardening.py": "198821b3e8626984093981ff50f636ba84ac7adb163c5aec6ee53e44f1dac3db",
+    "tests\\test_public_evidence.py": "ba5c52f7a24b88ba122a0530a920eaaebbee0c56da6623dd9eb2840a3632b336",
+    "tests\\test_execution_policy.py": "2a5240c6ac1b43eabdcf9d8ed90a3113c0e8ffc19b247c4b56de3af280cd579e"
+  },
+  "hash_scope": "Changed Python source/tests and runtime JSON configuration; Markdown/evidence files excluded to avoid self-reference."
+}

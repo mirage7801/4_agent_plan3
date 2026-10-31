@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "passed": true,
+  "stage": "complete",
+  "error_type": "none",
+  "summary": "编译、详细描述、仿真和目标器件综合均通过",
+  "source": "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\problems\\prob128_fsm_ps2\\reference.v",
+  "testbench": "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\problems\\prob128_fsm_ps2\\tb.sv",
+  "top_module": "TopModule",
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "vivado_version": "2026.1",
+  "timings": {
+    "compile_seconds": 2.0,
+    "elaborate_seconds": 1.547,
+    "simulation_seconds": 3.359,
+    "synthesis_seconds": 86.906,
+    "total_seconds": 94.86
+  },
+  "commands": [
+    {
+      "stage": "environment",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\vivado.bat",
+        "-version"
+      ],
+      "returncode": 1
+    },
+    {
+      "stage": "compile",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xvlog.bat",
+        "-sv",
+        "-work",
+        "work",
+        "C:\\Users\\chenr\\AppData\\Local\\Temp\\rtl_agent_t3_6o02t\\source.v",
+        "C:\\Users\\chenr\\AppData\\Local\\Temp\\rtl_agent_t3_6o02t\\testbench.sv"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "elaborate",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xelab.bat",
+        "work.tb_TopModule",
+        "-s",
+        "rtl_agent_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "simulation",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\xsim.bat",
+        "rtl_agent_snapshot",
+        "-tclbatch",
+        "C:/Users/chenr/AppData/Local/Temp/rtl_agent_t3_6o02t/run_xsim.tcl"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "synthesis",
+      "argv": [
+        "D:\\xilinx_vivado_2026.1\\2026.1\\Vivado\\bin\\vivado.bat",
+        "-mode",
+        "batch",
+        "-nolog",
+        "-nojournal",
+        "-notrace",
+        "-source",
+        "synth.tcl",
+        "-tclargs",
+        "source.v",
+        "TopModule",
+        "xczu3eg-sbva484-1-e",
+        "NO_CONSTRAINTS",
+        "synth_netlist.v"
+      ],
+      "returncode": 0
+    }
+  ],
+  "log_files": [
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2\\environment.log",
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2\\compile.log",
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2\\elaborate.log",
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2\\simulation.log",
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2\\synthesis.log"
+  ],
+  "artifacts": [
+    "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2\\synth_netlist.v"
+  ],
+  "warnings": [
+    "WARNING: [Synth 8-7129] Port in[7] in module TopModule is either unconnected or has no load",
+    "WARNING: [Synth 8-7129] Port in[6] in module TopModule is either unconnected or has no load",
+    "WARNING: [Synth 8-7129] Port in[5] in module TopModule is either unconnected or has no load",
+    "WARNING: [Synth 8-7129] Port in[4] in module TopModule is either unconnected or has no load",
+    "WARNING: [Synth 8-7129] Port in[2] in module TopModule is either unconnected or has no load",
+    "WARNING: [Synth 8-7129] Port in[1] in module TopModule is either unconnected or has no load",
+    "WARNING: [Synth 8-7129] Port in[0] in module TopModule is either unconnected or has no load"
+  ],
+  "output_dir": "D:\\AMD\\verilog-eval-main\\verilog-eval-main-trans\\validation_all\\prob128_fsm_ps2"
+}

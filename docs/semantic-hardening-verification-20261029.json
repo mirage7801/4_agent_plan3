@@ -1,0 +1,165 @@
+{
+  "target": "D:\\AMD\\4_agent_plan3",
+  "sequential_batch_validation": true,
+  "batches": {
+    "batch1": {
+      "tests": 222,
+      "seconds": 261.505,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\semantic_batch1_target.log"
+    },
+    "batch2": {
+      "tests": 225,
+      "seconds": 259.42,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\semantic_batch2_final_target.log"
+    },
+    "batch3": {
+      "tests": 238,
+      "seconds": 250.657,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\semantic_batch3_final_target.log"
+    }
+  },
+  "validation_scope": "Actual target CLI + local HTTP + mock validator and owned local test subprocesses; no cloud GPU/Vivado or ablations.",
+  "sequential_validation_file_timestamps": {
+    "semantic_batch1_target.log": 1793288460.813507,
+    "semantic_install_2.json": 1793288910.2614868,
+    "semantic_batch2_final_target.log": 1793289553.5597355,
+    "semantic_install_3.json": 1793290567.1258402
+  },
+  "source_audit": {
+    "target": "D:\\AMD\\4_agent_plan3",
+    "module_paths": {
+      "agent.cli": "D:\\AMD\\4_agent_plan3\\agent\\cli.py",
+      "agent.runtime.run": "D:\\AMD\\4_agent_plan3\\agent\\runtime\\run.py",
+      "agent.runtime.worker_boundary": "D:\\AMD\\4_agent_plan3\\agent\\runtime\\worker_boundary.py",
+      "agent.orchestration.candidate_search": "D:\\AMD\\4_agent_plan3\\agent\\orchestration\\candidate_search.py",
+      "agent.core.stage_context": "D:\\AMD\\4_agent_plan3\\agent\\core\\stage_context.py",
+      "model.rtl_lex": "D:\\AMD\\4_agent_plan3\\model\\rtl_lex.py"
+    },
+    "matching_source_files": 109,
+    "agent_python_modules": 29,
+    "controller_count": 1,
+    "production_source_hashes": {
+      "agent\\cli.py": "e4d3a45cea57680f4cf7c133dc8de3aed3b5e9c96e237208ad54b3c9a5e3c838",
+      "agent\\resume.py": "c889178f5647b1538900a7a7a4eedbdb951b8a1a4d026791624e784cb9b1bc99",
+      "agent\\worker_cli.py": "1a7df806c6ac2491dbcecbb581e7604bed6c0dbf322a2cab23cc8284c189f347",
+      "agent\\__init__.py": "88e7d275a5e97d97b76a8dd54ef5988a1bfaad4d9920b2174da945825cf20e8a",
+      "agent\\contracts\\messages.py": "bba47e924c10e35879d4178d0437b30592e28f3a2ff986a8028c614c80db011c",
+      "agent\\contracts\\schemas.py": "030e0301342e3d1df9860174ccd829faef35b44905137d4141ecc50046cab157",
+      "agent\\contracts\\__init__.py": "07829648477de02153f25c598c56396c1ae1e237ca28133e2c0977c44d0a9918",
+      "agent\\core\\diagnostics.py": "9e4911faafe56dd8fd3970c216a261093e634ea22b404b2d02add037cecd581e",
+      "agent\\core\\eda_adapter.py": "5cd544ef3dc918ed2fc7997b46a3e550f3213cd46ad902fb206d61f3a029f927",
+      "agent\\core\\failure_evidence.py": "28d242f7d493ec0ebfd88f3ca63e4aa61a4018d64041377e7fcc8bc0d904a628",
+      "agent\\core\\failure_memory.py": "de9df09860f6bf1d431758b6ab59706587c9a899fe4226b2636e0401df9225a4",
+      "agent\\core\\feedback.py": "77bb1637bf5f5fa16ca69a65ec430759099e43f54ba804f08db4f759a344b686",
+      "agent\\core\\output_protocol.py": "46d577214189e5f797711bc7d8bb087a4718c136b7db7e44682cd3f31442a219",
+      "agent\\core\\prompts.py": "acf7857701331702c25986c25397d4f9e28b0260a1f7e0fa1ca081aa00159404",
+      "agent\\core\\repair_strategy.py": "c2ea55dee83fc44004ac09127451ab773fc8e41aaf6088fb46e0a35ce4c47f34",
+      "agent\\core\\search_policy.py": "41ae5b1334e83ac523e4efec18aca03b34b82fdca1aa07df96a862b821b8d024",
+      "agent\\core\\stage_context.py": "a78c2095d7893fcc8e1f56df75170c319791e0f33a023c34f5bf133df1f8c2c3",
+      "agent\\core\\static_checks.py": "f3401fafa805600eddc78a09963ce97ebd22465da8d2a52a86f9684bd7647261",
+      "agent\\core\\storage.py": "8903aed357ae4300f8906804d1c8f89ae5b4ba0d7461000bfaeea1bf448dd81f",
+      "agent\\core\\task.py": "c4677074b24c705f4d5e141977463fb8392b25aaec4c4daf92a2e0a3df34f3e6",
+      "agent\\core\\task_facts.py": "864f4f4d2d551defe13591473011c40990952a6c4d539cf3bfe7955913a03e32",
+      "agent\\core\\task_profile.py": "b1c3750d239fb4e9401918adaeeec9ebdc5d381f45d1d8599b252c62af8b9715",
+      "agent\\core\\__init__.py": "84c6755ba92c45e275560e324df15ddd2ef3d5553ef52212f3f4a18a1bdbff21",
+      "agent\\orchestration\\candidate_search.py": "0496c8bdbca2165daaa00915b6e8f2648ce4f5980fe7452c95a98c46fc71c80a",
+      "agent\\orchestration\\__init__.py": "f1d7c748bc6fd20964d748ccab038bac088045a2a6bde6704282972a8104e18d",
+      "agent\\runtime\\reporting.py": "5e777acc7fa29b63ce6497cb7b0be4211948e811cdf61e0360df5d6bb3869af8",
+      "agent\\runtime\\run.py": "84c02b57487d5e1459b071723f9623a7dbdbfc6de0dd5f3274289e3880157a5c",
+      "agent\\runtime\\worker_boundary.py": "dc4746c142a3339a875597760c19c659a74bbc505cd5a30ae6a6d4de7b1bec62",
+      "agent\\runtime\\__init__.py": "53992a33ae3fb874a546751581bc4f18de96a92cd794959313ac6611e185ae30",
+      "model\\contracts.py": "04ffd197c4d1d0e22dda0bd52a65b65f453b0ac774d14a01c5e6fa888b7e1079",
+      "model\\extraction.py": "71468f62585df7c7c9d86de9c71ce10a656aebca72877fab1ecc82af58763e52",
+      "model\\framing.py": "15286384beb0892ad38f9a7e42abf1504aea37d3fc8f3cc14be6135ce604fa00",
+      "model\\rtl_lex.py": "2c52c17c7e39a3d892a69117209f5315c5eadc3353de31417fdbd72dc3f9569b",
+      "model\\__init__.py": "902cbb46e20f7054d71492a88726bb4803a427a3c198e7c7bad55fd1bde2f304"
+    },
+    "removed_old_branches": true,
+    "baseline_folder_and_prompt_unchanged": true,
+    "model_max_tokens": 8912,
+    "http_timeout_seconds": 300,
+    "analysis_mode": "before_generation",
+    "worker_watchdog": {
+      "allowance_seconds": 30.0,
+      "termination_grace_seconds": 10.0
+    },
+    "token_preflight_enabled": false,
+    "live_cloud_or_vivado_tested": false
+  },
+  "http_modes": {
+    "in_process": {
+      "project_root": "D:\\AMD\\4_agent_plan3",
+      "roles": {
+        "analyst": 1,
+        "synthesizer": 3,
+        "reviewer": 2,
+        "repairer": 2,
+        "rebuild": 1
+      },
+      "model_call_count": 9,
+      "passed": true,
+      "reviewer_analyst_context_isolated": true,
+      "rebuild_evidence_delivered_to_generation": true,
+      "reviewer_received_bound_feedback": true,
+      "reviewer_findings_consumed_by_repairer": true,
+      "append_events_and_final_export_match": true,
+      "cli_report_timing_recorded": true,
+      "report_worker_removed": true,
+      "actual_http_max_tokens": [
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912
+      ],
+      "request_timeout_seconds": 300,
+      "B_repairs_independent": true
+    },
+    "workers": {
+      "project_root": "D:\\AMD\\4_agent_plan3",
+      "roles": {
+        "analyst": 1,
+        "synthesizer": 3,
+        "reviewer": 2,
+        "repairer": 2,
+        "rebuild": 1
+      },
+      "model_call_count": 9,
+      "passed": true,
+      "reviewer_analyst_context_isolated": true,
+      "rebuild_evidence_delivered_to_generation": true,
+      "reviewer_received_bound_feedback": true,
+      "reviewer_findings_consumed_by_repairer": true,
+      "append_events_and_final_export_match": true,
+      "cli_report_timing_recorded": true,
+      "report_worker_removed": true,
+      "actual_http_max_tokens": [
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912,
+        8912
+      ],
+      "request_timeout_seconds": 300,
+      "B_repairs_independent": true
+    }
+  },
+  "preserved": {
+    "baseline_prompt_and_call_policy": true,
+    "output_limit": 8912,
+    "http_timeout_seconds": 300,
+    "natural_remote_drain": true,
+    "unknown_blocks_next_task": true
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "target": "D:\\AMD\\4_agent_plan3",
+  "controller_count": 1,
+  "agent_python_modules": 29,
+  "source_identity": {
+    "scope": "agent,model,serve,config Python sources; embedded prompts included",
+    "files": [
+      {
+        "path": "agent/__init__.py",
+        "sha256": "88e7d275a5e97d97b76a8dd54ef5988a1bfaad4d9920b2174da945825cf20e8a"
+      },
+      {
+        "path": "agent/cli.py",
+        "sha256": "e4d3a45cea57680f4cf7c133dc8de3aed3b5e9c96e237208ad54b3c9a5e3c838"
+      },
+      {
+        "path": "agent/contracts/__init__.py",
+        "sha256": "07829648477de02153f25c598c56396c1ae1e237ca28133e2c0977c44d0a9918"
+      },
+      {
+        "path": "agent/contracts/messages.py",
+        "sha256": "bba47e924c10e35879d4178d0437b30592e28f3a2ff986a8028c614c80db011c"
+      },
+      {
+        "path": "agent/contracts/schemas.py",
+        "sha256": "8df1f2a98ba13a181361946b25ba74b237d1dfd5f6708f334772998c8408fa7c"
+      },
+      {
+        "path": "agent/core/__init__.py",
+        "sha256": "84c6755ba92c45e275560e324df15ddd2ef3d5553ef52212f3f4a18a1bdbff21"
+      },
+      {
+        "path": "agent/core/diagnostics.py",
+        "sha256": "9e4911faafe56dd8fd3970c216a261093e634ea22b404b2d02add037cecd581e"
+      },
+      {
+        "path": "agent/core/eda_adapter.py",
+        "sha256": "711245285bd4da7ef598e8518dccdd0aec0506b68c1d08bc0aa08915c26f5a30"
+      },
+      {
+        "path": "agent/core/failure_evidence.py",
+        "sha256": "fb0a94d1f7e9bb2706a48e72c69ec0d94a668710c1be00b2ddc8e3f708fcff4a"
+      },
+      {
+        "path": "agent/core/failure_memory.py",
+        "sha256": "de9df09860f6bf1d431758b6ab59706587c9a899fe4226b2636e0401df9225a4"
+      },
+      {
+        "path": "agent/core/feedback.py",
+        "sha256": "97951762c08e8f0c87f15ac752987e8d31b90af39feeb07612d7feb6db111f0a"
+      },
+      {
+        "path": "agent/core/output_protocol.py",
+        "sha256": "e09de6b34fd7f65efa68c3d057c76547d30f11050b6ce75f7ef574d24011d110"
+      },
+      {
+        "path": "agent/core/prompts.py",
+        "sha256": "acf7857701331702c25986c25397d4f9e28b0260a1f7e0fa1ca081aa00159404"
+      },
+      {
+        "path": "agent/core/repair_strategy.py",
+        "sha256": "c2ea55dee83fc44004ac09127451ab773fc8e41aaf6088fb46e0a35ce4c47f34"
+      },
+      {
+        "path": "agent/core/search_policy.py",
+        "sha256": "c1fbfd57f53b12ba209df0759859deff28e66516fe922b4f993cab41e5302e03"
+      },
+      {
+        "path": "agent/core/stage_context.py",
+        "sha256": "11f29429bc416edc542cd0c968fdc9334c1d3471a2ca79705596e259da8dfa29"
+      },
+      {
+        "path": "agent/core/static_checks.py",
+        "sha256": "10b2da5e85b4d4db683d0b277c186e7537413f43783ec5a9e86e29962572a992"
+      },
+      {
+        "path": "agent/core/storage.py",
+        "sha256": "e17d0ad22ed72719b6732507cc4fc020b90d876c8325aed076c7120bb18b6d51"
+      },
+      {
+        "path": "agent/core/task.py",
+        "sha256": "c4677074b24c705f4d5e141977463fb8392b25aaec4c4daf92a2e0a3df34f3e6"
+      },
+      {
+        "path": "agent/core/task_facts.py",
+        "sha256": "4b22c503a5e5d926aa297b2759403882d1f107a8594131826e804b254c808ed2"
+      },
+      {
+        "path": "agent/core/task_profile.py",
+        "sha256": "b1c3750d239fb4e9401918adaeeec9ebdc5d381f45d1d8599b252c62af8b9715"
+      },
+      {
+        "path": "agent/orchestration/__init__.py",
+        "sha256": "f1d7c748bc6fd20964d748ccab038bac088045a2a6bde6704282972a8104e18d"
+      },
+      {
+        "path": "agent/orchestration/candidate_search.py",
+        "sha256": "f670241326d770c4a2a53753452ba13725651f65e1edf990d6b0d41f03e4a7eb"
+      },
+      {
+        "path": "agent/resume.py",
+        "sha256": "c889178f5647b1538900a7a7a4eedbdb951b8a1a4d026791624e784cb9b1bc99"
+      },
+      {
+        "path": "agent/runtime/__init__.py",
+        "sha256": "53992a33ae3fb874a546751581bc4f18de96a92cd794959313ac6611e185ae30"
+      },
+      {
+        "path": "agent/runtime/reporting.py",
+        "sha256": "e89341a7e15abf9a18a672e7f32ea817d63ce627791fb0e10cf8f555785c24e3"
+      },
+      {
+        "path": "agent/runtime/run.py",
+        "sha256": "84c02b57487d5e1459b071723f9623a7dbdbfc6de0dd5f3274289e3880157a5c"
+      },
+      {
+        "path": "agent/runtime/worker_boundary.py",
+        "sha256": "593c340768c41d1dc02c27205b99cbb9ee1e9c0d6918e4e2a85a05656016564a"
+      },
+      {
+        "path": "agent/worker_cli.py",
+        "sha256": "b5c3e778d57c1514c4b8e536d590d2e54e68940d2f06dead4d16509a0c308815"
+      },
+      {
+        "path": "config/__init__.py",
+        "sha256": "0c5100b0f9ff7d01810a7926e298a2173b7a0edde2840ee195801a227601aa0c"
+      },
+      {
+        "path": "config/loader.py",
+        "sha256": "2998cc808d4dc50e1f7bbbe017182fbe2151bb47f8348f36535dfde8bc9d5cd9"
+      },
+      {
+        "path": "model/__init__.py",
+        "sha256": "902cbb46e20f7054d71492a88726bb4803a427a3c198e7c7bad55fd1bde2f304"
+      },
+      {
+        "path": "model/contracts.py",
+        "sha256": "04ffd197c4d1d0e22dda0bd52a65b65f453b0ac774d14a01c5e6fa888b7e1079"
+      },
+      {
+        "path": "model/extraction.py",
+        "sha256": "f56ee4b96a3a672dba4cb2f7af9c34a7f768cd0ced8a3c12b9c6bad2034419c4"
+      },
+      {
+        "path": "model/framing.py",
+        "sha256": "15286384beb0892ad38f9a7e42abf1504aea37d3fc8f3cc14be6135ce604fa00"
+      },
+      {
+        "path": "model/rtl_lex.py",
+        "sha256": "791dcfea34c263fa0cc8d466910fcfcf26dd26ffbb76eb292ab367e21086f12b"
+      },
+      {
+        "path": "serve/__init__.py",
+        "sha256": "941836ba568c7962cfaa4c6a67421879160955f839d8100dfabb5184ba03fd11"
+      },
+      {
+        "path": "serve/backend_lifecycle.py",
+        "sha256": "e03d77db0938e8f7881ece90873867ef67ac2bbc45bf76f8ded7017f3207b8b6"
+      },
+      {
+        "path": "serve/clients.py",
+        "sha256": "c7d675dc362d8c276b122e3098cc64752e83108f74ae02faf1ada33c6a363812"
+      },
+      {
+        "path": "serve/factory.py",
+        "sha256": "ad3849c83cc2c43f39c45813c6781598f6c7f7f73ea072760ecd2a33adbdb7df"
+      },
+      {
+        "path": "serve/qwen_server.py",
+        "sha256": "58a9b014d4c14839ade0229dc296229bd41b6a0ab103b3ce99d764b9b16ee30c"
+      },
+      {
+        "path": "serve/request_state.py",
+        "sha256": "66d51d5e95ec4241951b9bbb55f4de15742f0bfcb8001966e4f84db1bfb8bb7a"
+      }
+    ],
+    "sha256": "61ef46ffa3700248880409798074cf6c26037ab5984f051a70669e228db0694f"
+  },
+  "verified_modes": {
+    "in_process": {
+      "roles": [
+        "synthesizer",
+        "synthesizer",
+        "reviewer",
+        "repairer",
+        "rebuild",
+        "synthesizer"
+      ],
+      "runtime_identity": {
+        "identity_id": "f6993e3a464df3bbab5ffb9ff4e37ef03d0ffdee333a9ceddf56d16faf9c6fcd",
+        "code_hash": "61ef46ffa3700248880409798074cf6c26037ab5984f051a70669e228db0694f",
+        "config_hash": "cce9d0ba93ff0d7a1a41f5ee4d0b182083668aaeeb8de6ac4648a99051285100"
+      },
+      "diagnostic_views_verified": 4
+    },
+    "workers": {
+      "roles": [
+        "synthesizer",
+        "synthesizer",
+        "reviewer",
+        "repairer",
+        "rebuild",
+        "synthesizer"
+      ],
+      "runtime_identity": {
+        "identity_id": "851fbc71e3fcb628e684609e2b96cb8d079260f9c36651a8b93e639469a29c84",
+        "code_hash": "61ef46ffa3700248880409798074cf6c26037ab5984f051a70669e228db0694f",
+        "config_hash": "08e918664ac1d8f3f99a2a3ff782cd4e25d16417c3bdcdfd9f051d61111e1d02"
+      },
+      "diagnostic_views_verified": 4
+    }
+  },
+  "baseline_generation_unchanged": true,
+  "scope": "Current target local CLI/HTTP/tokenizer and mock EDA; no cloud GPU/Vivado."
+}

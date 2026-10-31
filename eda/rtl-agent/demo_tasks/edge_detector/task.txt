@@ -1,0 +1,8 @@
+设计一个可综合的上升沿检测器，模块名为 edge_detector。
+
+端口：input logic clk、rst、signal_in；output logic pulse。
+
+行为要求：
+- 每个 clk 上升沿采样 signal_in；时钟周期为 5 ns。
+- rst 为同步高有效复位，清除上次采样值和 pulse。
+- 本次采样为 1、上次采样为 0 时，pulse 寄存输出 1，持续一个周期；输入持续为高时不得重复触发。

@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob068_countbcd",
+  "source_files": {
+    "Prob068_countbcd_prompt.txt": "ae64942315bfdb8370969ba27e22057af9f28f35a4c0532e18fd0805ef1ebda4",
+    "Prob068_countbcd_ref.sv": "699702b0cbd8dead9301675e70fe23b847a58a81d5757e87af0abd26163f01ec",
+    "Prob068_countbcd_test.sv": "be9d522bc290acd8340576c843e517c797068c7092cd4a28454b637d71005c57"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "补齐BCD计数器复位值，明确ena为当前数字的组合进位使能而非额外状态。",
+    "upstream_prompt_sha256": "ae64942315bfdb8370969ba27e22057af9f28f35a4c0532e18fd0805ef1ebda4",
+    "code_complete_prompt_sha256": "d74f177e1f4b3d14e7e180f2878d65286293252b7ebe9f634cc4303c781bfe1e",
+    "previous_task_txt_sha256": "75e070ed5913e5c051294d124aa7f3b7112c61066dff96c28c712a0dcf91e85e"
+  }
+}

@@ -1,0 +1,3322 @@
+{
+  "project_root": "D:\\AMD\\4_agent_plan3",
+  "date": "2026-10-25",
+  "pipeline_version": "bounded_pipeline_resource_v2",
+  "policy_version": "resource_admission_v1",
+  "full_regression": {
+    "tests": 130,
+    "passed": 130,
+    "seconds": 81.645,
+    "log_sha256": "f354d8f6e1307509fb6be6ff8a8951f46ecd27af403a37e7ca9d9ec6240bd441"
+  },
+  "validation_kind": "synthetic HTTP model and validator subprocess; not real model or Vivado",
+  "installed_files": [
+    {
+      "path": "4agent_now.md",
+      "action": "modify",
+      "sha256": "921e763f9b8f5be1c3d7c3c2e6d3c3a011106b34a3c37f17b30ecb83d20f2ff8"
+    },
+    {
+      "path": "AGENTS.md",
+      "action": "modify",
+      "sha256": "4df5221983230bd8fd0ff568489ca1b554f1d9f9f32c382efd86bb0efe1449cc"
+    },
+    {
+      "path": "PRD.md",
+      "action": "modify",
+      "sha256": "6399fcacc74df71c6afddf4a902643efcc25bcb7e73f38c7ca639820345f45f6"
+    },
+    {
+      "path": "README.md",
+      "action": "modify",
+      "sha256": "7e5c5780ef2e16872a4ffa91955e7aa3097486c99ff0453c34d4c45fc62aebed"
+    },
+    {
+      "path": "agent/cli.py",
+      "action": "modify",
+      "sha256": "f2c2428b3f2b2890f722862a2277ebbba585a0c20774dcd4aa9a92fcbb86852d"
+    },
+    {
+      "path": "agent/README.md",
+      "action": "modify",
+      "sha256": "03c8c8812021a0ed8448e8bd026efe513c8ee7c9c2c987ad8922e176f689db68"
+    },
+    {
+      "path": "agent/core/prompts.py",
+      "action": "modify",
+      "sha256": "d9a3ff3dcd1b3098317817726798823d2dcd75d82db099082ef34e0778692ac9"
+    },
+    {
+      "path": "agent/core/risk.py",
+      "action": "delete",
+      "sha256": null
+    },
+    {
+      "path": "agent/orchestration/candidate_search.py",
+      "action": "modify",
+      "sha256": "73c0ec062d6030aeaf0de6eb2f33476d754cdbf4f45d0b869aa431607ef22dc8"
+    },
+    {
+      "path": "config/candidate_search.example.json",
+      "action": "modify",
+      "sha256": "aa482c2f509e83b5732951d0e1e24dc3d303d22e6c8e8daa202b8ba25c5c788b"
+    },
+    {
+      "path": "config/experiment.example.json",
+      "action": "modify",
+      "sha256": "ea57771c9aa13cfc82a59f0fe8da5cdf7be7f7bc3f8315dd870b94617e8798ab"
+    },
+    {
+      "path": "config/gitee.example.json",
+      "action": "modify",
+      "sha256": "7489651dcd4317cdda150d3b9886c6d6d54d3bd5461834dd43c8b853e4de11e4"
+    },
+    {
+      "path": "config/gitee.qwen.temperature02.json",
+      "action": "modify",
+      "sha256": "42394c7829d9e418dffc0ffc0a5d74fd21580093e5b5877365970ec44d3f9ad2"
+    },
+    {
+      "path": "config/loader.py",
+      "action": "modify",
+      "sha256": "db56c7c821c6d9d22f5cb7230cd590b67f8dab3d68f8963afe8de351f8893205"
+    },
+    {
+      "path": "config/mock.e2e.json",
+      "action": "modify",
+      "sha256": "640f6bc33e30c126225a43efa155a922d671508bed1e560f07e8aff887150da3"
+    },
+    {
+      "path": "config/qwen25_coder7b_rocm.json",
+      "action": "modify",
+      "sha256": "907db5ecc854c0be6d34ac68192a12047f77d9b5161872a169c15ee78403da16"
+    },
+    {
+      "path": "config/README.md",
+      "action": "modify",
+      "sha256": "550c845bec3e4ebc2a841107eee995607224c11763ac832da415d82c5ce0be1f"
+    },
+    {
+      "path": "config/remote-qwen.local.json",
+      "action": "modify",
+      "sha256": "b0fc14ec80584d0b63f0b5906728f3e794588f46a559516fd623b5f475a30b17"
+    },
+    {
+      "path": "config/remote-siliconmind.local.json",
+      "action": "modify",
+      "sha256": "8f60d60e6e0307f90ee88b0264c3f9909261ca7729b180d60e60057cb4b78b0f"
+    },
+    {
+      "path": "docs/candidate-search-architecture.md",
+      "action": "modify",
+      "sha256": "68933102dd4cab7327014fd55c49fec169566bbf08f3c56e86efa9dc50eab192"
+    },
+    {
+      "path": "docs/file_manifest.md",
+      "action": "modify",
+      "sha256": "200bee61d438d88d8228550de17ee2ed7e28763eda03332e22fab06bc00b77b8"
+    },
+    {
+      "path": "docs/interfaces.md",
+      "action": "modify",
+      "sha256": "637f49e89243d906f0417c05ad8f67136ea20c9f924ab9ce01fdac0545822ed6"
+    },
+    {
+      "path": "docs/README.md",
+      "action": "modify",
+      "sha256": "7cf5a6ea45363ca2dec80cf20cdfc2762593c0596f2e9665fa99f6dd881a190f"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "action": "modify",
+      "sha256": "618e7fdf4561be73c8cc30074a431f6b4a00e4f03aac6a43b78e39ed86c8f829"
+    },
+    {
+      "path": "tests/README.md",
+      "action": "modify",
+      "sha256": "1bdae164da090de2861ac10c4425586cde786f4535e1b34506e206cca5e71924"
+    },
+    {
+      "path": "tests/test_extraction_and_config.py",
+      "action": "modify",
+      "sha256": "68578f571e8a90bc18641b357338636d716b8ef53d87cde66220ec2efc5437b6"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "action": "modify",
+      "sha256": "357734552526752064b47927c9e9270d954d1070b398475284e2b668b3808a37"
+    },
+    {
+      "path": "agent/core/search_policy.py",
+      "action": "add",
+      "sha256": "f3edf8c51dac15726090e4172509baabf6b9e7d5bb5f72db385f1afd82bc2e16"
+    },
+    {
+      "path": "tests/test_search_policy.py",
+      "action": "add",
+      "sha256": "6c2a511488ac6dc971138a465eadc6575807d7207ac6cd8ec1039fe0224c0b7b"
+    },
+    {
+      "path": "docs/resource-admission-verification-20261025.md",
+      "action": "add",
+      "sha256": "0a5dc219d60a3bdc517fb698d1c0d234eb382ad4a9fe90c2846084770ef5c77f"
+    }
+  ],
+  "http_chain_evidence": [
+    {
+      "name": "failure_chain_in_process.json",
+      "sha256": "33773c169e3fd8185b1f529f77172cd1e11eba35f43810d4c7bafe0011eefaeb",
+      "evidence": {
+        "project_root": "D:\\AMD\\4_agent_plan3",
+        "mode": "in_process",
+        "actual_http_max_tokens": [
+          2048,
+          8192,
+          8192
+        ],
+        "passed": true,
+        "model_call_count": 3,
+        "call_records": [
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "protocol",
+            "request_id": "model_call_0001",
+            "response_kind": "analyst",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": null,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\task_facts.json"
+            },
+            "model_id": "test",
+            "revision": "test",
+            "elapsed_seconds": 0.078,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 400,
+              "output_tokens": 70,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\context\\analyst_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\context\\analyst_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\context\\analyst_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "protocol",
+            "request_id": "model_call_0002",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\task_facts.json"
+            },
+            "model_id": "test",
+            "revision": "test",
+            "elapsed_seconds": 0.062,
+            "status": "failed",
+            "stage": "rtl_extraction",
+            "error": {
+              "code": "FINAL_BOUNDARY_ERROR",
+              "message": "expected exactly one complete RTL_CODE region",
+              "retryable": true
+            },
+            "generation": {
+              "finish_reason": "length",
+              "provider_finish_reason": "length"
+            },
+            "usage": {
+              "input_tokens": 400,
+              "output_tokens": 8192,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "incomplete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": null,
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "protocol",
+            "request_id": "model_call_0003",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\task_facts.json"
+            },
+            "model_id": "test",
+            "revision": "test",
+            "elapsed_seconds": 0.062,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 400,
+              "output_tokens": 150,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\candidates\\candidate_01\\code_response\\call_02\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\candidates\\candidate_01\\code_response\\call_02\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpt9zd0mvc\\protocol\\candidates\\candidate_01\\code_response\\call_02\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          }
+        ],
+        "audit_isolated": true,
+        "validation": "mock"
+      }
+    },
+    {
+      "name": "failure_chain_workers.json",
+      "sha256": "ee8aa2a10e4537edbecab36d999828aeab0f520faf36f2e5e963f637447c4e5d",
+      "evidence": {
+        "project_root": "D:\\AMD\\4_agent_plan3",
+        "mode": "workers",
+        "actual_http_max_tokens": [
+          2048,
+          8192,
+          8192
+        ],
+        "passed": true,
+        "model_call_count": 3,
+        "call_records": [
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "protocol",
+            "request_id": "model_call_0001",
+            "response_kind": "analyst",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": null,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\task_facts.json"
+            },
+            "model_id": "test",
+            "revision": "test",
+            "elapsed_seconds": 0.078,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 400,
+              "output_tokens": 70,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\context\\analyst_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\context\\analyst_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\context\\analyst_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "protocol",
+            "request_id": "model_call_0002",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\task_facts.json"
+            },
+            "model_id": "test",
+            "revision": "test",
+            "elapsed_seconds": 0.079,
+            "status": "failed",
+            "stage": "rtl_extraction",
+            "error": {
+              "code": "FINAL_BOUNDARY_ERROR",
+              "message": "expected exactly one complete RTL_CODE region",
+              "retryable": true
+            },
+            "generation": {
+              "finish_reason": "length",
+              "provider_finish_reason": "length"
+            },
+            "usage": {
+              "input_tokens": 400,
+              "output_tokens": 8192,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "incomplete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": null,
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "protocol",
+            "request_id": "model_call_0003",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\task_facts.json"
+            },
+            "model_id": "test",
+            "revision": "test",
+            "elapsed_seconds": 0.078,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 400,
+              "output_tokens": 150,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\candidates\\candidate_01\\code_response\\call_02\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\candidates\\candidate_01\\code_response\\call_02\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpbd9cttji\\protocol\\candidates\\candidate_01\\code_response\\call_02\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          }
+        ],
+        "audit_isolated": true,
+        "validation": "mock"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_False_high_12_2_2_True.json",
+      "sha256": "97df3d7e2c5efac18b2a9a806e77335c7c2ced1ea2ea5d0b3e0822baa9779063",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 2,
+        "initial_risk": "high",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 2,
+        "enabled": true,
+        "expected_overlap": false,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.203,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.219,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.328,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.344,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.36,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.375,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "insufficient_validation_budget",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.703,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.735,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:24Z",
+            "elapsed_seconds": 0.75,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_False_high_12_6_2_False.json",
+      "sha256": "78b586e958eaf1fd52b88356c08cc4b32dd362693098f57851215a5a567f153a",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 2,
+        "initial_risk": "high",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": false,
+        "expected_overlap": false,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:25Z",
+            "elapsed_seconds": 0.188,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:25Z",
+            "elapsed_seconds": 0.219,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.313,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.328,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.344,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.375,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "speculation_disabled",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.703,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.719,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:26Z",
+            "elapsed_seconds": 0.735,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_False_high_4_6_2_True.json",
+      "sha256": "ea30440bdf409951592ed40827afc47fbd367f947d30fd53777776e78959802e",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 2,
+        "initial_risk": "high",
+        "budget": 4,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": false,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.235,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.25,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.36,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.375,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.391,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.407,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "insufficient_model_budget",
+            "remaining_model_calls": 2,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.735,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.75,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:19Z",
+            "elapsed_seconds": 0.782,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_False_low_12_6_2_True.json",
+      "sha256": "a103e8212fa3c6d79493ac6ca683bdf5e253e89bd23385c10904fab59aa106d7",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.266,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.313,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.453,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.469,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.484,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.5,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 0.531,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 1.031,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 1.063,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 1.125,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 1.141,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:06Z",
+            "elapsed_seconds": 1.172,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_False_low_4_6_1_True.json",
+      "sha256": "38ecb56b05742bc15f5835c1f4fa192554286718bfcea0c2f1017855c70b35bd",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 4,
+        "reserve": 1,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.204,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.235,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.344,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.36,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.391,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.407,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 2,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 1,
+            "required_model_calls": 2,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:22Z",
+            "elapsed_seconds": 0.438,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 1,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:23Z",
+            "elapsed_seconds": 0.891,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:23Z",
+            "elapsed_seconds": 0.938,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:23Z",
+            "elapsed_seconds": 1.0,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:23Z",
+            "elapsed_seconds": 1.032,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:23Z",
+            "elapsed_seconds": 1.047,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_False_low_5_6_2_True.json",
+      "sha256": "9d79cec1c85575fab6892c7a99a0b7202d0d826d2ecc2f48a485b0388b0a8aa7",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 5,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:20Z",
+            "elapsed_seconds": 0.172,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:20Z",
+            "elapsed_seconds": 0.204,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.297,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.313,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.329,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.36,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 3,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.375,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.688,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.719,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.797,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "8863e885084c360cdb4496ffc1189f3a6c2d4f821856285503376b79427f7369"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.813,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:21Z",
+            "elapsed_seconds": 0.844,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+      }
+    },
+    {
+      "name": "pipeline_in_process_False_True_low_12_6_2_True.json",
+      "sha256": "a57f1264189a446072054a64b49c0ba3a0da982478d355ef2aee1bbde736ece8",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.188,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.204,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.313,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.344,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.36,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.375,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:17Z",
+            "elapsed_seconds": 0.407,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:18Z",
+            "elapsed_seconds": 0.797,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:18Z",
+            "elapsed_seconds": 0.813,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_failed",
+            "state": "MODEL_JOB_FAILED",
+            "at": "2026-10-25T07:37:18Z",
+            "elapsed_seconds": 0.86,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:18Z",
+            "elapsed_seconds": 0.875,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_in_process_True_False_low_12_6_2_True.json",
+      "sha256": "082749d63125c1e5c2a1b6427d4f4b474cb3c2be803c9616aa27ba783cab308b",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 4,
+        "initial_risk": "low",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:07Z",
+            "elapsed_seconds": 0.187,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:07Z",
+            "elapsed_seconds": 0.203,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.312,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.328,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.344,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.359,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.391,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.703,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": false
+          },
+          {
+            "event": "feedback_queued",
+            "state": "FEEDBACK_QUEUED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.828,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "concrete": true
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.891,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.906,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.922,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.953,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "feedback_has_priority",
+            "remaining_model_calls": 9,
+            "free_validation_slots": 4,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:08Z",
+            "elapsed_seconds": 0.953,
+            "role": "repairer",
+            "candidate_id": "candidate_01",
+            "parent_revision": "candidate_01:r0",
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:09Z",
+            "elapsed_seconds": 1.297,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:09Z",
+            "elapsed_seconds": 1.312,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:09Z",
+            "elapsed_seconds": 1.391,
+            "revision_id": "candidate_01:r1",
+            "source_hash": "454c49b4cab66446d002a5248014a3d8b37821363d7038eeed5ee554000420da"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:09Z",
+            "elapsed_seconds": 1.406,
+            "revision_id": "candidate_01:r1",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:09Z",
+            "elapsed_seconds": 1.437,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_False_high_12_2_2_True.json",
+      "sha256": "8912406db2c7e685e19b3cdeec4139b3d1f345c6b75ca8e5fe7ddabd4b9d0215",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 2,
+        "initial_risk": "high",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 2,
+        "enabled": true,
+        "expected_overlap": false,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:37Z",
+            "elapsed_seconds": 0.594,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:37Z",
+            "elapsed_seconds": 0.625,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:38Z",
+            "elapsed_seconds": 1.125,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:38Z",
+            "elapsed_seconds": 1.141,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:38Z",
+            "elapsed_seconds": 1.156,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:38Z",
+            "elapsed_seconds": 1.172,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "insufficient_validation_budget",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:39Z",
+            "elapsed_seconds": 1.922,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:39Z",
+            "elapsed_seconds": 1.937,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:39Z",
+            "elapsed_seconds": 1.953,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_False_high_12_6_2_False.json",
+      "sha256": "d3d33d130006deef3485ec58a55896e436a9d5c39647e4036038a7d3d11d5d81",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 2,
+        "initial_risk": "high",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": false,
+        "expected_overlap": false,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:40Z",
+            "elapsed_seconds": 0.579,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:40Z",
+            "elapsed_seconds": 0.594,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:41Z",
+            "elapsed_seconds": 1.094,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:41Z",
+            "elapsed_seconds": 1.11,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:41Z",
+            "elapsed_seconds": 1.125,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:41Z",
+            "elapsed_seconds": 1.141,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "speculation_disabled",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:42Z",
+            "elapsed_seconds": 1.86,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:42Z",
+            "elapsed_seconds": 1.891,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:42Z",
+            "elapsed_seconds": 1.907,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_False_high_4_6_2_True.json",
+      "sha256": "f4e319bf9354531a7b98699c64aedc6f8d5c197c85ff286435569d2c6adff2ee",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 2,
+        "initial_risk": "high",
+        "budget": 4,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": false,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:27Z",
+            "elapsed_seconds": 0.578,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:27Z",
+            "elapsed_seconds": 0.594,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:28Z",
+            "elapsed_seconds": 1.141,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:28Z",
+            "elapsed_seconds": 1.157,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:28Z",
+            "elapsed_seconds": 1.172,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:28Z",
+            "elapsed_seconds": 1.188,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "insufficient_model_budget",
+            "remaining_model_calls": 2,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:29Z",
+            "elapsed_seconds": 1.938,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:29Z",
+            "elapsed_seconds": 1.953,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:29Z",
+            "elapsed_seconds": 1.969,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_False_low_12_6_2_True.json",
+      "sha256": "e3f8e1380bf1b29fe9360ab11ac60d4f9e5854ee6e13f2b63b8c60714d67aa70",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:10Z",
+            "elapsed_seconds": 0.593,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:10Z",
+            "elapsed_seconds": 0.609,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:10Z",
+            "elapsed_seconds": 1.109,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:10Z",
+            "elapsed_seconds": 1.125,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 1.156,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 1.171,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 1.187,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 1.89,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 1.921,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 2.031,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 2.062,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:11Z",
+            "elapsed_seconds": 2.062,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_False_low_4_6_1_True.json",
+      "sha256": "d8872862faaf62766020e4e814b878f62cbb3261b0f8b6c90c3cf553a7f63f9b",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 4,
+        "reserve": 1,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:34Z",
+            "elapsed_seconds": 0.594,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:34Z",
+            "elapsed_seconds": 0.61,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:34Z",
+            "elapsed_seconds": 1.11,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 1.125,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 1.141,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 1.172,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 2,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 1,
+            "required_model_calls": 2,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 1.188,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 1,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 1.922,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 1.938,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 2.031,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 2.047,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:35Z",
+            "elapsed_seconds": 2.078,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_False_low_5_6_2_True.json",
+      "sha256": "43603fb18cea7c81e1ea8101e0df1e15deca987cf69972f9ce2cde9697bb0dac",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 5,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 0.719,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 0.735,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 1.203,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 1.219,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 1.235,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 1.25,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 3,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:31Z",
+            "elapsed_seconds": 1.266,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:32Z",
+            "elapsed_seconds": 1.969,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:32Z",
+            "elapsed_seconds": 2.0,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:32Z",
+            "elapsed_seconds": 2.11,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "8863e885084c360cdb4496ffc1189f3a6c2d4f821856285503376b79427f7369"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:32Z",
+            "elapsed_seconds": 2.125,
+            "revision_id": "candidate_02:r0",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:32Z",
+            "elapsed_seconds": 2.157,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "46139827f67a53c4e40419e382c195cbd859f0bd3af3e6bd600fa23e63fdfa91"
+      }
+    },
+    {
+      "name": "pipeline_workers_False_True_low_12_6_2_True.json",
+      "sha256": "25d7f67cd8bec78343f8c52445fbc576b18cdb63a8209b2409d5bc8c87d6c1b0",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 3,
+        "initial_risk": "low",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 0.594,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 0.625,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 1.141,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 1.172,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 1.187,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 1.203,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:44Z",
+            "elapsed_seconds": 1.219,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:45Z",
+            "elapsed_seconds": 1.984,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:45Z",
+            "elapsed_seconds": 2.016,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_failed",
+            "state": "MODEL_JOB_FAILED",
+            "at": "2026-10-25T07:37:45Z",
+            "elapsed_seconds": 2.109,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:45Z",
+            "elapsed_seconds": 2.125,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+      }
+    },
+    {
+      "name": "pipeline_workers_True_False_low_12_6_2_True.json",
+      "sha256": "216e4473681e4090085c6754ebad3e746e996a91b0634d75d9f52c1ac6a572a5",
+      "evidence": {
+        "validation": "synthetic HTTP model and validator subprocess; no real model/Vivado",
+        "pipeline_version": "bounded_pipeline_resource_v2",
+        "model_call_count": 4,
+        "initial_risk": "low",
+        "budget": 12,
+        "reserve": 2,
+        "validations": 6,
+        "enabled": true,
+        "expected_overlap": true,
+        "passed": true,
+        "events": [
+          {
+            "event": "pipeline_started",
+            "state": "PIPELINE_STARTED",
+            "at": "2026-10-25T07:37:13Z",
+            "elapsed_seconds": 0.61,
+            "policy_version": "resource_admission_v1",
+            "buffer_capacity": 1,
+            "drain_policy": "natural_completion"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:13Z",
+            "elapsed_seconds": 0.641,
+            "role": "synthesizer",
+            "candidate_id": "candidate_01",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:14Z",
+            "elapsed_seconds": 1.172,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:14Z",
+            "elapsed_seconds": 1.188,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:14Z",
+            "elapsed_seconds": 1.203,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221"
+          },
+          {
+            "event": "speculation_allowed",
+            "state": "SPECULATION_ALLOWED",
+            "at": "2026-10-25T07:37:14Z",
+            "elapsed_seconds": 1.219,
+            "policy_version": "resource_admission_v1",
+            "allowed": true,
+            "reason_code": "resources_available",
+            "remaining_model_calls": 10,
+            "free_validation_slots": 5,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:14Z",
+            "elapsed_seconds": 1.235,
+            "role": "synthesizer",
+            "candidate_id": "candidate_02",
+            "parent_revision": null,
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 2,
+            "speculative": true
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.031,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "passed": false
+          },
+          {
+            "event": "feedback_queued",
+            "state": "FEEDBACK_QUEUED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.156,
+            "revision_id": "candidate_01:r0",
+            "source_hash": "c78ca7ab0cd7fc5f69b41f51b428b41304391ab80e621fc5c6e2888f63180221",
+            "concrete": true
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.266,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "candidate_queued",
+            "state": "CANDIDATE_QUEUED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.281,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "validation_started",
+            "state": "VALIDATION_STARTED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.297,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+          },
+          {
+            "event": "speculation_denied",
+            "state": "SPECULATION_DENIED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.313,
+            "policy_version": "resource_admission_v1",
+            "allowed": false,
+            "reason_code": "feedback_has_priority",
+            "remaining_model_calls": 9,
+            "free_validation_slots": 4,
+            "failure_reserve_calls": 2,
+            "required_model_calls": 3,
+            "required_validation_slots": 2,
+            "completion_estimate": "unknown"
+          },
+          {
+            "event": "model_job_started",
+            "state": "MODEL_JOB_STARTED",
+            "at": "2026-10-25T07:37:15Z",
+            "elapsed_seconds": 2.328,
+            "role": "repairer",
+            "candidate_id": "candidate_01",
+            "parent_revision": "candidate_01:r0",
+            "reserved_model_calls": 1,
+            "reserved_validation_slots": 1,
+            "failure_reserve_calls": 0,
+            "speculative": false
+          },
+          {
+            "event": "validation_finished",
+            "state": "VALIDATION_FINISHED",
+            "at": "2026-10-25T07:37:16Z",
+            "elapsed_seconds": 3.063,
+            "revision_id": "candidate_02:r0",
+            "source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475",
+            "passed": true
+          },
+          {
+            "event": "dispatch_stopped",
+            "state": "DISPATCH_STOPPED",
+            "at": "2026-10-25T07:37:16Z",
+            "elapsed_seconds": 3.078,
+            "reason": "success",
+            "dropped_validation": []
+          },
+          {
+            "event": "model_job_finished",
+            "state": "MODEL_JOB_FINISHED",
+            "at": "2026-10-25T07:37:16Z",
+            "elapsed_seconds": 3.156,
+            "revision_id": "candidate_01:r1",
+            "source_hash": "454c49b4cab66446d002a5248014a3d8b37821363d7038eeed5ee554000420da"
+          },
+          {
+            "event": "model_drained",
+            "state": "MODEL_DRAINED",
+            "at": "2026-10-25T07:37:16Z",
+            "elapsed_seconds": 3.188,
+            "revision_id": "candidate_01:r1",
+            "disposition": "discarded"
+          },
+          {
+            "event": "final",
+            "state": "FINAL",
+            "at": "2026-10-25T07:37:16Z",
+            "elapsed_seconds": 3.203,
+            "reason": "success"
+          }
+        ],
+        "max_active": {
+          "active_model": 0,
+          "max_active_model": 1,
+          "active_eda": 0,
+          "max_active_eda": 1
+        },
+        "drain_status": "completed",
+        "final_source_hash": "0b912a01d8b39723dcd7ee9e906e95413e483c6870ecf1f8759f4dff22fd1475"
+      }
+    },
+    {
+      "name": "policy_chain_in_process.json",
+      "sha256": "7df5e5ce476a0d3ae6fccfabfb89bfc318a702ce6e1f6e90c9ac3ad4c4254a9e",
+      "evidence": {
+        "project_root": "D:\\AMD\\4_agent_plan3",
+        "mode": "in_process",
+        "roles": {
+          "analyst": 1,
+          "synthesizer": 3,
+          "reviewer": 2,
+          "repairer": 2,
+          "rebuild": 1
+        },
+        "model_call_count": 9,
+        "passed": true,
+        "call_records": [
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0001",
+            "response_kind": "analyst",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": null,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.032,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\context\\analyst_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\context\\analyst_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\context\\analyst_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0002",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0003",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0004",
+            "response_kind": "reviewer",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\repair_01\\review_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\repair_01\\review_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\repair_01\\review_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0005",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\repair_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\repair_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_01\\repair_01\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0006",
+            "response_kind": "reviewer",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\repair_01\\review_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\repair_01\\review_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\repair_01\\review_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0007",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\repair_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\repair_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_02\\repair_01\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0008",
+            "response_kind": "analyst",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.031,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\context\\contract_rebuild\\analyst_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\context\\contract_rebuild\\analyst_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\context\\contract_rebuild\\analyst_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0009",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 2,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.063,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_03_rebuild\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_03_rebuild\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmptpeugx4z\\audit\\candidates\\candidate_03_rebuild\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          }
+        ],
+        "validation": "mock"
+      }
+    },
+    {
+      "name": "policy_chain_workers.json",
+      "sha256": "ff8a7f79ac08975dcd98b917d32f3eb15615d7e34ebba1933d047dda4be3e6b4",
+      "evidence": {
+        "project_root": "D:\\AMD\\4_agent_plan3",
+        "mode": "workers",
+        "roles": {
+          "analyst": 1,
+          "synthesizer": 3,
+          "reviewer": 2,
+          "repairer": 2,
+          "rebuild": 1
+        },
+        "model_call_count": 9,
+        "passed": true,
+        "call_records": [
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0001",
+            "response_kind": "analyst",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": null,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.031,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\context\\analyst_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\context\\analyst_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\context\\analyst_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0002",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.078,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0003",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0004",
+            "response_kind": "reviewer",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.063,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\repair_01\\review_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\repair_01\\review_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\repair_01\\review_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0005",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.063,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\repair_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\repair_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_01\\repair_01\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0006",
+            "response_kind": "reviewer",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.062,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\repair_01\\review_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\repair_01\\review_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\repair_01\\review_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0007",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.047,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\repair_01\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\repair_01\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_02\\repair_01\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0008",
+            "response_kind": "analyst",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 1,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.063,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 2048
+            },
+            "rtl_status": "not_available",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\context\\contract_rebuild\\analyst_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\context\\contract_rebuild\\analyst_response\\call_01\\audit\\raw_payload.json",
+            "source_file": null,
+            "answer_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\context\\contract_rebuild\\analyst_response\\call_01\\answer.json",
+            "source_kind": null,
+            "selected_block_index": null
+          },
+          {
+            "schema_version": "2.0",
+            "task_id": "mock_counter_001",
+            "run_id": "audit",
+            "request_id": "model_call_0009",
+            "response_kind": "rtl",
+            "context_binding": {
+              "facts_ref": "2621219e1e1e1fb260dc6818de3d741a807cdb4524dd08700e7d8319bca42836",
+              "facts_version": 1,
+              "derived_ref": 2,
+              "facts_path": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\task_facts.json"
+            },
+            "model_id": "chain-audit",
+            "revision": "local-test",
+            "elapsed_seconds": 0.031,
+            "status": "success",
+            "stage": "complete",
+            "error": null,
+            "generation": {
+              "finish_reason": "eos",
+              "provider_finish_reason": "eos"
+            },
+            "usage": {
+              "input_tokens": 123,
+              "output_tokens": 45,
+              "reasoning_tokens": null,
+              "requested_max_tokens": 8192
+            },
+            "rtl_status": "complete",
+            "raw_response_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_03_rebuild\\code_response\\call_01\\audit\\raw_response.txt",
+            "raw_payload_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_03_rebuild\\code_response\\call_01\\audit\\raw_payload.json",
+            "source_file": "C:\\Users\\chenr\\AppData\\Local\\Temp\\tmpndqo0grm\\audit\\candidates\\candidate_03_rebuild\\code_response\\call_01\\solution.txt",
+            "answer_file": null,
+            "source_kind": "tagged:RTL_CODE",
+            "selected_block_index": null
+          }
+        ],
+        "validation": "mock"
+      }
+    }
+  ],
+  "smoke": {
+    "passed": true,
+    "stop_reason": "success",
+    "pipeline_version": "bounded_pipeline_resource_v2",
+    "policy_version": "resource_admission_v1",
+    "model_call_count": 3,
+    "attempt_count": 2,
+    "drain_status": "completed"
+  },
+  "backup": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\plan3_resource_backup",
+  "notes": [
+    "Default-memory smoke was interrupted after first failed candidate; rerun changed only memory output directory to writable workspace and passed.",
+    "Model endpoint, identity, temperature and EDA assets were not changed.",
+    "Historical 2026-10-23 records retained."
+  ]
+}

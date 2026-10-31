@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "title": "RTL validation result 1.0", "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "passed", "stage", "error_type", "summary", "source", "testbench", "top_module", "part", "clock_period_ns", "vivado_version", "timings", "commands", "log_files", "artifacts", "warnings"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "passed": {"type": "boolean"},
+    "stage": {"enum": ["environment", "compile", "elaborate", "simulation", "synthesis", "complete"]},
+    "error_type": {"enum": ["tool_not_found", "unsupported_part", "license_error", "timeout", "syntax_error", "module_not_found", "port_mismatch", "width_mismatch", "elaboration_error", "functional_mismatch", "reset_behavior_error", "latency_mismatch", "simulation_timeout", "unknown_value", "multiple_driver", "latch_inferred", "combinational_loop", "unsynthesizable_construct", "synthesis_error", "unknown_error", "none"]},
+    "summary": {"type": "string", "maxLength": 1000}, "source": {"type": "string"}, "testbench": {"type": "string"},
+    "top_module": {"type": "string"}, "part": {"type": "string"}, "clock_period_ns": {"type": "number", "exclusiveMinimum": 0},
+    "vivado_version": {"type": ["string", "null"]},
+    "timings": {"type": "object", "required": ["compile_seconds", "elaborate_seconds", "simulation_seconds", "synthesis_seconds", "total_seconds"],
+      "properties": {"compile_seconds": {"type": "number", "minimum": 0}, "elaborate_seconds": {"type": "number", "minimum": 0}, "simulation_seconds": {"type": "number", "minimum": 0}, "synthesis_seconds": {"type": "number", "minimum": 0}, "total_seconds": {"type": "number", "minimum": 0}}},
+    "commands": {"type": "array", "items": {"type": "object"}}, "log_files": {"type": "array", "items": {"type": "string"}},
+    "artifacts": {"type": "array", "items": {"type": "string"}}, "warnings": {"type": "array", "items": {"type": "string"}},
+    "output_dir": {"type": "string"}
+  }
+}

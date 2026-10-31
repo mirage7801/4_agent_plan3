@@ -1,0 +1,8 @@
+设计一个可综合的 4 路固定优先级仲裁器，模块名为 arbiter。
+
+端口：input logic [3:0] request；output logic [3:0] grant。
+
+行为要求：
+- 优先级从高到低依次为 request[0]、request[1]、request[2]、request[3]。
+- grant 仅对最高优先级的有效请求置 1；最多一个授权，无请求时输出 4'b0000。
+- 这是纯组合逻辑，不得引入时钟、状态或锁存器。

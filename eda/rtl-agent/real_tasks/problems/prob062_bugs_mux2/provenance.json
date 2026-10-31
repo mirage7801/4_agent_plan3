@@ -1,0 +1,25 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob062_bugs_mux2",
+  "source_files": {
+    "Prob062_bugs_mux2_prompt.txt": "66ab950ad70efc33e0599cf07644a4fabd6cf4fc2b90c91099ce229ec85c0415",
+    "Prob062_bugs_mux2_ref.sv": "3735cd6a576c3ab365e0b42bcd95198b6ce609792a0ad7cb1765e12667417436",
+    "Prob062_bugs_mux2_test.sv": "020ebc5c365a0c3c23ff64ab2506e84bd2ce9a5046f8090c310fd6c104a525d2"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments.",
+    "Public task description corrected; see public_spec_correction. Private validation assets are unchanged by this repair."
+  ],
+  "public_spec_correction": {
+    "version": "public_spec_repair_v2_20261025",
+    "reason": "明确8位输出；交叉仿真发现原始验证行为是sel=1选a、sel=0选b，与错误示例相反。显式规定原验证极性，保留原始参考与测试。",
+    "upstream_prompt_sha256": "66ab950ad70efc33e0599cf07644a4fabd6cf4fc2b90c91099ce229ec85c0415",
+    "code_complete_prompt_sha256": "249a444f5d9b18564dbbf63300cbdb6784c590bc8b0b7bcbc1dd1591d3fcdee5",
+    "previous_task_txt_sha256": "5ad5285b165fa83ab78328347e819f6a0d99f3b3e10ef0a562f24520bc3390ee"
+  }
+}

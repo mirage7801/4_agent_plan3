@@ -1,0 +1,58 @@
+{
+  "target": "D:\\AMD\\4_agent_plan3",
+  "batches": {
+    "1": {
+      "tests": 262,
+      "seconds": 273.306,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\precision_batch1_final.log",
+      "source_hashes": {
+        "agent\\core\\static_checks.py": "10b2da5e85b4d4db683d0b277c186e7537413f43783ec5a9e86e29962572a992",
+        "model\\rtl_lex.py": "791dcfea34c263fa0cc8d466910fcfcf26dd26ffbb76eb292ab367e21086f12b",
+        "tests\\test_precision_hardening.py": "5a3ea0083fe2c347814f9b1d5904df48366978fa2ede80517bb96cafaf6d0733"
+      }
+    },
+    "2": {
+      "tests": 267,
+      "seconds": 338.7,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\precision_batch2_final.log",
+      "source_hashes": {
+        "agent\\contracts\\schemas.py": "dd1952ed42cc44541df6219f04e29c8b6fc6d1c2a58fa1d87f29f7d7d6f4e51c",
+        "agent\\core\\feedback.py": "97951762c08e8f0c87f15ac752987e8d31b90af39feeb07612d7feb6db111f0a",
+        "agent\\core\\stage_context.py": "11f29429bc416edc542cd0c968fdc9334c1d3471a2ca79705596e259da8dfa29",
+        "agent\\core\\static_checks.py": "10b2da5e85b4d4db683d0b277c186e7537413f43783ec5a9e86e29962572a992",
+        "agent\\orchestration\\candidate_search.py": "28762d17e6286986c11a65c155ec9ebca8da1e48fc07c442e0ee288fbba14cdf",
+        "model\\rtl_lex.py": "791dcfea34c263fa0cc8d466910fcfcf26dd26ffbb76eb292ab367e21086f12b",
+        "tests\\test_execution_policy.py": "37b157707a31532ea007b7bdb3c5640222dee4e5a60aaba57d831a7f4d10e417",
+        "tests\\test_pipeline.py": "b8dc6094949c2a60cb67aa7ad4fd8e46b117693676dbbd15d361105f8a779a1d",
+        "tests\\test_policy_http_chain.py": "62d218d32f9a971c27a4748ed23199049d30c2dfecc5a2dca62406b2bb98591e",
+        "tests\\test_precision_hardening.py": "185792f26302eed4f332b50778a93a069e58442cd0f5d799548acfabd83196e1"
+      }
+    },
+    "3": {
+      "tests": 271,
+      "seconds": 340.498,
+      "result": "OK",
+      "log": "C:\\Users\\chenr\\Documents\\ChatGPT\\agent\\precision_batch3.log",
+      "source_hashes": {
+        "agent\\contracts\\schemas.py": "8df1f2a98ba13a181361946b25ba74b237d1dfd5f6708f334772998c8408fa7c",
+        "agent\\core\\feedback.py": "97951762c08e8f0c87f15ac752987e8d31b90af39feeb07612d7feb6db111f0a",
+        "agent\\core\\output_protocol.py": "e09de6b34fd7f65efa68c3d057c76547d30f11050b6ce75f7ef574d24011d110",
+        "agent\\core\\stage_context.py": "11f29429bc416edc542cd0c968fdc9334c1d3471a2ca79705596e259da8dfa29",
+        "agent\\core\\static_checks.py": "10b2da5e85b4d4db683d0b277c186e7537413f43783ec5a9e86e29962572a992",
+        "agent\\core\\storage.py": "e17d0ad22ed72719b6732507cc4fc020b90d876c8325aed076c7120bb18b6d51",
+        "agent\\orchestration\\candidate_search.py": "f670241326d770c4a2a53753452ba13725651f65e1edf990d6b0d41f03e4a7eb",
+        "agent\\runtime\\reporting.py": "e89341a7e15abf9a18a672e7f32ea817d63ce627791fb0e10cf8f555785c24e3",
+        "agent\\runtime\\worker_boundary.py": "593c340768c41d1dc02c27205b99cbb9ee1e9c0d6918e4e2a85a05656016564a",
+        "agent\\worker_cli.py": "b5c3e778d57c1514c4b8e536d590d2e54e68940d2f06dead4d16509a0c308815",
+        "model\\rtl_lex.py": "791dcfea34c263fa0cc8d466910fcfcf26dd26ffbb76eb292ab367e21086f12b",
+        "tests\\test_execution_policy.py": "f66aa3da6086e9951e8b4b1b317a6aef9b07a72824907f93c6c8c7111115b2ea",
+        "tests\\test_pipeline.py": "b8dc6094949c2a60cb67aa7ad4fd8e46b117693676dbbd15d361105f8a779a1d",
+        "tests\\test_policy_http_chain.py": "62d218d32f9a971c27a4748ed23199049d30c2dfecc5a2dca62406b2bb98591e",
+        "tests\\test_precision_hardening.py": "2ad5c4b21aaf682eaee276aa6103e30711c020daebe3eb97c65543737106e660"
+      }
+    }
+  },
+  "scope": "Target CLI/local HTTP/tokenizer, mock EDA and local owned processes. No real cloud GPU/Vivado performance claim."
+}

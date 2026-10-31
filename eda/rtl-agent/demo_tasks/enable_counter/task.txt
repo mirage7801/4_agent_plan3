@@ -1,0 +1,8 @@
+设计一个可综合的带使能计数器，模块名为 enable_counter，参数 WIDTH 默认值为 8，且 WIDTH>=2。
+
+端口：input logic clk、rst、enable；output logic [WIDTH-1:0] count；output logic tick。
+
+行为要求：
+- 只在 clk 上升沿更新；时钟周期为 5 ns。rst 为同步高有效复位，优先清零 count 和 tick。
+- enable=1 时 count 按模 2^WIDTH 加 1；enable=0 时 count 保持。
+- tick 是寄存的单周期脉冲：仅在该次上升沿 enable=1 且更新前 count 全为 1 时为 1；其余周期为 0。

@@ -1,0 +1,8 @@
+设计一个可综合的序列检测器，模块名为 sequence_detector。
+
+端口：input logic clk、rst、bit_in；output logic detected。
+
+行为要求：
+- 使用有限状态机，在 clk 每个上升沿采样一个 bit_in；时钟周期为 5 ns。
+- 当最近四个有效采样构成 1011 时，detected 寄存输出 1，持续一个周期；其他周期为 0。
+- 必须支持重叠序列检测。rst 为同步高有效复位，清除历史状态和 detected。

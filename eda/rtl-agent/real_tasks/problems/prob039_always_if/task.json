@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob039_always_if",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  a\n - input  b\n - input  sel_b1\n - input  sel_b2\n - output out_assign\n - output out_always\n\nThe module should implement a 2-to-1 mux that chooses between a and b.\nChoose b if both sel_b1 and sel_b2 are true. Otherwise, choose a. Do the\nsame twice, once using assign statements and once using a procedural if\nstatement.",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

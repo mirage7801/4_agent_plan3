@@ -1,0 +1,7 @@
+设计一个可综合的无符号加法器，模块名为 parameterized_adder，参数 WIDTH 默认值为 8，且 WIDTH>=2。
+
+端口：input logic [WIDTH-1:0] a、b；output logic [WIDTH-1:0] sum；output logic carry。
+
+行为要求：
+- {carry, sum} 必须是 a+b 的精确 WIDTH+1 位结果，不能丢失最高进位。
+- 这是纯组合逻辑；不得引入时钟、状态或锁存器。

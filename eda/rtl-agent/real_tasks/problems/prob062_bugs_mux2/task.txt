@@ -1,0 +1,23 @@
+
+Consider the following implementation of an 8-bit 2-to-1 mux:
+
+  module TopModule (
+      input        sel,
+      input  [7:0] a,
+      input  [7:0] b,
+      output       out
+  );
+
+      assign out = (~sel & a) | (sel & b);
+
+  endmodule
+
+Unfortunately, this module has a bug. Implement a new version of this
+module that fixes the bug.
+
+
+The corrected interface has input sel, input [7:0] a, input [7:0] b,
+and output [7:0] out. For compatibility with the original VerilogEval
+validation behavior, select b when sel=0 and a when sel=1.
+This explicit selection rule supersedes the faulty example above, whose
+selection polarity and scalar output are not the corrected specification.

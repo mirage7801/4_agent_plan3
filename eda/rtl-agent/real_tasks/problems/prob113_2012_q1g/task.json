@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob113_2012_q1g",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  x (4 bits)\n - output f\n\nThe module should implement the function f shown in the Karnaugh map\nbelow.\n\n             x[0]x[1]\nx[2]x[3]  00  01  11  10\n  00     | 1 | 0 | 0 | 1 |\n  01     | 0 | 0 | 0 | 0 |\n  11     | 1 | 1 | 1 | 0 |\n  10     | 1 | 1 | 0 | 1 |",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}

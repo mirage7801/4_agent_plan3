@@ -1,0 +1,17 @@
+{
+  "source_dataset": "VerilogEval dataset_spec-to-rtl",
+  "source_problem": "Prob005_notgate",
+  "source_files": {
+    "Prob005_notgate_prompt.txt": "0dcc1f15aa03789c4b4fcaa87aaea9f1f6c6618bb65aaf12db601c9ccda49cc4",
+    "Prob005_notgate_ref.sv": "b9c7af094411e46248398822c76728653300163f17595b16379f7e475d60cfcf",
+    "Prob005_notgate_test.sv": "8c24f1f7eaa0f30af7418607d59444a74a3f1fc81a65b586a90b389b6b3caeb7"
+  },
+  "conversion_notes": [
+    "Candidate top module renamed from RefModule to TopModule for the reference smoke test.",
+    "Original RefModule reference is appended to the private testbench because it is required by the upstream checker.",
+    "The upstream mismatch counter is instrumented to emit TEST_PASS or TB_FAIL for RTL-Agent's Vivado validator.",
+    "Vivado requires tb_match/tb_mismatch declarations before $dumpvars; only their declaration position is changed.",
+    "The upstream testbench module tb is renamed to tb_TopModule because the existing validator elaborates that fixed name.",
+    "Run the Vivado reference smoke test before using this task for Agent experiments."
+  ]
+}

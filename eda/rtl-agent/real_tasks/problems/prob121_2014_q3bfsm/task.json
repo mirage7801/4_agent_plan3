@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "prob121_2014_q3bfsm",
+  "description": "I would like you to implement a module named TopModule with the following\ninterface. All input and output ports are one bit unless otherwise\nspecified.\n\n - input  clk\n - input  reset\n - input  x\n - output z\n\nThe module should implement a finite-state machine with the\nstate-assigned table shown below. Reset should synchronous active high\nreset the FSM to state 000. Assume all sequential logic is triggered on\nthe positive edge of the clock.\n\n  Present state y[2:0] | Next state y[2:0] x=0, Next state y[2:0] x=1 | Output z\n  000 | 000, 001 | 0\n  001 | 001, 100 | 0\n  010 | 010, 001 | 0\n  011 | 001, 010 | 1\n  100 | 011, 100 | 1",
+  "language": "systemverilog",
+  "top_module": "TopModule",
+  "expected_source_file": "solution.sv",
+  "testbench": "tb.sv",
+  "constraints": null,
+  "part": "xczu3eg-sbva484-1-e",
+  "clock_period_ns": 5.0,
+  "timeouts": {
+    "compile_seconds": 60,
+    "elaborate_seconds": 60,
+    "simulation_seconds": 120,
+    "synthesis_seconds": 300
+  }
+}
